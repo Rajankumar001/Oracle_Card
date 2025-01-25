@@ -1,0 +1,301 @@
+
+.login-main-container{
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.Form.Control{
+    width: 95%;
+}
+.Login_container{
+    background-image: url('https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg');
+    border-radius: 4%;
+    box-shadow: 5px 5px 5px pink;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px 0px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    box-shadow: -4px 4px 4px rgb(208, 206, 206);
+    width: 450px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+}
+.form-content{
+    z-index: 22;
+    opacity: 1;
+
+}
+.welcome-container{
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    width: 250px;
+    height: 70px;
+    text-align: center;
+    color: #94c973;
+    font-size: 1.4rem;
+    
+
+}
+.welcome-container span{
+    color: #f8cd4f;
+    font-size: 1.4rem;
+}
+.mb-3{
+    position: relative;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-weight: 200;
+    font-style: normal;
+    width: 420px;
+    height: 100px;
+
+}
+.text-muted p{
+    margin-left: 3px;
+    font-family: "Jersey 15", serif;
+    font-weight: 600;
+font-size: 1.1rem;
+font-weight: 100;
+color: #ba3276 ;
+}
+.form_input{
+    font-size: 0.85rem;
+    width: 400px;
+    border: none;
+    display: flex;
+    box-shadow: 1px 1px 1px grey;
+    color: rgb(239, 230, 230);
+    color: grey;
+    opacity: 0.7;
+} 
+.PhoneInputCountrySelect{
+   display: none;
+}
+.PhoneInputCountryIcon{
+    margin-top:10px;
+    width: 35px;
+    height: 30px;
+    border: none;
+}
+.PhoneInputCountryIconImg{
+    /* margin-top:20%; */
+    width: 35px;
+    height: 30px;
+    border: none;
+}
+.PhoneInput{
+    display: none;
+    width: 400px !important;     
+    height:50px;
+    padding: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+
+}
+.PhoneInput:hover{
+    border: 1px solid #000c66;
+
+}
+.PhoneInputCountry{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+.PhoneInputInput{
+    width: 330px;
+    height: 35px;
+    border-radius: 5px;
+    position: absolute;
+    top: 47%;
+    left: 16%;
+    border: none;
+    font-size: 1.2rem;
+    color: #000c66 ;
+    /* border: 1px solid #000c66; */
+    
+}
+input:focus-visible{
+    offset: 0px;
+}
+:focus-visible{
+    outline: none;
+}
+form h2{
+    position: absolute;
+    top: 100px;
+    left: 720px;
+    font-family: "Jersey 15", serif;
+        font-weight: 600;
+    font-size: 3rem;
+    font-weight: 100;
+    color: #ba3276 ;
+    font-style: normal;
+    text-align: center;
+}
+.login-button{
+    margin-left: 0px;
+    width: 400px;
+    height: 50px;
+    background-color: #eed544 !important;
+    color: #fff;
+}
+.login-button:hover{
+transition: 1s ease-out;
+    background-color: #e56997 !important;
+    color: black;
+    border: 2px solid #eed544 !important;
+}
+span h4{
+    margin-right: 30px;
+    margin-top: 20px;
+    text-align: end;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+     font-size: 0.85rem;
+    font-style: normal;
+}
+span a{
+    text-decoration: none;
+    text-align: center;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.title{
+    margin-left: 3px;
+    font-size: 1.2rem;
+    color: #ba3276 ;
+    font-family: "Jersey 15", serif;
+    font-weight: 600;
+font-size: 1.5rem;
+}
+.signup_container{
+    margin: 20px 0px;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-weight: 200;
+    font-style: normal;
+    box-shadow: -4px 5px 4px rgb(208, 206, 206);
+    width: 500px;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+
+@media (max-width:600px) {
+    .login-main-container{
+        font-family: "Roboto", serif;
+        font-weight: 500;
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        justify-content: center;
+        padding-left: 30px;
+        align-items: center;
+    }
+    input:focus-visible{
+        offset: 0px !important;
+    }
+    :focus-visible{
+        outline: none !important;
+    }
+    .Login_container{
+        background-image: url('../../assets/GUARDIAN-ANGEL.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* margin: 20px 0px; */
+        margin-left: 10px;
+        font-family: "Roboto", serif;
+        font-weight: 500;
+        font-style: normal;
+        font-weight: 200;
+        font-style: normal;
+        box-shadow: -4px 5px 4px rgb(208, 206, 206);
+        width:450px;     
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mb-3{
+        font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+        font-weight: 200;
+        font-style: normal;
+        width: 350px;
+        height: 100px;
+    }
+    .mb-3 .form_input{
+        width: 350px;
+    }
+    .PhoneInput{
+        display: none;
+        width: 350px !important;     
+        height:50px;
+        padding: 0px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center !important;
+    
+    }
+    .PhoneInputInput{
+        width: 250px !important;
+        height: 36px;
+        border-radius: 5px;
+        position: absolute;
+        top: 47%;
+        left: 21%;
+    }
+    .PhoneInput:hover{
+        border: 1px solid #000c66;
+    }
+    .login-button{
+        width: 350px;
+        height: 50px;
+        background-color: #F4CE14;
+        color: #fff;
+    }
+    .login-button:hover{
+        background-color: #fff;
+        color: #379777;
+        border: 2px solid #F4CE14;
+    }
+    .signup_container{
+        margin: 20px 0px;
+        font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+        font-style: normal;
+        box-shadow: -4px 5px 4px rgb(208, 206, 206);
+        width: 375px;     
+        height: 750px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+}

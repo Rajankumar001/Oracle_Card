@@ -1,0 +1,49 @@
+.cardReading-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardReading-main-content{
+
+        font-family: "Jersey 15", serif;
+        font-weight: 600;
+        font-size: 1.8rem;
+        font-style: normal;
+        background-image: url('https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg');
+        background-size: auto;
+    border-radius: 6%;
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.cardReading-box-content{
+    cursor: pointer;
+    font-family: "Jersey 15", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.8rem;
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    width: 400px;
+    height: 80px;
+    background-color: yellow;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+.link-style{
+    text-decoration: none;
+    color: black;
+}
+.image-style{
+    height: 60px;
+    width: 60px;
+}
