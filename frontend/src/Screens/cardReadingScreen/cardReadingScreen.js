@@ -2,6 +2,7 @@ import React from 'react'
 import cardReading from '../../constants/cardReading';
 import { Link } from 'react-router-dom';
 import './cardReadingScreen.css'
+import NavigationTwo from '../../Componenets/Navigation/NavigationTwo';
 const cardReadingScreen = () => {
   return (
     <div className='cardReading-container'>
@@ -16,6 +17,7 @@ const cardReadingScreen = () => {
                 ))
               }
           </div>
+          <NavigationTwo link={'/home'}/>
     </div>
   )
 }

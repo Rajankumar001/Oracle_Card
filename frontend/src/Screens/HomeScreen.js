@@ -2,6 +2,7 @@ import React from 'react'
 import './HomeScreen.css';
 import mainCard from '../constants/mainCard';
 import { Link } from 'react-router-dom';
+import NavigationTwo from '../Componenets/Navigation/NavigationTwo';
 const HomeScreen = () => {
   return (
     <div className='home-container'>
@@ -15,7 +16,9 @@ const HomeScreen = () => {
                 ))
               }
           </div>
+          <NavigationTwo link={'/'}/>
     </div>
+    
   )
 }
 export default HomeScreen;

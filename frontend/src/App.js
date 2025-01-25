@@ -6,17 +6,20 @@ import cardReadingScreen from './Screens/cardReadingScreen/cardReadingScreen';
 import oneCard from './Componenets/oneCard/oneCard';
 import guidebook from './Componenets/Guidebook/guidebook';
 import OneCard from './Componenets/oneCard/oneCard';
-import CardCarousel from './Componenets/oneCard/Crouselcard';
+import Header from './Componenets/Header/Header';
+import Footer from './Componenets/Footer/Footer';
 function App() {
   return (
     <div className='app-container'>
      <BrowserRouter>
+     <Header/>
     <Routes>
      <Route path='/' Component={Login}></Route>
      <Route path='/home' Component={HomeScreen}></Route>
      <Route path='/begin-new-cards' Component={cardReadingScreen}></Route>
      <Route path='/one-card' Component={OneCard}></Route>
     </Routes>
+    <Footer/>
     </BrowserRouter> 
     </div>
   );

@@ -7,6 +7,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import './oneCard.css';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import Navigation from '../Navigation/Navigation';
 export default function App() {
   return (
     <>
@@ -54,6 +55,8 @@ export default function App() {
           <img src="https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg" />
         </SwiperSlide>
       </Swiper>
+
+      <Navigation link={'/begin-new-cards'}/>
     </>
   );
 }

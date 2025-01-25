@@ -2,6 +2,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -35,7 +36,7 @@
     align-items: center;
     width: 400px;
     height: 80px;
-    background-color: yellow;
+    background-image: linear-gradient(to right, rgb(254, 185, 65) ,rgb(255, 244, 95));
     border-radius: 10px;
     box-shadow: 2px 2px 2px black;
 }
