@@ -201,9 +201,6 @@ span a{
     justify-content: center;
     align-items: center;  
 }
-
-
-
 @media (max-width:600px) {
     .login-main-container{
         font-family: "Roboto", serif;
@@ -224,10 +221,9 @@ span a{
         outline: none !important;
     }
     .Login_container{
-        background-image: url('../../assets/GUARDIAN-ANGEL.jpg');
-        background-size: cover;
+        background-size: auto;
         background-repeat: no-repeat;
-        /* margin: 20px 0px; */
+        margin: 20px 0px;
         margin-left: 10px;
         font-family: "Roboto", serif;
         font-weight: 500;
