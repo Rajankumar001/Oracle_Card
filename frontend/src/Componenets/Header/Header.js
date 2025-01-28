@@ -14,7 +14,7 @@ const Header = () => {
     {  ['xxl'].map((expand) => (
       <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3 header-class-container">
         <div fluid  className='header-class'>
-          <Navbar.Brand href="/home">ORACLE CARD</Navbar.Brand>
+          <Navbar.Brand href="/home" className='header-title'>ORACLE CARD</Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-${expand}`}
@@ -22,21 +22,10 @@ const Header = () => {
             placement="end"
           >
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} className='header-title'>
                 ORACLE CARD
               </Offcanvas.Title>
             </Offcanvas.Header>
-            <Offcanvas.Body>
-              <Form className="d-flex">
-                <Form.Control
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
-                />
-                <Button variant="outline-success">Search</Button>
-              </Form>
-            </Offcanvas.Body>
           </Navbar.Offcanvas>
         </div>
       </Navbar>
