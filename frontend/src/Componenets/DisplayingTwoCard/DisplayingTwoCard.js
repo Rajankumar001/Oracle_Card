@@ -4,19 +4,18 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
-import './DisplayOneCard.css';
+import './DisplayingTwoCard.css';
 import NavigationTwo from '../Navigation/NavigationTwo';
 
-const DisplayOneCard = () => {
+const DisplayTwoCard = () => {
   const [cardData, setCardData] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
-
   useEffect(() => {
-    const storedData = localStorage.getItem('oneCard');
+    const storedData = localStorage.getItem('twoCards');
     if (storedData) {
       const parsedData = JSON.parse(storedData);
       setCardData(parsedData);
-      setFlippedCards(Array(parsedData.length).fill(false)); // Initialize flippedCards state
+      setFlippedCards(Array(parsedData.length).fill(false)); 
     }
   }, []);
 
@@ -62,9 +61,9 @@ const DisplayOneCard = () => {
           ))}
         </Swiper>
       </div>
-<NavigationTwo link={'/one-card'}/>
+<NavigationTwo link={'/two-card'}/>
     </>
   );
 };
 
-export default DisplayOneCard;
+export default DisplayTwoCard;

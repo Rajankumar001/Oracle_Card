@@ -11,6 +11,11 @@ import shuffleSound from '../../assets/shufflingCard.wav';
 const TwoCard = () => {
     const [shuffledIndices, setShuffledIndices] = useState(Array.from({ length: cardData.length }, (_, index) => index));
       const [isShuffling, setIsShuffling] = useState(false);
+      const [selectedCards, setSelectedCards] = useState([]);
+      const [arrayOfObjects, setArrayOfObjects] = useState([]);
+      const [redirected, setRedirected] = useState(false);
+      const [box1Selected, setBox1Selected] = useState(false);
+      const [box2Selected, setBox2Selected] = useState(false);
       const audioRef = React.useRef(null);
       const shuffleCards = () => {
         const shuffled = shuffledIndices.slice();
@@ -26,6 +31,27 @@ const TwoCard = () => {
         setShuffledIndices(shuffled);
        
       };
+     
+      const handleCardClick = (index) => {
+
+        if (selectedCards.length < 2) {
+          const selectedCard = cardData[index];
+          setSelectedCards([...selectedCards, selectedCard]);
+          if (selectedCards.length === 0) {
+            setBox1Selected(true);
+          } else if (selectedCards.length === 1) {
+            setBox2Selected(true);
+            setRedirected(true);
+            setRedirected(true);
+            const dataEntry1 = { id: selectedCards[0].id, frontImage: selectedCards[0].frontImage, backImage: selectedCards[0].backImage };
+            const dataEntry2 = { id: selectedCard.id, frontImage: selectedCard.frontImage, backImage: selectedCard.backImage };
+            setArrayOfObjects([dataEntry1, dataEntry2]);
+            localStorage.setItem('twoCards', JSON.stringify([dataEntry1, dataEntry2]));
+            console.log("localStorage called..", localStorage.setItem('twoCards', JSON.stringify([dataEntry1, dataEntry2])));
+              window.location.href = '/displaying-twoCard'
+          }
+       }
+      }
   return (
     <>
     <div className='oneCard-container'>
@@ -47,7 +73,7 @@ const TwoCard = () => {
       >
         {shuffledIndices.map((index) => (
           <SwiperSlide key={index}>
-            <div className={`card ${isShuffling ? 'shake-animation' : ''}`}  onClick={() => console.log(`Card clicked: ${index}`)}>
+            <div className={`card ${isShuffling ? 'shake-animation' : ''}`}  onClick={() => {handleCardClick(index)}}>
               <img className='front' src={cardData[index].frontImage} alt="Front Image" />
               <img className='back' src={cardData[index].backImage} alt="Back Image" />
             </div>
@@ -55,8 +81,8 @@ const TwoCard = () => {
         ))}
       </Swiper>
       <div className='card-choosed-box-container'>
-           <div className='box-1'></div>
-           <div className='box-2'></div>
+      <div className={`box-1 ${box1Selected ? 'selected' : 'box-1'}`}></div>
+      <div className={`box-2 ${box2Selected ? 'selected' : 'box-2'}`}></div>
       </div>
     </div>
     <Navigation link={'/begin-new-cards'} shuffleCards={shuffleCards} />
