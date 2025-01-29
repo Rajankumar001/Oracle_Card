@@ -9,6 +9,7 @@ import OneCard from './Componenets/oneCard/oneCard';
 import Header from './Componenets/Header/Header';
 import Footer from './Componenets/Footer/Footer';
 import TwoCard from './Componenets/twoCard/twoCard';
+import DisplayOneCard from './Componenets/DisplayOneCard/DisplayOneCard';
 function App() {
   return (
     <div className='app-container'>
@@ -20,6 +21,7 @@ function App() {
      <Route path='/begin-new-cards' Component={cardReadingScreen}></Route>
      <Route path='/one-card' Component={OneCard}></Route>
      <Route path='/two-card' Component={TwoCard}></Route>
+     <Route path='/displaying-oneCard' Component={DisplayOneCard}></Route>
     </Routes>
     <Footer/>
     </BrowserRouter> 

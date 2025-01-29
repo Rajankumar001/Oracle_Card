@@ -12,6 +12,8 @@ import shuffleSound from '../../assets/shufflingCard.wav';
 export default function App() {
   const [shuffledIndices, setShuffledIndices] = useState(Array.from({ length: cardData.length }, (_, index) => index));
   const [isShuffling, setIsShuffling] = useState(false);
+  const [isHighlighted, setIsHighlighted] = useState(false);
+  const [arrayOfObjects, setArrayOfObjects] = useState([]);
   const audioRef = React.useRef(null);
   const shuffleCards = () => {
     const shuffled = shuffledIndices.slice();
@@ -27,6 +29,20 @@ export default function App() {
     setShuffledIndices(shuffled);
    
   };
+  const Backend=(index)=>{
+       const dataId=cardData[index].id;
+       console.log("dataId",dataId);
+       const frontImglink=cardData[index].frontImage;
+       console.log("frontImage",frontImglink);
+       const backImglink=cardData[index].backImage;
+       console.log("backImage",backImglink);
+       const dataEntry1 = { id: dataId, frontImage:frontImglink, backImage: backImglink };
+       setIsHighlighted(!isHighlighted);
+       setArrayOfObjects([dataEntry1]);
+       localStorage.setItem('oneCard',JSON.stringify(arrayOfObjects));
+       console.log("localStorage called..",localStorage.setItem('oneCard',JSON.stringify([dataEntry1])));
+       window.location.href='/displaying-onecard'
+  }
 
   return (
     <>
@@ -49,14 +65,14 @@ export default function App() {
         >
           {shuffledIndices.map((index) => (
             <SwiperSlide key={index}>
-              <div className={`card ${isShuffling ? 'shake-animation' : ''}`}  onClick={() => console.log(`Card clicked: ${index}`)}>
+              <div className={`card ${isShuffling ? 'shake-animation' : ''}`}  onClick={() => {Backend(index)}}>
                 <img className='front' src={cardData[index].frontImage} alt="Front Image" />
                 <img className='back' src={cardData[index].backImage} alt="Back Image" />
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className='card-choosed-box'>
+        <div className={isHighlighted ? 'highlighted' : 'card-choosed-box'}>
 
         </div>
       </div>
