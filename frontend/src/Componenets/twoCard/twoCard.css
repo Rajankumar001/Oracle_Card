@@ -80,6 +80,10 @@ body {
   border: 2px solid black;
   border-radius: 5px; 
 }
+.box-1.selected,
+.box-2.selected {
+  background-color: white; 
+}
 .card {
   transition: transform 0.7s ease-in-out; 
 }
