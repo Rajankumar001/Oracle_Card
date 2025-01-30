@@ -41,7 +41,7 @@ const TwoCard = () => {
             setBox1Selected(true);
           } else if (selectedCards.length === 1) {
             setBox2Selected(true);
-            setRedirected(true);
+            // setRedirected(true);
             setRedirected(true);
             const dataEntry1 = { id: selectedCards[0].id, frontImage: selectedCards[0].frontImage, backImage: selectedCards[0].backImage };
             const dataEntry2 = { id: selectedCard.id, frontImage: selectedCard.frontImage, backImage: selectedCard.backImage };

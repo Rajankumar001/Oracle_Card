@@ -1,0 +1,22 @@
+.box-4{
+    width: 60px;
+    height: 70px;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 5px; 
+}
+.box-5{
+    width: 60px;
+    height: 70px;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 5px; 
+}
+.box-1.selected,
+.box-2.selected,
+.box-3.selected,
+.box-4.selected,
+.box-5.selected
+ {
+  background-color: white; 
+}
