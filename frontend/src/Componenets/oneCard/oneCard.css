@@ -20,6 +20,9 @@ body {
   padding-bottom: 50px;
   transition: transform 0.4s ease-in-out; 
 }
+.swiper-pagination-bullets{
+  display: none;
+}
 
 .swiper-slide {
   background-position: center;
