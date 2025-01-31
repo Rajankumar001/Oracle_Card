@@ -124,30 +124,30 @@ export const cardData = [
     Invocation: "Dear Archangel Raguel, harmonizer and bringer of justice, I call upon your gentle energy to help restore peace and fairness in my life. Please assist me in resolving any conflicts and guide me towards harmonious solutions. May your divine light shine upon all situations, bringing clarity and fairness to every aspect of my existence. Help me to live in alignment with truth, balance, and justice."
   },
  {
-    "id": 10,
-    "name": "Archangel Azrael Divine Solace",
-    "Message": "Time to let go of Pain and Worry.",
-    "Colour": "Pale Yellow",
-    "Crystal": "Yellow Calcite",
-    "frontImage": "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg",
-    "backImage": "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625339/10_Azrael_zssoc8.jpg",
-    "Description": "Archangel Azrael is the Comforter, offering solace and Guidance during times of transition, loss, and grief. His presence is often symbolized by the gentle hue of pale yellow or off-white, representing comfort, enlightenment, and understanding. Azrael is a compassionate and comforting angel, known for his patience and ability to provide support to those navigating the end of life, whether their own or that of a loved one. He appears as a serene and calm figure, radiating tranquillity and understanding. Azrael's purpose is to assist souls in their journey from the physical realm to the spiritual realm and to bring comfort to those who mourn. He embodies qualities of compassion, empathy, and the wisdom of the divine.",
-    "Guidance": "Drawing the card of Archangel Azrael signifies a period of transition or loss in your life. Azrael's Message is one of comfort and Guidance during these challenging times. Whether you're experiencing the passing of a loved one or navigating significant life changes, Azrael is here to offer his comforting presence. Allow yourself to grieve and process your emotions, knowing that Azrael is with you, offering solace and understanding. His Guidance reminds you that endings are a natural part of life's cycles, and he encourages you to embrace the transformative power of these experiences. Seek support and solace in your faith, spirituality, or inner wisdom, knowing that Azrael is guiding you through this transition with love and compassion.",
-    "Affirmation": "I embrace the comforting energy of Archangel Azrael. I find solace and Guidance in times of transition.",
-    "Invocation": "Dear Archangel Azrael, I humbly call upon your compassionate presence. Please comfort me in times of sorrow, guiding me through life's transitions with grace. Help me release fears and embrace the peace that lies beyond. Surround me with your loving energy, illuminating the path ahead with gentle understanding. Please assist me in finding solace, strength, and renewal, allowing my spirit to heal and grow."
+    id: 10,
+    name: "Archangel Azrael Divine Solace",
+    Message: "Time to let go of Pain and Worry.",
+    Colour: "Pale Yellow",
+    Crystal: "Yellow Calcite",
+    frontImage: "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg",
+    backImage: "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625339/10_Azrael_zssoc8.jpg",
+    Description: "Archangel Azrael is the Comforter, offering solace and Guidance during times of transition, loss, and grief. His presence is often symbolized by the gentle hue of pale yellow or off-white, representing comfort, enlightenment, and understanding. Azrael is a compassionate and comforting angel, known for his patience and ability to provide support to those navigating the end of life, whether their own or that of a loved one. He appears as a serene and calm figure, radiating tranquillity and understanding. Azrael's purpose is to assist souls in their journey from the physical realm to the spiritual realm and to bring comfort to those who mourn. He embodies qualities of compassion, empathy, and the wisdom of the divine.",
+    Guidance: "Drawing the card of Archangel Azrael signifies a period of transition or loss in your life. Azrael's Message is one of comfort and Guidance during these challenging times. Whether you're experiencing the passing of a loved one or navigating significant life changes, Azrael is here to offer his comforting presence. Allow yourself to grieve and process your emotions, knowing that Azrael is with you, offering solace and understanding. His Guidance reminds you that endings are a natural part of life's cycles, and he encourages you to embrace the transformative power of these experiences. Seek support and solace in your faith, spirituality, or inner wisdom, knowing that Azrael is guiding you through this transition with love and compassion.",
+    Affirmation: "I embrace the comforting energy of Archangel Azrael. I find solace and Guidance in times of transition.",
+    Invocation: "Dear Archangel Azrael, I humbly call upon your compassionate presence. Please comfort me in times of sorrow, guiding me through life's transitions with grace. Help me release fears and embrace the peace that lies beyond. Surround me with your loving energy, illuminating the path ahead with gentle understanding. Please assist me in finding solace, strength, and renewal, allowing my spirit to heal and grow."
   },
   {
-    "id": 11,
-    "name": "Archangel Sandalphon Divine Voice",
-    "Message": "Mesmerise all with your Voice.",
-    "Colour": "Turquoise",
-    "Crystal": "Turquoise Crystal",
-    "frontImage": "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg",
-    "backImage": "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625337/11_Sandalphon_cw8zeu.jpg",
-    "Description": "Archangel Sandalphon bridges the gap between the earthly and spiritual realms. His presence is symbolized by the calming and balancing Colour turquoise, representing the fusion of heart-centered energies with spiritual wisdom. He serves as a guide for individuals seeking harmony, balance, and spiritual connection in their lives. Sandalphon's purpose is to help you ground your spiritual insights into practical actions, enabling you to lead a more spiritual life. He embodies qualities of compassion, self-expression, music, and the blending of earthly and celestial energies. Archangel Sandalphon is also the patron angel for musicians.",
-    "Guidance": "Drawing the card of Archangel Sandalphon signifies a need to balance your earthly and spiritual energies. Archangel Sandalphon reminds you to integrate spiritual insights into daily life. Embrace creativity, engage in music or art, and use these for spiritual expression. Sandalphon reminds you that harmony is essential for well-being, and you have his support. Trust yourself and express yourself freely, as Archangel Sandalphon has your back.",
-    "Affirmation": "I express myself freely as my words are divinely guided. My voice is becoming divinely melodious and miraculous.",
-    "Invocation": "Dear Archangel Sandalphon, hear the whispers of my soul. Illuminate the path to my true purpose and deepest desires. I seek your divine assistance in transforming my struggles into opportunities for growth. Help me embrace your wisdom and Guidance, leading me to harmony and fulfilment. Grant me the strength to align with my higher self and live with clarity, grace, and profound peace. Let my voice be guided by divine wisdom and energy."
+    id: 11,
+    name: "Archangel Sandalphon Divine Voice",
+    Message: "Mesmerise all with your Voice.",
+    Colour: "Turquoise",
+    Crystal: "Turquoise Crystal",
+    frontImage: "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg",
+    backImage: "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625337/11_Sandalphon_cw8zeu.jpg",
+    Description: "Archangel Sandalphon bridges the gap between the earthly and spiritual realms. His presence is symbolized by the calming and balancing Colour turquoise, representing the fusion of heart-centered energies with spiritual wisdom. He serves as a guide for individuals seeking harmony, balance, and spiritual connection in their lives. Sandalphon's purpose is to help you ground your spiritual insights into practical actions, enabling you to lead a more spiritual life. He embodies qualities of compassion, self-expression, music, and the blending of earthly and celestial energies. Archangel Sandalphon is also the patron angel for musicians.",
+    Guidance: "Drawing the card of Archangel Sandalphon signifies a need to balance your earthly and spiritual energies. Archangel Sandalphon reminds you to integrate spiritual insights into daily life. Embrace creativity, engage in music or art, and use these for spiritual expression. Sandalphon reminds you that harmony is essential for well-being, and you have his support. Trust yourself and express yourself freely, as Archangel Sandalphon has your back.",
+    Affirmation: "I express myself freely as my words are divinely guided. My voice is becoming divinely melodious and miraculous.",
+    Invocation: "Dear Archangel Sandalphon, hear the whispers of my soul. Illuminate the path to my true purpose and deepest desires. I seek your divine assistance in transforming my struggles into opportunities for growth. Help me embrace your wisdom and Guidance, leading me to harmony and fulfilment. Grant me the strength to align with my higher self and live with clarity, grace, and profound peace. Let my voice be guided by divine wisdom and energy."
   },
   {
     "id": 12,
@@ -176,17 +176,17 @@ export const cardData = [
     "Invocation": "Dear Archangel Ariel, radiant guardian of nature and abundance, I call upon your divine presence. Illuminate my path and reveal the true needs of my heart. Assist me in transforming challenges into opportunities for growth and healing. Guide me to embrace your wisdom and live in harmony with the world around me. Help me embody your grace and compassion in all that I do."
   },
   {
-    "id": 14,
-    "name": "Archangel Jeremiel Divine Reflection",
-    "Message": "Clarity in Reflection and Transformation.",
-    "Colour": "Deep Purple",
-    "Crystal": "Amethyst",
-    "frontImage": "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg",
-    "backImage": "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/14_jeremiel_gxsgtl.jpg",
-    "Description": "Archangel Jeremiel is a gentle and compassionate guide known for helping individuals gain clarity and insight through reflection and transformation. His presence is often symbolized by the deep purple Colour, representing spiritual awakening and inner wisdom. Jeremiel appears as a wise and patient figure, encouraging seekers to take a step back, reflect on their life's journey, and gain a broader perspective. His purpose is to assist in understanding the lessons of the past, providing Guidance for the present, and offering vision for the future.",
-    "Guidance": "Drawing the card of Archangel Jeremiel indicates a time for deep reflection and personal transformation. Jeremiel's Message is to encourage you to review your life's experiences, both positive and challenging, with compassion and wisdom. This introspection can lead to valuable insights and a clearer understanding of your path. Jeremiel helps you see how your past has shaped you and guides you in making choices that align with your soul's growth. Trust the process of change, and know that it's never too late to course-correct and create a brighter future.",
-    "Affirmation": "I make aware and wise choices, with the Guidance of Archangel Jeremiel.",
-    "Invocation": "Dear Archangel Jeremiel, I call upon your divine presence to illuminate my path with clarity and understanding. Help me uncover the truths hidden within my heart and guide me through challenges with wisdom and compassion. Assist me in transforming my pain into growth and healing. May your Guidance lead me to embrace my higher purpose and live with grace and insight."
+    id: 14,
+    name: "Archangel Jeremiel Divine Reflection",
+    Message: "Clarity in Reflection and Transformation.",
+    Colour: "Deep Purple",
+    Crystal: "Amethyst",
+    frontImage: "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg",
+    backImage: "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/14_jeremiel_gxsgtl.jpg",
+    Description: "Archangel Jeremiel is a gentle and compassionate guide known for helping individuals gain clarity and insight through reflection and transformation. His presence is often symbolized by the deep purple Colour, representing spiritual awakening and inner wisdom. Jeremiel appears as a wise and patient figure, encouraging seekers to take a step back, reflect on their life's journey, and gain a broader perspective. His purpose is to assist in understanding the lessons of the past, providing Guidance for the present, and offering vision for the future.",
+    Guidance: "Drawing the card of Archangel Jeremiel indicates a time for deep reflection and personal transformation. Jeremiel's Message is to encourage you to review your life's experiences, both positive and challenging, with compassion and wisdom. This introspection can lead to valuable insights and a clearer understanding of your path. Jeremiel helps you see how your past has shaped you and guides you in making choices that align with your soul's growth. Trust the process of change, and know that it's never too late to course-correct and create a brighter future.",
+    Affirmation: "I make aware and wise choices, with the Guidance of Archangel Jeremiel.",
+    Invocation: "Dear Archangel Jeremiel, I call upon your divine presence to illuminate my path with clarity and understanding. Help me uncover the truths hidden within my heart and guide me through challenges with wisdom and compassion. Assist me in transforming my pain into growth and healing. May your Guidance lead me to embrace my higher purpose and live with grace and insight."
   },
   
  {
@@ -385,16 +385,16 @@ export const cardData = [
     "Invocation": "Divine Guru Nanak Dev, hear the whispers of my heart. Illuminate my path with your eternal wisdom and compassion. Guide me through life's challenges with your grace, helping me to see every moment as an opportunity for growth and understanding. May your teachings inspire me to live with humility and purpose, embracing every experience with love and serenity."
   },
   {
-    "id": 30,
-    "frontImage": "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg",
-    "backImage": "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625343/30_mahavatar_y2bcnn.jpg",
-    "Message": "Practice Yoga and Meditation.",
-    "Colour": "Radiant White",
-    "CrystalorDivinationTool": "Breath Work",
-    "Description": "Mahavatar Babaji, the timeless and immortal yogi, is revered as the great master who reintroduced the ancient practice of Kriya Yoga to the modern world. Known as the 'deathless' master, Babaji is believed to have transcended the limitations of the physical body, existing eternally to guide and uplift humanity. His teachings focus on the realization of the divine self through deep meditation and disciplined spiritual practice. Babaji’s presence is felt by those on the path of spiritual awakening, offering guidance, protection, and profound inner transformation. Mahavatara Babaji, is the Himalayan yogi and guru who taught Kriya Yoga to Lahiri Mahasaya. Babaji first became recognized through the writings of Paramahansa Yogananda, who devoted a chapter of his book, Autobiography of a Yogi, to Babaji.",
-    "Guidance": "Drawing the card of Mahavatar Babaji as your spirit guide signifies a time to embrace the practice of yoga and meditation, to seek spiritual enlightenment. His message encourages you to deepen your meditation practice and live with spiritual discipline and devotion. Engage in practices that enhance your spiritual growth, such as daily meditation, yoga, and studying sacred texts. Mahavatar Babaji reminds you that through dedicated practice and inner focus, you can achieve profound spiritual transformation and connect with the eternal wisdom of your soul.",
-    "Affirmation": "I embrace the eternal wisdom and practice of yoga. With Mahavatar Babaji's guidance, I cultivate spiritual discipline and seek self-realization.",
-    "Invocation": "Dear Mahavatar Babaji, Eternal Yogi, I call upon your divine presence and wisdom. Illuminate my path with your timeless guidance and grace. Help me transcend my current struggles and unveil the deeper truths of my soul. Grant me your infinite compassion and serenity, and empower me to walk in alignment with my highest purpose. May your eternal light inspire and transform my journey towards enlightenment and inner peace."
+    id: 30,
+    frontImage: "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg",
+    backImage: "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625343/30_mahavatar_y2bcnn.jpg",
+    Message: "Practice Yoga and Meditation.",
+    Colour: "Radiant White",
+    CrystalorDivinationTool: "Breath Work",
+    Description: "Mahavatar Babaji, the timeless and immortal yogi, is revered as the great master who reintroduced the ancient practice of Kriya Yoga to the modern world. Known as the 'deathless' master, Babaji is believed to have transcended the limitations of the physical body, existing eternally to guide and uplift humanity. His teachings focus on the realization of the divine self through deep meditation and disciplined spiritual practice. Babaji’s presence is felt by those on the path of spiritual awakening, offering guidance, protection, and profound inner transformation. Mahavatara Babaji, is the Himalayan yogi and guru who taught Kriya Yoga to Lahiri Mahasaya. Babaji first became recognized through the writings of Paramahansa Yogananda, who devoted a chapter of his book, Autobiography of a Yogi, to Babaji.",
+    Guidance: "Drawing the card of Mahavatar Babaji as your spirit guide signifies a time to embrace the practice of yoga and meditation, to seek spiritual enlightenment. His message encourages you to deepen your meditation practice and live with spiritual discipline and devotion. Engage in practices that enhance your spiritual growth, such as daily meditation, yoga, and studying sacred texts. Mahavatar Babaji reminds you that through dedicated practice and inner focus, you can achieve profound spiritual transformation and connect with the eternal wisdom of your soul.",
+    Affirmation: "I embrace the eternal wisdom and practice of yoga. With Mahavatar Babaji's guidance, I cultivate spiritual discipline and seek self-realization.",
+    Invocation: "Dear Mahavatar Babaji, Eternal Yogi, I call upon your divine presence and wisdom. Illuminate my path with your timeless guidance and grace. Help me transcend my current struggles and unveil the deeper truths of my soul. Grant me your infinite compassion and serenity, and empower me to walk in alignment with my highest purpose. May your eternal light inspire and transform my journey towards enlightenment and inner peace."
   },
   
     { id:31,
@@ -681,9 +681,8 @@ Guidance:"Drawing the card of tree spirits signifies a time to embrace stability
 Affirmation:
 "I embrace stability, growth, and deep-rooted wisdom. With the Guidance of the tree spirits, I connect deeply with nature and cultivate inner strength.",
 Invocation: "Wise Tree Spirits, guardians of growth and wisdom, I call upon you to hear the whispers of my heart. Illuminate the path to my deepest needs and desires. As you nurture the earth, guide me through life's transitions with clarity and strength. Help me grow with grace, embracing change and renewal. Bless me with your wisdom, so I may flourish in harmony and purpose.",
-
-      },
-      { id:54,
+ },
+  { id:54,
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625347/53_Tree_Spirit_yqom0y.jpg',
         Message: "The Power You Seek is within YOU.",
