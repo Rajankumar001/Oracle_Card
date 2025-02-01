@@ -3,7 +3,6 @@ const dotenv = require('dotenv');
 const path = require('path');
 const mongoose = require('mongoose');
 const UserRouter = require('./routes/UserRoutes');
-
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
@@ -16,16 +15,16 @@ const PORT = process.env.PORT || 8080;
 
 // CORS options to allow requests from your frontend
 const corsOptions = {
-  origin: 'http://localhost:3000', 
+  origin: 'http://localhost:3000',
   methods: 'GET,POST,PUT,DELETE',
-  allowedHeaders: 'Content-Type,Authorization', 
+  allowedHeaders: 'Content-Type,Authorization',
 };
 
 // Apply middleware
-app.use(cors(corsOptions));
-app.use(express.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(cors(corsOptions)); // Apply CORS with options
+app.use(express.json()); // Parse incoming JSON requests
+app.use(bodyParser.urlencoded({ extended: true })); // Parse URL-encoded bodies
+app.use(express.static(path.join(__dirname, 'build'))); // Serve static files from build folder
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -41,9 +40,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-// Use custom route handlers for User and Leaderboard
+// Use custom route handlers for User
 app.use('/api/User', UserRouter);
-// app.use('/api/leaderboard', Router);
+// app.use('/api/leaderboard', Router); // Uncomment if needed
 
 // Test route to ensure the app is running
 app.get("/home", (req, res) => {
