@@ -15,6 +15,8 @@ import ThreeCard from './Componenets/threeCard/threeCard';
 import DisplayThreeCard from './Componenets/DisplayingThreeCard/DisplayingThreeCard';
 import FiveCard from './Componenets/fiveCard/fiveCard';
 import DisplayFiveCard from './Componenets/DisplayingFiveCard/DisplayingFiveCard';
+import BrowseCard from './Componenets/BrowseCards/BrowseCard';
+import ViewGuideBook from './Componenets/ViewGuideBook/ViewGuideBook';
 function App() {
   return (
     <div className='app-container'>
@@ -32,6 +34,9 @@ function App() {
      <Route path='/displaying-twoCard' Component={DisplayTwoCard}></Route>
      <Route path='/displaying-threeCard' Component={DisplayThreeCard}></Route>
      <Route path='/displaying-fiveCard' Component={DisplayFiveCard}></Route>
+     <Route path='/browse-cards' Component={BrowseCard}></Route>
+     <Route path='/view-guidebook' Component={ViewGuideBook}></Route>
+    
     
     </Routes>
     <Footer/>

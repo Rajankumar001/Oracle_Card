@@ -36,6 +36,10 @@ const ThreeCard = () => {
     const handleCardClick = (index) => {
         if (selectedCards.length < 3) {
           const selectedCard = cardData[index];
+          if (selectedCards.some(card => card.id === selectedCard.id)) {
+            alert('You have already chosen this card.');
+            return;
+          }
           setSelectedCards([...selectedCards, selectedCard]);
       
           if (selectedCards.length === 0) {
