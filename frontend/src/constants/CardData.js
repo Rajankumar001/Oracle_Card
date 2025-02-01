@@ -1,10 +1,8 @@
-
 export const cardData = [
     { id:1,
       frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
       backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625332/01_Michael_zhpfof.jpg',
     },
-  
     {  id:2,
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625335/02_Gabriel_jep3uu.jpg',
@@ -167,11 +165,11 @@ export const cardData = [
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625342/31_mother_mary_ccatqs.jpg',
         Message: "Unconditional Love and Divine Nurturing.",
        Colour: "Light Blue and White",
-CrystalorDivinationTool: "Blue Lace Agate",
-Description:"Mother Mary, the revered mother of Jesus Christ, is a symbol of divine grace, compassion, and unconditional love. Known as the Virgin Mary in Christian tradition, she is venerated for her purity, humility, and profound faith. Mary’s acceptance of her role as the mother of Jesus exemplifies her deep devotion to God and her willingness to serve humanity. As a spiritual figure, she is often invoked for comfort, healing, and guidance, offering a motherly presence to those in need. Mother Mary's legacy of love and mercy continues to inspire people worldwide, embodying the virtues of kindness, nurturing, and spiritual strength. Mother Mary serves as a spirit guide for those seeking to cultivate love, compassion, and healing in their lives.",
-Guidance:"Drawing the card of Mother Mary as your spirit guide signifies a time to embrace unconditional love and divine nurturing. Her message encourages you to practice compassion and understanding towards yourself and others. Engage in practices that enhance your emotional and spiritual growth, such as prayer, meditation, and acts of kindness. Mother Mary reminds you that through love and nurturing, you can heal and transform your life and the lives of those around you.",
-Affirmation:"I embrace unconditional love and divine nurturing. With Mother Mary's guidance, I open my heart to compassion and healing.",
-Invocation: "Dear Mother Mary, Divine Nurturer, I seek your gentle guidance and nurturing embrace. Illuminate the hidden needs within my heart and reveal the path of healing. Intervene in the areas of my life where I am struggling, and help me to view my challenges through a lens of love and compassion. Assist me in cultivating inner peace and purposeful living, reflecting your divine grace in all I do.",
+       CrystalorDivinationTool: "Blue Lace Agate",
+          Description:"Mother Mary, the revered mother of Jesus Christ, is a symbol of divine grace, compassion, and unconditional love. Known as the Virgin Mary in Christian tradition, she is venerated for her purity, humility, and profound faith. Mary’s acceptance of her role as the mother of Jesus exemplifies her deep devotion to God and her willingness to serve humanity. As a spiritual figure, she is often invoked for comfort, healing, and guidance, offering a motherly presence to those in need. Mother Mary's legacy of love and mercy continues to inspire people worldwide, embodying the virtues of kindness, nurturing, and spiritual strength. Mother Mary serves as a spirit guide for those seeking to cultivate love, compassion, and healing in their lives.",
+          Guidance:"Drawing the card of Mother Mary as your spirit guide signifies a time to embrace unconditional love and divine nurturing. Her message encourages you to practice compassion and understanding towards yourself and others. Engage in practices that enhance your emotional and spiritual growth, such as prayer, meditation, and acts of kindness. Mother Mary reminds you that through love and nurturing, you can heal and transform your life and the lives of those around you.",
+         Affirmation:"I embrace unconditional love and divine nurturing. With Mother Mary's guidance, I open my heart to compassion and healing.",
+           Invocation: "Dear Mother Mary, Divine Nurturer, I seek your gentle guidance and nurturing embrace. Illuminate the hidden needs within my heart and reveal the path of healing. Intervene in the areas of my life where I am struggling, and help me to view my challenges through a lens of love and compassion. Assist me in cultivating inner peace and purposeful living, reflecting your divine grace in all I do.",
 
       },
    
