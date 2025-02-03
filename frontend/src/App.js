@@ -36,8 +36,6 @@ function App() {
      <Route path='/displaying-fiveCard' Component={DisplayFiveCard}></Route>
      <Route path='/browse-cards' Component={BrowseCard}></Route>
      <Route path='/view-guidebook' Component={ViewGuideBook}></Route>
-    
-    
     </Routes>
     <Footer/>
     </BrowserRouter> 
