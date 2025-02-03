@@ -1,0 +1,29 @@
+.GuideBookCard-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.guidebookCard-mainContent{
+    position: absolute;
+    padding: 10px;
+    overflow-y:scroll;
+    text-align:center;
+        border: 5px solid  #F4CE14;
+        font-family: "Jersey 15", serif;
+        font-weight: 400;
+        font-size: 1.8rem;
+        font-style: normal;
+    border-radius: 6%;
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #ba3276 ;
+}

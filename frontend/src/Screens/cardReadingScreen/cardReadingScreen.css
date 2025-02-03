@@ -48,3 +48,47 @@
     height: 60px;
     width: 60px;
 }
+@media (max-width:600px) {
+    .cardReading-container{
+        width: 500px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    .cardReading-box-content{
+        cursor: pointer;
+        font-family: "Jersey 15", serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.8rem;
+        display: flex;
+        gap: 5px;
+        justify-content: space-around;
+        padding: 10px;
+        align-items: center;
+        width: 400px;
+        height: 80px;
+        background-image: linear-gradient(to right, rgb(254, 185, 65) ,rgb(255, 244, 95));
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px black;
+    }
+    .cardReading-main-content{
+
+        font-family: "Jersey 15", serif;
+        font-weight: 600;
+        font-size: 1.8rem;
+        font-style: normal;
+        background-image: url('https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg');
+        background-size: auto;
+    border-radius: 6%;
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+}

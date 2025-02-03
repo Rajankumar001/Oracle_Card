@@ -50,11 +50,8 @@ const Login = () => {
   };
 
   const SigninHandler = async (e) => {
-    e.preventDefault(); // Prevent form submission
-
+    e.preventDefault(); 
     console.log("SigninHandler function is calling");
-
-    // Validation for mobile number length
     if (!mobile || mobile.length !== 13) {
       alert('Please enter a valid 10-digit mobile number with country code.');
       return;

@@ -123,4 +123,14 @@
         align-items: center;
         text-align: center;
     }
+    .footer {
+        margin-top: 60px;
+        width: 500px;
+        
+        background-image: linear-gradient(to right, #7efaee ,#d88eb9);
+        border: none;
+        box-shadow: 5px 5px -5px #7efaee ;
+        padding: var(--spacing-lg) 0;
+     
+    }
 }

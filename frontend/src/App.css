@@ -43,3 +43,16 @@
     transform: rotate(360deg);
   }
 }
+@media (max-width:600px) {
+  .app-container{
+    /* margin: auto; */
+    /* display: flex;
+    align-items: center;
+  justify-content: center; */
+    width: 500px;
+    height: 100%;
+    background-image: url('./assets/backrground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

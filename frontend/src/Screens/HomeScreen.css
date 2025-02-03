@@ -43,3 +43,29 @@
     text-decoration: none;
     color: black;
 }
+@media (max-width:600px) {
+    .home-container{
+        width: 500px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-main-content{
+        font-family: "Jersey 15", serif;
+        font-weight: 600;
+        font-size: 1.8rem;
+        font-style: normal;
+   background-image: url('https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg');
+   background-size: auto;
+    border-radius: 6%;
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+}

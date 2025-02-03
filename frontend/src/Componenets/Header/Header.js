@@ -15,18 +15,6 @@ const Header = () => {
       <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3 header-class-container">
         <div fluid  className='header-class'>
           <Navbar.Brand href="/home" className='header-title'>ORACLE CARD</Navbar.Brand>
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-          <Navbar.Offcanvas
-            id={`offcanvasNavbar-expand-${expand}`}
-            aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-            placement="end"
-          >
-            <Offcanvas.Header closeButton>
-              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} className='header-title'>
-                ORACLE CARD
-              </Offcanvas.Title>
-            </Offcanvas.Header>
-          </Navbar.Offcanvas>
         </div>
       </Navbar>
     ))}
