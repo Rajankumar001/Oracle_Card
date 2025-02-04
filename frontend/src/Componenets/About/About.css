@@ -1,0 +1,15 @@
+.About-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.About-content{
+    width: 500px;
+    height: 500px;
+}
+.About-content-img{
+    width: 500px;
+    height: 500px; 
+}

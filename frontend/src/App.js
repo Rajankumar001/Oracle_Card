@@ -18,6 +18,7 @@ import DisplayFiveCard from './Componenets/DisplayingFiveCard/DisplayingFiveCard
 import BrowseCard from './Componenets/BrowseCards/BrowseCard';
 import ViewGuideBook from './Componenets/ViewGuideBook/ViewGuideBook';
 import GuideBookCard from './Componenets/WorkingWithCards/GuideBookCard';
+import About from './Componenets/About/About';
 function App() {
   return (
     <div className='app-container'>
@@ -38,6 +39,7 @@ function App() {
      <Route path='/browse-cards' Component={BrowseCard}></Route>
      <Route path='/view-guidebook' Component={ViewGuideBook}></Route>
      <Route path='/working-with-cards' Component={GuideBookCard}></Route>
+     <Route path='/about' Component={About}></Route>
     </Routes>
     <Footer/>
     </BrowserRouter> 

@@ -10,7 +10,7 @@
 .guidebookCard-mainContent{
     position: absolute;
     padding: 10px;
-    overflow-y:scroll;
+    overflow-y:hidden;
     text-align:center;
         border: 5px solid  #F4CE14;
         font-family: "Jersey 15", serif;
@@ -19,7 +19,7 @@
         font-style: normal;
     border-radius: 6%;
     width: 450px;
-    height: 500px;
+    height: 500px !important;
     display: flex;
     flex-direction: column;
     gap: 10px;

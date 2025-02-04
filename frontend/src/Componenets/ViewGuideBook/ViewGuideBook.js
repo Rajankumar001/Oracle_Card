@@ -3,6 +3,7 @@ import './ViewGuideBook.css'
 import pdfUrl from '../../assets/guideBook.pdf'
 import guideBook from '../../constants/GuideBook';
 import { Link } from 'react-router-dom';
+import NavigationTwo from '../Navigation/NavigationTwo';
 const ViewGuideBook = () => {
 
   return (
@@ -20,6 +21,7 @@ const ViewGuideBook = () => {
                 ))
               }
       </div>
+      <NavigationTwo link={'/home'}/>
   </div>
 
   )
