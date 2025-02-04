@@ -15,6 +15,7 @@ const Header = () => {
       <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3 header-class-container">
         <div fluid  className='header-class'>
           <Navbar.Brand href="/home" className='header-title'>ORACLE CARD</Navbar.Brand>
+          <button>Logout</button>
         </div>
       </Navbar>
     ))}
