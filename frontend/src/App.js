@@ -41,7 +41,7 @@ function App() {
      <Route path='/working-with-cards' Component={GuideBookCard}></Route>
      <Route path='/about' Component={About}></Route>
     </Routes>
-    <Footer/>
+    {/* <Footer/> */}
     </BrowserRouter> 
     </div>
   );

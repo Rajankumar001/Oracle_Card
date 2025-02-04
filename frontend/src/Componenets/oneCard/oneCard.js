@@ -2,19 +2,25 @@ import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
+import 'swiper/css/effect-cards';
 import 'swiper/css/pagination';
 import './oneCard.css';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, EffectCards,Pagination } from 'swiper/modules';
 import Navigation from '../Navigation/Navigation';
 import { cardData } from '../../constants/CardData';
-import shuffleSound from '../../assets/shufflingCard.wav'; 
+import shuffleSound from '../../assets/shufflingCard.wav';
 
 export default function App() {
   const [shuffledIndices, setShuffledIndices] = useState(Array.from({ length: cardData.length }, (_, index) => index));
   const [isShuffling, setIsShuffling] = useState(false);
   const [isHighlighted, setIsHighlighted] = useState(false);
   const [arrayOfObjects, setArrayOfObjects] = useState([]);
+  const [change ,setChange]=useState(false);
   const audioRef = React.useRef(null);
+
+  const  onChange=()=>{
+    setChange(!change);
+  }
   const shuffleCards = () => {
     const shuffled = shuffledIndices.slice();
     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -48,7 +54,7 @@ export default function App() {
     <>
       <div className='oneCard-container'>
         <Swiper
-          effect={'coverflow'}
+          effect={change?'cards':'coverflow'}
           grabCursor={true}
           centeredSlides={true}
           slidesPerView={'auto'}
@@ -60,7 +66,7 @@ export default function App() {
             slideShadows: true,
           }}
           pagination={true}
-          modules={[EffectCoverflow, Pagination]}
+          modules={[EffectCoverflow,EffectCards,Pagination]}
           className="mySwiper"
         >
           {shuffledIndices.map((index) => (
@@ -76,7 +82,7 @@ export default function App() {
 
         </div>
       </div>
-      <Navigation link={'/begin-new-cards'} shuffleCards={shuffleCards} />
+      <Navigation link={'/begin-new-cards'} shuffleCards={shuffleCards} onChange={onChange}/>
       <audio ref={audioRef} src={shuffleSound} />
     </>
   );
