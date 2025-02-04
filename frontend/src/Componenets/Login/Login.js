@@ -42,6 +42,7 @@ const Login = () => {
       localStorage.setItem('LoginUser', userString);
       console.log(localStorage.setItem('LoginUser', userString));
       console.log("localStorage get item", localStorage.getItem('LoginUser'));
+      window.location.href='/home'
     }
   }, [LoginUser]);
 

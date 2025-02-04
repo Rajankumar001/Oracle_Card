@@ -9,7 +9,7 @@ const Navigation = ({link,shuffleCards}) => {
     <div className='Navigation-container'>
       <div><a href={link}><img src={back_arrow} className='Navigation-image-style'></img></a></div>
       <div ><button className='shuffle-button' onClick={shuffleCards}><img src={shuffle} className='Navigation-image-style' alt="Shuffle" /></button></div>
-      <div ><button className='shuffle-button' ><img src={change_animation} className='Navigation-image-style' alt="Shuffle" /></button></div>
+      {/* <div ><button className='shuffle-button' ><img src={change_animation} className='Navigation-image-style' alt="Shuffle" /></button></div> */}
       <div><a href={link}><img src={About_section} className='Navigation-image-style'></img></a></div>
     </div>
   )
