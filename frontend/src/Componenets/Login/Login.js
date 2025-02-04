@@ -4,7 +4,6 @@ import Form from 'react-bootstrap/Form';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';  // ✅ Import useNavigate
 import './Login.css';
 import { UserAction } from '../../Action/UserAction';
 import Loader from '../../Loader';
@@ -12,9 +11,10 @@ import PhoneInput from 'react-phone-number-input';
 
 const Login = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate();  // ✅ useNavigate for redirection
-  const { LoginUser, loading, error } = useSelector((state) => state.LoginReducer);
-
+  const User = useSelector((state) => state.LoginReducer);
+  const { LoginUser, loading, error } = User;
+  console.log("loginUser", LoginUser);
+  
   const [mobile, setMobile] = useState('');
   const [countryCode, setCountryCode] = useState('');
 
@@ -35,27 +35,51 @@ const Login = () => {
     fetchCountryCode();
   }, []);
 
-  // ✅ Use React Router's navigation instead of full-page reload
   useEffect(() => {
+    console.log("LoginUser in useEffect:", LoginUser);
     if (LoginUser && Object.keys(LoginUser).length > 0) {
-      localStorage.setItem('LoginUser', JSON.stringify(LoginUser)); // ✅ Save user in localStorage
-      console.log("Stored User:", localStorage.getItem('LoginUser')); // ✅ Proper logging
-      navigate('/home'); // ✅ Use React Router for smooth transition
+      const userString = JSON.stringify(LoginUser);
+      localStorage.setItem('LoginUser', userString);
+      console.log(localStorage.setItem('LoginUser', userString));
+      console.log("localStorage get item", localStorage.getItem('LoginUser'));
+      window.location.href='/home';
     }
-  }, [LoginUser, navigate]);
+  }, [LoginUser]);
+
+  const notifyContactNotFound = () => {
+    toast.error("User not found! Please check the mobile number.");
+  };
 
   const SigninHandler = async (e) => {
     e.preventDefault(); 
-    if (!mobile || !mobile.startsWith('+') || mobile.length < 10) {  // ✅ More accurate validation
-      toast.error('Please enter a valid mobile number with country code.');
+    console.log("SigninHandler function is calling");
+    if (!mobile || mobile.length !== 13) {
+      alert('Please enter a valid 10-digit mobile number with country code.');
       return;
     }
 
+    const user = { mobile };
+
     try {
-      await dispatch(UserAction({ mobile })); // ✅ Dispatch login action
+      const response = await dispatch(UserAction(user)); // Dispatch the user action
+      console.log("User after dispatch:", response);
+      
+      // Handle error from server if user is not found
+      if (response && response.data && response.data.message === 'User not found') {
+        notifyContactNotFound();
+        return;
+      }
+
+      // Proceed if user is found
+      if (response.data) {
+        const userString = JSON.stringify(response.data);
+        localStorage.setItem('LoginUser', userString);
+        console.log("User data saved in localStorage");
+        window.location.href = '/home'; // Redirect to home page
+      }
     } catch (error) {
       console.error('Error signing in:', error);
-      toast.error('Login failed. Please try again.');
+      notifyContactNotFound();
     }
   };
 
@@ -64,19 +88,27 @@ const Login = () => {
       <div className="login-main-container">
         {loading && <p><Loader /></p>}
         {error && <p>Error: {error}</p>}
+        {LoginUser && (
+          <div className="welcome-container">
+            <p><span>Welcome</span> {LoginUser.name}</p>
+          </div>
+        )}
         <div className="Login_container">
           <Form>
             <h2>Login</h2>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-3" controlId="formBasicMobile">
               <Form.Label className="title">Mobile Number</Form.Label>
               <PhoneInput
                 international
-                defaultCountry={countryCode || "IN"}
-                placeholder="Enter your mobile number"
+                defaultCountry={countryCode || "RU"}
+                placeholder="Enter your 10-digit mobile number"
                 value={mobile}
-                onChange={setMobile} // ✅ Update state on change
+                onChange={setMobile} // Update state on change
                 className="form_input form-control"
               />
+              <Form.Text className="text-muted">
+                <p>We'll never share your mobile number with anyone else.</p>
+              </Form.Text>
             </Form.Group>
             <Button type="button" onClick={SigninHandler} className="login-button">
               Verify
