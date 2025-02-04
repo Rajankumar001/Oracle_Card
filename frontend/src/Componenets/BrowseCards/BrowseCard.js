@@ -6,6 +6,7 @@ import 'swiper/css/navigation';
 import { cardData } from '../../constants/CardData'
 import { Pagination,} from 'swiper/modules';
 import './BrowseCard.css';
+import NavigationTwo from '../Navigation/NavigationTwo';
 export default function BrowseCard() {
   return (
         <>
@@ -46,6 +47,7 @@ export default function BrowseCard() {
            
           </Swiper>
           </div>
+          <NavigationTwo link={'/home'}/>
         
     </>
   );
