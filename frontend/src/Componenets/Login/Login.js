@@ -47,7 +47,7 @@ const Login = () => {
   }, [LoginUser]);
 
   const notifyContactNotFound = () => {
-    toast.error("User not found! Please check the mobile number.");
+    toast.error("Contact not found!");
   };
 
   const SigninHandler = async (e) => {
@@ -61,22 +61,8 @@ const Login = () => {
     const user = { mobile };
 
     try {
-      const response = await dispatch(UserAction(user)); // Dispatch the user action
-      console.log("User after dispatch:", response);
-      
-      // Handle error from server if user is not found
-      if (response && response.data && response.data.message === 'User not found') {
-        notifyContactNotFound();
-        return;
-      }
-
-      // Proceed if user is found
-      if (response.data) {
-        const userString = JSON.stringify(response.data);
-        localStorage.setItem('LoginUser', userString);
-        console.log("User data saved in localStorage");
-        window.location.href = '/home'; // Redirect to home page
-      }
+      await dispatch(UserAction(user)); // Dispatch the user action
+      console.log("User after dispatch:", user);
     } catch (error) {
       console.error('Error signing in:', error);
       notifyContactNotFound();
