@@ -1,4 +1,4 @@
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import {HashRouter,Routes,Route} from 'react-router-dom';
 import './App.css';
 import Login from './Componenets/Login/Login';
 import HomeScreen from './Screens/HomeScreen';
@@ -23,7 +23,7 @@ import SavedCards from './Componenets/SavedCards/SavedCards';
 function App() {
   return (
     <div className='app-container'>
-     <BrowserRouter>
+     <HashRouter>
      <Header/>
     <Routes>
      <Route path='/' Component={Login}></Route>
@@ -44,7 +44,7 @@ function App() {
      <Route path='/load-saved-cards' Component={SavedCards}></Route>
     </Routes>
     <Footer/>
-    </BrowserRouter> 
+    </HashRouter> 
     </div>
   );
 }
