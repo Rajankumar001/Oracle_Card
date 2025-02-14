@@ -56,7 +56,7 @@
 }
 .mb-3{
     position: relative;
-    font-family: "Roboto", serif;
+    font-family: "Jersey 15", serif;
     font-weight: 500;
     font-style: normal;
     font-weight: 200;
@@ -127,7 +127,7 @@
     height: 40px;
     border-radius: 5px;
     position: absolute;
-    top: 47%;
+    top: 42%;
     left: 16%;
     border: none;
     font-size: 1.2rem;
@@ -143,11 +143,11 @@ input:focus-visible{
 }
 form h2{
     position: absolute;
-    top: 200px;
+    top: 90px;
     left: 650px;
     font-family: "Jersey 15", serif;
         font-weight: 600;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 100;
     color: #ba3276 ;
     font-style: normal;
@@ -188,8 +188,8 @@ span a{
     font-size: 1.2rem;
      color:#ba3276 !important;
     font-family: "Jersey 15", serif;
-    font-weight: 600;
-  font-size: 1.5rem;
+    font-weight: 500;
+  /* font-size: 1.5rem; */
 }
 .signup_container{
     margin: 20px 0px;
@@ -215,7 +215,6 @@ span a{
         width: 500px;
         height: auto;
         justify-content: center;
-        /* padding-left: 30px; */
         align-items: center;
     }
     input:focus-visible{
@@ -226,7 +225,7 @@ span a{
     }
     form h2{
         position: absolute;
-        top: 200px;
+        top: 90px;
         left: 210px;
         font-family: "Jersey 15", serif;
             font-weight: 600;
@@ -239,7 +238,7 @@ span a{
     .Login_container{
         background-size: auto;
         background-repeat: no-repeat;
-        margin: 20px 0px;
+        /* margin: 20px 0px; */
         margin-left: 10px;
         font-family: "Roboto", serif;
         font-weight: 500;
@@ -247,7 +246,7 @@ span a{
         font-weight: 200;
         font-style: normal;
         box-shadow: -4px 5px 4px rgb(208, 206, 206);
-        width:450px;     
+        width:440px;     
         height: 500px;
         display: flex;
         justify-content: center;
@@ -284,7 +283,7 @@ span a{
         height: 40px;
         border-radius: 5px;
         position: absolute;
-        top: 47%;
+        top: 42%;
         left: 21%;
     }
     .PhoneInput:hover{

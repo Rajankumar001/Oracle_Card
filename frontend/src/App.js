@@ -1,13 +1,11 @@
-import {HashRouter,Routes,Route} from 'react-router-dom';
+import {Routes,Route, BrowserRouter} from 'react-router-dom';
 import './App.css';
 import Login from './Componenets/Login/Login';
 import HomeScreen from './Screens/HomeScreen';
 import cardReadingScreen from './Screens/cardReadingScreen/cardReadingScreen';
-import oneCard from './Componenets/oneCard/oneCard';
 import guidebook from './Componenets/Guidebook/guidebook';
 import OneCard from './Componenets/oneCard/oneCard';
 import Header from './Componenets/Header/Header';
-import Footer from './Componenets/Footer/Footer';
 import TwoCard from './Componenets/twoCard/twoCard';
 import DisplayOneCard from './Componenets/DisplayOneCard/DisplayOneCard';
 import DisplayTwoCard from './Componenets/DisplayingTwoCard/DisplayingTwoCard';
@@ -20,11 +18,12 @@ import ViewGuideBook from './Componenets/ViewGuideBook/ViewGuideBook';
 import GuideBookCard from './Componenets/WorkingWithCards/GuideBookCard';
 import About from './Componenets/About/About';
 import SavedCards from './Componenets/SavedCards/SavedCards';
+import CardSpread from './Componenets/UseOracle/CardSpread';
+import UseOracle from './Componenets/UseOracle/UseOracle';
 function App() {
   return (
     <div className='app-container'>
-     <HashRouter>
-     <Header/>
+     <BrowserRouter>
     <Routes>
      <Route path='/' Component={Login}></Route>
      <Route path='/home' Component={HomeScreen}></Route>
@@ -42,9 +41,10 @@ function App() {
      <Route path='/working-with-cards' Component={GuideBookCard}></Route>
      <Route path='/about' Component={About}></Route>
      <Route path='/load-saved-cards' Component={SavedCards}></Route>
+     <Route path='/card-spread' Component={CardSpread}></Route>
+     <Route path='/use-oracle' Component={UseOracle}></Route>
     </Routes>
-    <Footer/>
-    </HashRouter> 
+    </BrowserRouter> 
     </div>
   );
 }

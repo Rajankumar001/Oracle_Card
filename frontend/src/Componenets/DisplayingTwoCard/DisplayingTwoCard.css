@@ -24,14 +24,15 @@ body {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 400px;
+  background-color: none;
+  width: 260px;
+  height: 330px;
   border-radius: 10px;
   transition: transform 0.4s ease-in-out; 
 }
 .card{
-  width: 250px;
-  height: 250px;
+  width: 260px;
+  height: 330px;
   border-radius: 10px;
   --bs-card-bg:none;
 
@@ -81,12 +82,12 @@ body {
 .shake-animation {
   animation: shake 1.4s ease-in-out;
 }
-.card {
+.card { 
     width: 100%;
     height: 100%;
     perspective: 1000px;
-  }
-  
+  } 
+   
   .card-inner {
     position: relative;
     width: 100%;

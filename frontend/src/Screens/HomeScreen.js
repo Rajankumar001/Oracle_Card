@@ -3,9 +3,13 @@ import './HomeScreen.css';
 import mainCard from '../constants/mainCard';
 import { Link } from 'react-router-dom';
 import NavigationTwo from '../Componenets/Navigation/NavigationTwo';
+import Header from '../Componenets/Header/Header';
 const HomeScreen = () => {
   return (
+    <>
+     <Header/>
     <div className='home-container'>
+     
           <div className='home-main-content'>
               {
                 mainCard && mainCard.map((item)=>(
@@ -18,6 +22,7 @@ const HomeScreen = () => {
           </div>
           <NavigationTwo link={'/'}/>
     </div>
+    </>
     
   )
 }

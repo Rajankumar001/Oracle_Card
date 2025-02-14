@@ -4,10 +4,11 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import './fiveCard.css'; 
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow,EffectCards, Pagination } from 'swiper/modules';
 import Navigation from '../Navigation/Navigation';
 import { cardData } from '../../constants/CardData';
 import shuffleSound from '../../assets/shufflingCard.wav'; 
+import Header from '../Header/Header';
 
 const FiveCard = () => {
   const [shuffledIndices, setShuffledIndices] = useState(Array.from({ length: cardData.length }, (_, index) => index));
@@ -19,7 +20,11 @@ const FiveCard = () => {
   const [box2Selected, setBox2Selected] = useState(false);
   const [box3Selected, setBox3Selected] = useState(false);
   const [box4Selected, setBox4Selected] = useState(false);
+  const [change ,setChange]=useState(false);
   const [box5Selected, setBox5Selected] = useState(false);
+  const  onChange=()=>{
+    setChange(!change);
+  }
   const audioRef = React.useRef(null);
 
   const shuffleCards = () => {
@@ -39,6 +44,10 @@ const FiveCard = () => {
   const handleCardClick = (index) => {
     if (selectedCards.length < 5) {
       const selectedCard = cardData[index];
+      if (selectedCards.some(card => card.id === selectedCard.id)) {
+        alert('You have already chosen this card.');
+        return;
+      }
       setSelectedCards([...selectedCards, selectedCard]);
       switch (selectedCards.length) {
         case 0:
@@ -86,9 +95,10 @@ const FiveCard = () => {
   };
   return (
     <>
+    <Header/>
       <div className='oneCard-container'>
         <Swiper
-          effect={'coverflow'}
+          effect={change?'cards':'coverflow'}
           grabCursor={true}
           centeredSlides={true}
           slidesPerView={'auto'}
@@ -100,7 +110,7 @@ const FiveCard = () => {
             slideShadows: true,
           }}
           pagination={true}
-          modules={[EffectCoverflow, Pagination]}
+          modules={[EffectCoverflow,EffectCards,Pagination]}
           className="mySwiper"
         >
           {shuffledIndices.map((index) => (
@@ -120,7 +130,7 @@ const FiveCard = () => {
           <div className={`box-5 ${box5Selected ? 'selected' : 'box-5'}`}></div>
         </div>
       </div>
-      <Navigation link={'/begin-new-cards'} shuffleCards={shuffleCards} />
+      <Navigation link={'/begin-new-cards'} shuffleCards={shuffleCards} onChange={onChange} link_about={'/about'} />
       <audio ref={audioRef} src={shuffleSound} />
     </>
   );

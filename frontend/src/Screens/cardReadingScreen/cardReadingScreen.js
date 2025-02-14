@@ -3,8 +3,11 @@ import cardReading from '../../constants/cardReading';
 import { Link } from 'react-router-dom';
 import './cardReadingScreen.css'
 import NavigationTwo from '../../Componenets/Navigation/NavigationTwo';
+import Header from '../../Componenets/Header/Header';
 const cardReadingScreen = () => {
   return (
+    <>
+    <Header/>
     <div className='cardReading-container'>
           <div className='cardReading-main-content'>
               {
@@ -19,6 +22,7 @@ const cardReadingScreen = () => {
           </div>
           <NavigationTwo link={'/home'}/>
     </div>
+    </>
   )
 }
 

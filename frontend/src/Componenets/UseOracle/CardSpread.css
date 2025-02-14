@@ -1,0 +1,50 @@
+.Oracle_Card_Container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.Oracle_Card_Content{
+    overflow-y: auto;
+    border: 5px solid yellow;
+    background-color: white;
+    color:#ba3276 !important;
+    font-family: "Jersey 15", serif;
+    font-weight: 500;
+    width: 440px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.Card-title{
+    text-align: center;
+    font-size: 1.4rem;
+    
+}
+.box-contnet{
+    display: flex;
+    width: 300px;
+    margin-left: 70px;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-box{
+    width: 40px;
+    height: 70px;
+    background-color: #ba3276;
+    border: 2px solid black;
+}
+.card-box-first{
+    width: 40px;
+    height: 70px;
+    background-color: #ba3276;
+    border: 2px solid black;
+    margin-left: 200px;
+
+}

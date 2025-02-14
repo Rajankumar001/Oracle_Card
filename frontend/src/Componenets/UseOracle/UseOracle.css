@@ -1,0 +1,67 @@
+.OracleCard-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.OracleCard-mainContent {
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    border: 5px solid #F4CE14;
+    font-family: "Jersey 15", serif;
+    font-weight: 440;
+    font-size: 1.4rem;
+    font-style: normal;
+    border-radius: 6%;
+    width: 440px;
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ba3276;
+}
+.horizontal-line{
+    border: 2px solid #F4CE14 ;
+    color: #F4CE14;
+    width: 200px;
+    
+}
+.Oracletext-content{
+    overflow-y: auto;
+}
+@media (max-width: 600px) {
+    .OracleCard-container {
+        width: 500px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .OracleCard-mainContent {
+        padding: 10px;
+        text-align: center;
+        border: 5px solid #F4CE14;
+        font-family: "Jersey 15", serif;
+        font-weight: 440;
+        font-size: 1.4rem;
+        font-style: normal;
+        border-radius: 6%;
+        width: 440px;
+        height: 600px; 
+        display: flex;
+        flex-direction: column;
+        color: #ba3276;
+    }
+    .Oracletext-content{
+        overflow-y: auto;
+    }
+}

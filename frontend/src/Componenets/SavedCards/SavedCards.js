@@ -1,9 +1,11 @@
 import React from 'react'
 import './SavedCard.css'
 import NavigationTwo from '../Navigation/NavigationTwo'
+import Header from '../Header/Header'
 const SavedCards = () => {
   return (
     <>
+    <Header/>
     <div className='saved-container'>
         <div className='saved-content'>
            <div className='saved-box'>

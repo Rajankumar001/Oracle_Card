@@ -6,6 +6,7 @@ import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import './DisplayingTwoCard.css';
 import NavigationTwo from '../Navigation/NavigationTwo';
+import Header from '../Header/Header';
 
 const DisplayTwoCard = () => {
   const [cardData, setCardData] = useState([]);
@@ -27,6 +28,7 @@ const DisplayTwoCard = () => {
 
   return (
     <>
+    <Header/>
       <div className='oneCard-container-displaying'>
         <h4 className='card-title'>Your Card 👇</h4>
         <Swiper

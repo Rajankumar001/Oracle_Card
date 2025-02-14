@@ -3,7 +3,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 .home-main-content{
@@ -12,8 +12,10 @@
         font-weight: 600;
         font-size: 1.8rem;
         font-style: normal;
-   background-image: url('https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg');
-   background-size: auto;
+   /* background-image: url('https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg'); */
+   /* background-size: auto; */
+   background-color: white;
+        border: 5px solid yellow;
     border-radius: 6%;
     width: 450px;
     height: 500px;
@@ -46,10 +48,10 @@
 @media (max-width:600px) {
     .home-container{
         width: 500px;
-        height: 100vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
     }
     .home-main-content{
@@ -57,8 +59,10 @@
         font-weight: 600;
         font-size: 1.8rem;
         font-style: normal;
-   background-image: url('https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg');
-   background-size: auto;
+   /* background-image: url('https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg'); */
+   /* background-size: auto; */
+   background-color: white;
+   border: 5px solid yellow;
     border-radius: 6%;
     width: 450px;
     height: 500px;

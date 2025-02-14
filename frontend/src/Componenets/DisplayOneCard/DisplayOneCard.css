@@ -24,18 +24,15 @@ body {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 300px;
-  height: 300px;
+  width: 260px;
+  height: 330px;
   border-radius: 10px;
   transition: transform 0.4s ease-in-out; 
 }
 .card{
-  width: 300px;
-  height: 300px;
+  width: 260px;
+  height: 330px;
   border-radius: 10px;
-  --bs-card-bg:none;
-
-
 }
 .card-title{
     color:#ba3276;
@@ -130,7 +127,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    /* gap: 60px; */
     width: 460px;
     height: 600px;
     margin: auto;

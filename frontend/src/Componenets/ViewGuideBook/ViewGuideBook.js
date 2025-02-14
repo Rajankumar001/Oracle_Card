@@ -4,9 +4,12 @@ import pdfUrl from '../../assets/guideBook.pdf'
 import guideBook from '../../constants/GuideBook';
 import { Link } from 'react-router-dom';
 import NavigationTwo from '../Navigation/NavigationTwo';
+import Header from '../Header/Header';
 const ViewGuideBook = () => {
 
   return (
+    <>
+    <Header/>
     <div className='GuideBook-container'>
       <div className='guidebook-title'>
         <h2>GUIDEBOOK</h2>
@@ -23,6 +26,7 @@ const ViewGuideBook = () => {
       </div>
       <NavigationTwo link={'/home'}/>
   </div>
+  </>
 
   )
 }

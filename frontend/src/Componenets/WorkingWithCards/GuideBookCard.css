@@ -1,4 +1,4 @@
-.GuideBookCard-container{
+.GuideBookCard-container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -7,23 +7,63 @@
     justify-content: center;
     align-items: center;
 }
-.guidebookCard-mainContent{
-    position: absolute;
-    padding: 10px;
-    overflow-y:hidden;
-    text-align:center;
-        border: 5px solid  #F4CE14;
-        font-family: "Jersey 15", serif;
-        font-weight: 400;
-        font-size: 1.8rem;
-        font-style: normal;
+
+.guidebookCard-mainContent {
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    border: 5px solid #F4CE14;
+    font-family: "Jersey 15", serif;
+    font-weight: 440;
+    font-size: 1.4rem;
+    font-style: normal;
     border-radius: 6%;
-    width: 450px;
-    height: 500px !important;
+    width: 440px;
+    height: 500px; /* Adjusted height */
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 10px; */
     justify-content: center;
     align-items: center;
-    color: #ba3276 ;
+    color: #ba3276;
+}
+.horizontal-line{
+    border: 2px solid #F4CE14 ;
+    color: #F4CE14;
+    width: 200px;
+    
+}
+.text-content{
+    overflow-y: auto;
+    /* height: 80%; */
+}
+@media (max-width: 600px) {
+    .GuideBookCard-container {
+        width: 500px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .guidebookCard-mainContent {
+        padding: 10px;
+        text-align: center;
+        border: 5px solid #F4CE14;
+        font-family: "Jersey 15", serif;
+        font-weight: 440;
+        font-size: 1.4rem;
+        font-style: normal;
+        border-radius: 6%;
+        width: 440px;
+        height: 600px; 
+        display: flex;
+        flex-direction: column;
+        color: #ba3276;
+    }
+    .text-content{
+        overflow-y: auto;
+    }
 }

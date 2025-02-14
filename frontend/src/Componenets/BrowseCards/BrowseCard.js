@@ -6,10 +6,12 @@ import 'swiper/css/navigation';
 import { cardData } from '../../constants/CardData'
 import { Pagination,} from 'swiper/modules';
 import './BrowseCard.css';
+import Header from '../Header/Header'
 import NavigationTwo from '../Navigation/NavigationTwo';
 export default function BrowseCard() {
   return (
         <>
+        <Header/>
          <div className='BrowseCard-container'>
           <Swiper
             slidesPerView={1}

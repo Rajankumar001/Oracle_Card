@@ -25,7 +25,7 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  width: 300px;
+  width: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,6 +48,7 @@ width: 1250px;
 height: 500px;
 margin: auto;
 padding: 10px;
+background-color: #fff;
 border: 2px solid yellow;
 }
 
@@ -55,6 +56,7 @@ border: 2px solid yellow;
   .card{
     width: 220px;
     height: 300px;
+    border-radius: 10px;
   }
   .swiper-slide{
     /* overflow: hidden; */

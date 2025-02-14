@@ -9,9 +9,10 @@
 .app-container{
   width: 100vw;
   height: 100%;
-  background-image: url('./assets/backrground.jpg');
+  background-color: #4c5270;
+  /* background-image: url('./assets/backrground.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -45,14 +46,8 @@
 }
 @media (max-width:600px) {
   .app-container{
-    /* margin: auto; */
-    /* display: flex;
-    align-items: center;
-  justify-content: center; */
     width: 500px;
-    height: 100%;
-    background-image: url('./assets/backrground.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 900px;
+    background-color:#4c5270;;
   }
 }

@@ -4,10 +4,11 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import './twoCard.css';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, EffectCards,Pagination } from 'swiper/modules';
 import Navigation from '../Navigation/Navigation';
 import { cardData } from '../../constants/CardData';
 import shuffleSound from '../../assets/shufflingCard.wav'; 
+import Header from '../Header/Header';
 const TwoCard = () => {
     const [shuffledIndices, setShuffledIndices] = useState(Array.from({ length: cardData.length }, (_, index) => index));
       const [isShuffling, setIsShuffling] = useState(false);
@@ -16,7 +17,11 @@ const TwoCard = () => {
       const [redirected, setRedirected] = useState(false);
       const [box1Selected, setBox1Selected] = useState(false);
       const [box2Selected, setBox2Selected] = useState(false);
+      const [change ,setChange]=useState(false);
       const audioRef = React.useRef(null);
+      const  onChange=()=>{
+        setChange(!change);
+      }
       const shuffleCards = () => {
         const shuffled = shuffledIndices.slice();
         for (let i = shuffled.length - 1; i > 0; i--) {
@@ -36,6 +41,10 @@ const TwoCard = () => {
 
         if (selectedCards.length < 2) {
           const selectedCard = cardData[index];
+          if (selectedCards.some(card => card.id === selectedCard.id)) {
+            alert('You have already chosen this card.');
+            return;
+          }
           setSelectedCards([...selectedCards, selectedCard]);
           if (selectedCards.length === 0) {
             setBox1Selected(true);
@@ -54,9 +63,10 @@ const TwoCard = () => {
       }
   return (
     <>
+    <Header/>
     <div className='oneCard-container'>
       <Swiper
-        effect={'coverflow'}
+        effect={change?'cards':'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={'auto'}
@@ -68,7 +78,7 @@ const TwoCard = () => {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow,EffectCards,Pagination]}
         className="mySwiper"
       >
         {shuffledIndices.map((index) => (
@@ -85,7 +95,7 @@ const TwoCard = () => {
       <div className={`box-2 ${box2Selected ? 'selected' : 'box-2'}`}></div>
       </div>
     </div>
-    <Navigation link={'/begin-new-cards'} shuffleCards={shuffleCards} />
+    <Navigation link={'/begin-new-cards'} shuffleCards={shuffleCards} onChange={onChange} link_about={'/about'}/>
     <audio ref={audioRef} src={shuffleSound} />
   </>
   )

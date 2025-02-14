@@ -24,7 +24,7 @@ body {
     /* padding-top: 30px; */
     background-position: center;
     background-size: cover;
-    width: 250px;
+    width: 260px;
     height: 330px;
   }
   
@@ -88,7 +88,14 @@ body {
   background-color: white; 
 }
 .card {
+  border-radius: 10px !important;
   transition: transform 0.7s ease-in-out; 
+}
+.front{
+  border-radius: 10px !important;
+}
+.back{
+  border-radius: 10px !important;
 }
 
 .shake-animation {

@@ -9,6 +9,7 @@ import { EffectCoverflow, EffectCards,Pagination } from 'swiper/modules';
 import Navigation from '../Navigation/Navigation';
 import { cardData } from '../../constants/CardData';
 import shuffleSound from '../../assets/shufflingCard.wav';
+import Header from '../Header/Header';
 
 export default function App() {
   const [shuffledIndices, setShuffledIndices] = useState(Array.from({ length: cardData.length }, (_, index) => index));
@@ -49,9 +50,9 @@ export default function App() {
        console.log("localStorage called..",localStorage.setItem('oneCard',JSON.stringify([dataEntry1])));
        window.location.href='/displaying-onecard'
   }
-
   return (
     <>
+    <Header/>
       <div className='oneCard-container'>
         <Swiper
           effect={change?'cards':'coverflow'}
@@ -81,8 +82,9 @@ export default function App() {
         <div className={isHighlighted ? 'highlighted' : 'card-choosed-box'}>
 
         </div>
+       
       </div>
-      <Navigation link={'/begin-new-cards'} shuffleCards={shuffleCards} onChange={onChange}/>
+      <Navigation link={'/begin-new-cards'} shuffleCards={shuffleCards} onChange={onChange} link_about={'/about'}/>
       <audio ref={audioRef} src={shuffleSound} />
     </>
   );

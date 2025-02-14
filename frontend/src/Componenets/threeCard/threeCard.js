@@ -4,10 +4,11 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import './threeCard.css';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow,EffectCards, Pagination } from 'swiper/modules';
 import Navigation from '../Navigation/Navigation';
 import { cardData } from '../../constants/CardData';
 import shuffleSound from '../../assets/shufflingCard.wav'; 
+import Header from '../Header/Header';
 const ThreeCard = () => {
     const [shuffledIndices, setShuffledIndices] = useState(Array.from({ length: cardData.length }, (_, index) => index));
     const [isShuffling, setIsShuffling] = useState(false);
@@ -17,7 +18,11 @@ const ThreeCard = () => {
     const [box1Selected, setBox1Selected] = useState(false);
     const [box2Selected, setBox2Selected] = useState(false);
     const [box3Selected, setBox3Selected] = useState(false);
+    const [change ,setChange]=useState(false);
     const audioRef = React.useRef(null);
+    const  onChange=()=>{
+      setChange(!change);
+    }
     const shuffleCards = () => {
       const shuffled = shuffledIndices.slice();
       for (let i = shuffled.length - 1; i > 0; i--) {
@@ -70,22 +75,23 @@ const ThreeCard = () => {
       };
 return (
   <>
+  <Header/>
   <div className='oneCard-container'>
     <Swiper
-      effect={'coverflow'}
-      grabCursor={true}
-      centeredSlides={true}
-      slidesPerView={'auto'}
-      coverflowEffect={{
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      }}
-      pagination={true}
-      modules={[EffectCoverflow, Pagination]}
-      className="mySwiper"
+       effect={change?'cards':'coverflow'}
+       grabCursor={true}
+       centeredSlides={true}
+       slidesPerView={'auto'}
+       coverflowEffect={{
+         rotate: 50,
+         stretch: 0,
+         depth: 100,
+         modifier: 1,
+         slideShadows: true,
+       }}
+       pagination={true}
+       modules={[EffectCoverflow,EffectCards,Pagination]}
+       className="mySwiper"
     >
       {shuffledIndices.map((index) => (
         <SwiperSlide key={index}>
@@ -102,7 +108,7 @@ return (
     <div className={`box-3 ${box3Selected ? 'selected' : 'box-3'}`}></div>
     </div>
   </div>
-  <Navigation link={'/begin-new-cards'} shuffleCards={shuffleCards} />
+  <Navigation link={'/begin-new-cards'} shuffleCards={shuffleCards} onChange={onChange} link_about={'/about'} />
   <audio ref={audioRef} src={shuffleSound} />
 </>
   )
