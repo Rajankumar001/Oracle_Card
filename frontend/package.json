@@ -13,12 +13,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@react-spring/konva": "^9.7.5",
-    "@react-spring/shared": "^9.7.5",
     "ajv": "^8.17.1",
     "axios": "^1.7.9",
     "framer-motion": "^12.0.3",
-    "react": "^16.8.0",
+    "react": "^19.0.0",
     "react-bootstrap": "^2.10.8",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
