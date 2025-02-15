@@ -5,7 +5,6 @@ import { LoginReducer } from './Reducer/UserReducer';
  const rootReducer=combineReducers({
     LoginReducer:LoginReducer,
  })
- 
  const Middleware=[thunk];
  const store=createStore(
     rootReducer,
