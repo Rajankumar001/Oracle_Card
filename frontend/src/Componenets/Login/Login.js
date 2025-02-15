@@ -86,7 +86,7 @@ const Login = () => {
               <Form.Label className="title">Mobile Number</Form.Label>
               <PhoneInput
                 international
-                defaultCountry={countryCode || "RU"}
+                defaultCountry={countryCode || "IND"}
                 placeholder="Enter your 10-digit mobile number"
                 value={mobile}
                 onChange={setMobile} // Update state on change
