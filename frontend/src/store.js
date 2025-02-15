@@ -5,15 +5,10 @@ import { LoginReducer } from './Reducer/UserReducer';
  const rootReducer=combineReducers({
     LoginReducer:LoginReducer,
  })
- const initialstate={
-   otpVerifyReducer:{
-   
-   }
- }
+ 
  const Middleware=[thunk];
  const store=createStore(
     rootReducer,
-    initialstate,
     composeWithDevTools(applyMiddleware(...Middleware))
  )
  export default store;
