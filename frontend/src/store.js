@@ -1,4 +1,4 @@
-import {legacy_createStore,combineReducers,applyMiddleware} from 'redux'
+import {createStore,combineReducers,applyMiddleware} from 'redux'
 import {thunk }from 'redux-thunk';
 import {composeWithDevTools} from 'redux-devtools-extension';
 import { LoginReducer } from './Reducer/UserReducer';
@@ -11,7 +11,7 @@ import { LoginReducer } from './Reducer/UserReducer';
    }
  }
  const Middleware=[thunk];
- const store=legacy_createStore(
+ const store=createStore(
     rootReducer,
     initialstate,
     composeWithDevTools(applyMiddleware(...Middleware))
