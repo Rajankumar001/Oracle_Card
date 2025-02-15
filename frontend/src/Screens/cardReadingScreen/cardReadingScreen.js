@@ -2,8 +2,8 @@ import React from 'react'
 import cardReading from '../../constants/cardReading';
 import { Link } from 'react-router-dom';
 import './cardReadingScreen.css'
-import NavigationTwo from '../../Componenets/Navigation/NavigationTwo';
-import Header from '../../Componenets/Header/Header';
+import NavigationTwo from '../../Components/Navigation/NavigationTwo';
+import Header from '../../Components/Header/Header';
 const cardReadingScreen = () => {
   return (
     <>

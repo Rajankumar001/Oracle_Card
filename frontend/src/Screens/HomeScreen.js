@@ -2,8 +2,8 @@ import React from 'react'
 import './HomeScreen.css';
 import mainCard from '../constants/mainCard';
 import { Link } from 'react-router-dom';
-import NavigationTwo from '../Componenets/Navigation/NavigationTwo';
-import Header from '../Componenets/Header/Header';
+import NavigationTwo from '../Components/Navigation/NavigationTwo';
+import Header from '../Components/Header/Header';
 const HomeScreen = () => {
   return (
     <>

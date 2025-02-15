@@ -1,25 +1,25 @@
 import {Routes,Route, BrowserRouter} from 'react-router-dom';
 import './App.css';
-import Login from './Componenets/Login/Login';
+import Login from './Components/Login/Login';
 import HomeScreen from './Screens/HomeScreen';
 import cardReadingScreen from './Screens/cardReadingScreen/cardReadingScreen';
-import guidebook from './Componenets/Guidebook/guidebook';
-import OneCard from './Componenets/oneCard/oneCard';
-import Header from './Componenets/Header/Header';
-import TwoCard from './Componenets/twoCard/twoCard';
-import DisplayOneCard from './Componenets/DisplayOneCard/DisplayOneCard';
-import DisplayTwoCard from './Componenets/DisplayingTwoCard/DisplayingTwoCard';
-import ThreeCard from './Componenets/threeCard/threeCard';
-import DisplayThreeCard from './Componenets/DisplayingThreeCard/DisplayingThreeCard';
-import FiveCard from './Componenets/fiveCard/fiveCard';
-import DisplayFiveCard from './Componenets/DisplayingFiveCard/DisplayingFiveCard';
-import BrowseCard from './Componenets/BrowseCards/BrowseCard';
-import ViewGuideBook from './Componenets/ViewGuideBook/ViewGuideBook';
-import GuideBookCard from './Componenets/WorkingWithCards/GuideBookCard';
-import About from './Componenets/About/About';
-import SavedCards from './Componenets/SavedCards/SavedCards';
-import CardSpread from './Componenets/UseOracle/CardSpread';
-import UseOracle from './Componenets/UseOracle/UseOracle';
+import guidebook from './Components/Guidebook/guidebook';
+import OneCard from './Components/oneCard/oneCard';
+import Header from './Components/Header/Header';
+import TwoCard from './Components/twoCard/twoCard';
+import DisplayOneCard from './Components/DisplayOneCard/DisplayOneCard';
+import DisplayTwoCard from './Components/DisplayingTwoCard/DisplayingTwoCard';
+import ThreeCard from './Components/threeCard/threeCard';
+import DisplayThreeCard from './Components/DisplayingThreeCard/DisplayingThreeCard';
+import FiveCard from './Components/fiveCard/fiveCard';
+import DisplayFiveCard from './Components/DisplayingFiveCard/DisplayingFiveCard';
+import BrowseCard from './Components/BrowseCards/BrowseCard';
+import ViewGuideBook from './Components/ViewGuideBook/ViewGuideBook';
+import GuideBookCard from './Components/WorkingWithCards/GuideBookCard';
+import About from './Components/About/About';
+import SavedCards from './Components/SavedCards/SavedCards';
+import CardSpread from './Components/UseOracle/CardSpread';
+import UseOracle from './Components/UseOracle/UseOracle';
 function App() {
   return (
     <div className='app-container'>
