@@ -29,8 +29,9 @@
     width: 450px;
     height: 500px;
     display: flex;
-    justify-content: center;
-    align-items: end;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     padding-bottom: 20px;
 }
 .form-content{
@@ -141,17 +142,16 @@ input:focus-visible{
 :focus-visible{
     outline: none;
 }
-form h2{
-    position: absolute;
-    top: 90px;
-    left: 650px;
+
+h2{
+    align-items: center;
     font-family: "Jersey 15", serif;
         font-weight: 600;
     font-size: 2.5rem;
     font-weight: 100;
     color: #ba3276 ;
     font-style: normal;
-    text-align: center;
+   
 }
 .login-button{
     margin-left: 0px;
@@ -223,10 +223,7 @@ span a{
     :focus-visible{
         outline: none !important;
     }
-    form h2{
-        position: absolute;
-        top: 90px;
-        left: 210px;
+     h2{
         font-family: "Jersey 15", serif;
             font-weight: 600;
         font-size: 3rem;
@@ -249,10 +246,13 @@ span a{
         width:440px;     
         height: 500px;
         display: flex;
-        justify-content: center;
-        padding-left: 70px;
-    padding-top: 340px;
-        align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    }
+    form{
+        margin-left: 70px;
     }
     .mb-3{
     position: relative;
