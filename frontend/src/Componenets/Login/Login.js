@@ -22,9 +22,9 @@ const Login = () => {
     const fetchCountryCode = async () => {
       try {
         const response = await axios.get('https://api-prod-new.tagmango.com/get-country-through-ip');
-        if (response.data && response.data.result) {
+        if (response.data?.result) {
           const resultObj = JSON.parse(response.data.result);
-          if (resultObj && resultObj.countryCode) {
+          if (resultObj?.countryCode) {
             setCountryCode(resultObj.countryCode);
           }
         }
@@ -40,9 +40,8 @@ const Login = () => {
     if (LoginUser && Object.keys(LoginUser).length > 0) {
       const userString = JSON.stringify(LoginUser);
       localStorage.setItem('LoginUser', userString);
-      console.log(localStorage.setItem('LoginUser', userString));
-      console.log("localStorage get item", localStorage.getItem('LoginUser'));
-      window.location.href='/home';
+      console.log("Stored in localStorage:", localStorage.getItem('LoginUser'));
+      window.location.href = '/home';
     }
   }, [LoginUser]);
 
@@ -53,16 +52,15 @@ const Login = () => {
   const SigninHandler = async (e) => {
     e.preventDefault(); 
     console.log("SigninHandler function is calling");
-    if (!mobile || mobile.length !== 13) {
-      alert('Please enter a valid 10-digit mobile number with country code.');
+
+    if (!mobile || !mobile.startsWith('+') || mobile.length < 10) {
+      alert('Please enter a valid mobile number with country code.');
       return;
     }
 
-    const user = { mobile };
-
     try {
-      await dispatch(UserAction(user)); // Dispatch the user action
-      console.log("User after dispatch:", user);
+      await dispatch(UserAction({ mobile }));
+      console.log("User after dispatch:", mobile);
     } catch (error) {
       console.error('Error signing in:', error);
       notifyContactNotFound();
@@ -72,24 +70,24 @@ const Login = () => {
   return (
     <>
       <div className="login-main-container">
-        {loading && <p><Loader /></p>}
-        {error && <p>Error: {error}</p>}
+        {loading && <Loader />}
+        {error && <p className="error-text">{error}</p>}
         {LoginUser && (
           <div className="welcome-container">
             <p><span>Welcome</span> {LoginUser.name}</p>
           </div>
         )}
         <div className="Login_container">
-        <h2>Login</h2>
+          <h2>Login</h2>
           <Form>
             <Form.Group className="mb-3" controlId="formBasicMobile">
               <Form.Label className="title">Mobile Number</Form.Label>
               <PhoneInput
                 international
-                defaultCountry={countryCode || "IND"}
-                placeholder="Enter your 10-digit mobile number"
+                defaultCountry={countryCode || "IN"}
+                placeholder="Enter your mobile number"
                 value={mobile}
-                onChange={setMobile} // Update state on change
+                onChange={setMobile}
                 className="form_input form-control"
               />
               <Form.Text className="text-muted">

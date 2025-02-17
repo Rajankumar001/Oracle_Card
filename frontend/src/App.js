@@ -1,4 +1,4 @@
-import {Routes,Route, BrowserRouter} from 'react-router-dom';
+import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
 import './App.css';
 import Login from './Components/Login/Login';
 import HomeScreen from './Screens/HomeScreen';
@@ -20,32 +20,46 @@ import About from './Components/About/About';
 import SavedCards from './Components/SavedCards/SavedCards';
 import CardSpread from './Components/UseOracle/CardSpread';
 import UseOracle from './Components/UseOracle/UseOracle';
+
+// Protected Route Component (Security Fix)
+const ProtectedRoute = ({ children }) => {
+  const user = JSON.parse(localStorage.getItem('LoginUser'));
+  return user ? children : <Navigate to="/" replace />;
+};
+
 function App() {
   return (
-    <div className='app-container'>
-     <BrowserRouter>
-    <Routes>
-     <Route path='/' Component={Login}></Route>
-     <Route path='/home' Component={HomeScreen}></Route>
-     <Route path='/begin-new-cards' Component={cardReadingScreen}></Route>
-     <Route path='/one-card' Component={OneCard}></Route>
-     <Route path='/two-card' Component={TwoCard}></Route>
-     <Route path='/three-card' Component={ThreeCard}></Route>
-     <Route path='/five-card' Component={FiveCard}></Route>
-     <Route path='/displaying-oneCard' Component={DisplayOneCard}></Route>
-     <Route path='/displaying-twoCard' Component={DisplayTwoCard}></Route>
-     <Route path='/displaying-threeCard' Component={DisplayThreeCard}></Route>
-     <Route path='/displaying-fiveCard' Component={DisplayFiveCard}></Route>
-     <Route path='/browse-cards' Component={BrowseCard}></Route>
-     <Route path='/view-guidebook' Component={ViewGuideBook}></Route>
-     <Route path='/working-with-cards' Component={GuideBookCard}></Route>
-     <Route path='/about' Component={About}></Route>
-     <Route path='/load-saved-cards' Component={SavedCards}></Route>
-     <Route path='/card-spread' Component={CardSpread}></Route>
-     <Route path='/use-oracle' Component={UseOracle}></Route>
-    </Routes>
-    </BrowserRouter> 
+    <div className="app-container">
+      <BrowserRouter>
+        <Routes>
+          {/*  Public Route */}
+          <Route path="/" element={<Login />} />
+
+          {/* Protected Routes - Requires Login */}
+          <Route path="/home" element={<ProtectedRoute><HomeScreen /></ProtectedRoute>} />
+          <Route path='/begin-new-cards' Component={cardReadingScreen}></Route>
+          <Route path="/one-card" element={<ProtectedRoute><OneCard /></ProtectedRoute>} />
+          <Route path="/two-card" element={<ProtectedRoute><TwoCard /></ProtectedRoute>} />
+          <Route path="/three-card" element={<ProtectedRoute><ThreeCard /></ProtectedRoute>} />
+          <Route path="/five-card" element={<ProtectedRoute><FiveCard /></ProtectedRoute>} />
+          <Route path="/displaying-oneCard" element={<ProtectedRoute><DisplayOneCard /></ProtectedRoute>} />
+          <Route path="/displaying-twoCard" element={<ProtectedRoute><DisplayTwoCard /></ProtectedRoute>} />
+          <Route path="/displaying-threeCard" element={<ProtectedRoute><DisplayThreeCard /></ProtectedRoute>} />
+          <Route path="/displaying-fiveCard" element={<ProtectedRoute><DisplayFiveCard /></ProtectedRoute>} />
+          <Route path="/browse-cards" element={<ProtectedRoute><BrowseCard /></ProtectedRoute>} />
+          <Route path="/view-guidebook" element={<ProtectedRoute><ViewGuideBook /></ProtectedRoute>} />
+          <Route path="/working-with-cards" element={<ProtectedRoute><GuideBookCard /></ProtectedRoute>} />
+          <Route path="/about" element={<ProtectedRoute><About /></ProtectedRoute>} />
+          <Route path="/load-saved-cards" element={<ProtectedRoute><SavedCards /></ProtectedRoute>} />
+          <Route path="/card-spread" element={<ProtectedRoute><CardSpread /></ProtectedRoute>} />
+          <Route path="/use-oracle" element={<ProtectedRoute><UseOracle /></ProtectedRoute>} />
+
+          {/* Redirect unknown routes to login */}
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
+
 export default App;
