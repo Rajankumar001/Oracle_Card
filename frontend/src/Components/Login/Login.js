@@ -53,11 +53,11 @@ const Login = () => {
   const SigninHandler = async (e) => {
     e.preventDefault(); 
     console.log("SigninHandler function is calling");
+    console.log("mobile",mobile);
     if (!mobile || mobile.length !== 13) {
       alert('Please enter a valid 10-digit mobile number with country code.');
       return;
     }
-
     const user = { mobile };
 
     try {

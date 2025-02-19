@@ -1,14 +1,29 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { cardData } from '../../constants/CardData'
+// import { cardData } from '../../constants/CardData'
 import { Pagination,} from 'swiper/modules';
+import axios from'axios';
 import './BrowseCard.css';
 import Header from '../Header/Header'
 import NavigationTwo from '../Navigation/NavigationTwo';
 export default function BrowseCard() {
+  const [cardData,setCardData]=useState([]);
+  const fetchCustomsData = async () => {
+    try {
+      const response = await axios.get("http://localhost:8080/api/savedcard/getcard");
+      console.log("response data...",response.data);
+      setCardData(response.data);
+      console.log("response...",response);
+    } catch (error) {
+      console.error("Error fetching customs data:", error);
+    }
+  };
+  useEffect(() => {
+    fetchCustomsData();
+  }, []);
   return (
         <>
         <Header/>

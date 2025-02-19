@@ -21,8 +21,8 @@ import SavedCards from './Components/SavedCards/SavedCards';
 import CardSpread from './Components/UseOracle/CardSpread';
 import UseOracle from './Components/UseOracle/UseOracle';
 const ProtectedRoute = ({ children }) => {
-  const token = localStorage.getItem("token");
-  return token ? children : <Navigate to="/" replace />;
+  const LoginUser = localStorage.getItem('LoginUser');
+  return LoginUser ? children : <Navigate to="/" replace />;
 };
 
 function App() {
