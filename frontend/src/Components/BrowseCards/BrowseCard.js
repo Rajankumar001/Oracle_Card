@@ -13,7 +13,7 @@ export default function BrowseCard() {
   const [cardData,setCardData]=useState([]);
   const fetchCustomsData = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/api/savedcard/getcard");
+      const response = await axios.get("/api/savedcard/getcard");
       console.log("response data...",response.data);
       setCardData(response.data);
       console.log("response...",response);

@@ -16,7 +16,7 @@ const FiveCard = () => {
   const [shuffledIndices, setShuffledIndices] = useState([]);
   const fetchCustomsData = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/api/savedcard/getcard");
+      const response = await axios.get("/api/savedcard/getcard");
       console.log("response data...",response.data);
       setCardData(response.data);
       setShuffledIndices(Array.from({ length: response.data.length }, (_, index) => index));

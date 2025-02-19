@@ -67,7 +67,7 @@ const DisplayTwoCard = () => {
   console.log("UserId........",UserId);
   const savedCard=async()=>{
     try{
-      const res=await axios.put(`http://localhost:8080/api/User/updateuser/${UserId}`,{ savedcard: saveId });
+      const res=await axios.put(`/api/User/updateuser/${UserId}`,{ savedcard: saveId });
       console.log("res data...",res.data);
       alert("Card-Reading saved successfully...🎉")
     }catch(err){
