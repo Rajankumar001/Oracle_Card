@@ -1,6 +1,6 @@
 import {createStore,combineReducers,applyMiddleware} from 'redux'
 import {thunk }from 'redux-thunk';
-import {composeWithDevTools} from 'redux-devtools-extension';
+// import {composeWithDevTools} from 'redux-devtools-extension';
 import { LoginReducer } from './Reducer/UserReducer';
  const rootReducer=combineReducers({
     LoginReducer:LoginReducer,
@@ -8,6 +8,6 @@ import { LoginReducer } from './Reducer/UserReducer';
  const Middleware=[thunk];
  const store=createStore(
     rootReducer,
-    composeWithDevTools(applyMiddleware(...Middleware))
+    applyMiddleware(...Middleware),
  )
  export default store;

@@ -1,5 +1,5 @@
 .home-container{
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@
         border: 5px solid yellow;
     border-radius: 6%;
     width: 450px;
-    height: 500px;
+    height: 425px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -65,7 +65,7 @@
    border: 5px solid yellow;
     border-radius: 6%;
     width: 450px;
-    height: 500px;
+    height: 425px;
     display: flex;
     flex-direction: column;
     gap: 10px;

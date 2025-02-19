@@ -72,21 +72,21 @@ const Login = () => {
   return (
     <>
       <div className="login-main-container">
-        {loading && <p><Loader /></p>}
+        {/* {loading && <p><Loader /></p>}
         {error && <p>Error: {error}</p>}
         {LoginUser && (
           <div className="welcome-container">
             <p><span>Welcome</span> {LoginUser.name}</p>
           </div>
-        )}
+        )} */}
         <div className="Login_container">
         <h2>Login</h2>
-          <Form>
-            <Form.Group className="mb-3" controlId="formBasicMobile">
+          <Form className='login-form'>
+            <Form.Group className="mb-3 form_box" controlId="formBasicMobile">
               <Form.Label className="title">Mobile Number</Form.Label>
               <PhoneInput
                 international
-                defaultCountry={countryCode || "RU"}
+                defaultCountry={countryCode || "IND"}
                 placeholder="Enter your 10-digit mobile number"
                 value={mobile}
                 onChange={setMobile} // Update state on change

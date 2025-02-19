@@ -99,19 +99,15 @@ body {
   .card-front, .card-back {
     position: absolute;
     width: 100%;
-    /* width: 200px; */
     height: 100%;
     backface-visibility: hidden;
   }
-  
   .card-back {
-    transform: rotateY(180deg); /* Initially hidden behind */
+    transform: rotateY(180deg); 
   }
-  
   .card.flipped .card-inner {
-    transform: rotateY(180deg); /* Apply flip animation */
+    transform: rotateY(180deg); 
   }
-  
 @keyframes shake {
   0%, 100% {
     transform: translateX(0);
@@ -123,9 +119,6 @@ body {
     transform: translateX(10px); 
   }
 }
-
-
-
 @media (max-width:600px) {
   .oneCard-container-displaying{
     display: flex;
@@ -133,7 +126,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 60px;
-    width: 460px;
+    width: 440px;
     height: 600px;
     margin: auto;
     padding: 20px;

@@ -1,12 +1,11 @@
 .header-class{
-    font-family: "Jersey 15", serif;
+    font-family: "Inter", sans-serif;
     display: flex;
-    justify-content: space-around !important;
+    justify-content: space-between !important;
     align-items: center;
     font-weight: 400;
     width: 100%;   
     height: 70px;
-    /* background-image: linear-gradient(to right, #7efaee ,#d88eb9); */
     background-color: #d2d1cc;
     border: none;
     padding-left:60px;
@@ -30,14 +29,13 @@
 }
 @media (max-width:600px) {
     .header-class{
-        font-family: "Jersey 15", serif;
+        font-family: "Inter", sans-serif;
         display: flex;
         justify-content: space-between !important;
         align-items: center;
         font-weight: 400;
         width: 500px;   
         height: 80px;
-        /* background-image: linear-gradient(to right, #7efaee ,#d88eb9); */
         border: none;
         padding-left:60px;
     }

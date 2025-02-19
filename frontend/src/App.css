@@ -7,7 +7,7 @@
   pointer-events: none;
 }
 .app-container{
-  width: 100vw;
+  width: 99.99%;
   height: 100%;
   background-color: #4c5270;
   /* background-image: url('./assets/backrground.jpg');
@@ -47,7 +47,7 @@
 @media (max-width:600px) {
   .app-container{
     width: 500px;
-    height: 900px;
+    height: 1280px;
     background-color:#4c5270;;
   }
 }

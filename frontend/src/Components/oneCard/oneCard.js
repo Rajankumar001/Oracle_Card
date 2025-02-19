@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -7,17 +7,33 @@ import 'swiper/css/pagination';
 import './oneCard.css';
 import { EffectCoverflow, EffectCards,Pagination } from 'swiper/modules';
 import Navigation from '../Navigation/Navigation';
-import { cardData } from '../../constants/CardData';
+// import { cardData } from '../../constants/CardData';
 import shuffleSound from '../../assets/shufflingCard.wav';
 import Header from '../Header/Header';
-
+import axios from 'axios';
 export default function App() {
-  const [shuffledIndices, setShuffledIndices] = useState(Array.from({ length: cardData.length }, (_, index) => index));
+  const [cardData,setCardData]=useState([]);
+  const [shuffledIndices, setShuffledIndices] = useState([]);
+  const fetchCustomsData = async () => {
+    try {
+      const response = await axios.get("http://localhost:8080/api/savedcard/getcard");
+      console.log("response data...",response.data);
+      setCardData(response.data);
+      setShuffledIndices(Array.from({ length: response.data.length }, (_, index) => index));
+      console.log("response...",response);
+    } catch (error) {
+      console.error("Error fetching customs data:", error);
+    }
+  };
+  useEffect(() => {
+    fetchCustomsData();
+  }, []);
   const [isShuffling, setIsShuffling] = useState(false);
   const [isHighlighted, setIsHighlighted] = useState(false);
   const [arrayOfObjects, setArrayOfObjects] = useState([]);
   const [change ,setChange]=useState(false);
   const audioRef = React.useRef(null);
+  console.log("shuffle",shuffledIndices);
 
   const  onChange=()=>{
     setChange(!change);
@@ -37,13 +53,13 @@ export default function App() {
    
   };
   const Backend=(index)=>{
-       const dataId=cardData[index].id;
+       const dataId=cardData[index]._id;
        console.log("dataId",dataId);
        const frontImglink=cardData[index].frontImage;
        console.log("frontImage",frontImglink);
        const backImglink=cardData[index].backImage;
        console.log("backImage",backImglink);
-       const dataEntry1 = { id: dataId, frontImage:frontImglink, backImage: backImglink };
+       const dataEntry1 = { _id: dataId, frontImage:frontImglink, backImage: backImglink };
        setIsHighlighted(!isHighlighted);
        setArrayOfObjects([dataEntry1]);
        localStorage.setItem('oneCard',JSON.stringify(arrayOfObjects));

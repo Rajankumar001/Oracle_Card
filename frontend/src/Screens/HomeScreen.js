@@ -1,13 +1,16 @@
 import React from 'react'
 import './HomeScreen.css';
+import { useSelector } from 'react-redux';
 import mainCard from '../constants/mainCard';
 import { Link } from 'react-router-dom';
 import NavigationTwo from '../Components/Navigation/NavigationTwo';
 import Header from '../Components/Header/Header';
+
 const HomeScreen = () => {
+ 
   return (
     <>
-     <Header/>
+     <Header />
     <div className='home-container'>
      
           <div className='home-main-content'>

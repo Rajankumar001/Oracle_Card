@@ -48,3 +48,29 @@
     margin-left: 200px;
 
 }
+@media (max-width:600px) {
+    .Oracle_Card_Container{
+        width: 500px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .Oracle_Card_Content{
+        overflow-y: auto;
+        border: 5px solid yellow;
+        background-color: white;
+        color:#ba3276 !important;
+        font-family: "Jersey 15", serif;
+        font-weight: 500;
+        width: 440px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+}

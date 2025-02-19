@@ -64,7 +64,10 @@ const DisplayOneCard = () => {
           ))}
         </Swiper>
       </div>
-<NavigationTwo link={'/one-card'}/>
+      <div className='save-card-container'>
+        <button className='save-card-button'>Save Card</button>
+      </div>
+<NavigationTwo link={'/home'}/>
     </>
   );
 };

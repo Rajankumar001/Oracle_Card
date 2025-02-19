@@ -1,5 +1,4 @@
-
-.login-main-container{
+.login-main-container {
     font-family: "Roboto", serif;
     font-weight: 500;
     font-style: normal;
@@ -10,71 +9,85 @@
     justify-content: center;
     align-items: center;
 }
-.Form.Control{
+
+.Form.Control {
     width: 95%;
 }
-.Login_container{
+
+.Login_container {
     background-image: url('https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg');
     border-radius: 4%;
     box-shadow: 5px 5px 5px pink;
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 20px 0px;
-    font-family: "Montserrat", sans-serif;
+    /* margin: 20px 0px; */
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
     box-shadow: -4px 4px 4px rgb(208, 206, 206);
-    width: 450px;
-    height: 500px;
+    width: 400px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 8px;
 }
-.form-content{
+
+.form-content {
     z-index: 22;
     opacity: 1;
 
 }
-.welcome-container{
-    font-family: "Roboto", serif;
+
+.welcome-container {
+    font-family: "Inter", sans-serif;
     font-weight: 500;
     font-style: normal;
     width: 250px;
-    height: 70px;
+    height: 60px;
     text-align: center;
     color: #94c973;
     font-size: 1.4rem;
-    
+
 
 }
-.welcome-container span{
+
+.login-form {
+    /* margin-top: 15px; */
+    padding: 0px 20px;
+}
+
+.welcome-container span {
     color: #f8cd4f;
     font-size: 1.4rem;
 }
-.mb-3{
+
+.form_box {
     position: relative;
-    font-family: "Jersey 15", serif;
+    font-family: "Inter", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-weight: 200;
     font-style: normal;
-    width: 420px;
+    width: 360px;
     height: 100px;
+    margin: auto;
 
 }
-.text-muted p{
+
+.text-muted p {
     margin-left: 3px;
-    font-family: "Jersey 15", serif;
+    font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 100;
-    color: #ba3276 ;
+    color: #ba3276;
 }
-.form_input{
+
+.form_input {
     font-size: 0.85rem;
     width: 400px;
     border: none;
@@ -83,36 +96,42 @@
     color: rgb(239, 230, 230);
     color: grey;
     opacity: 0.7;
-} 
-.PhoneInputCountrySelect{
-   display: none;
 }
-.PhoneInputCountryIcon{
-    margin-top:10px;
+
+.PhoneInputCountrySelect {
+    display: none;
+}
+
+.PhoneInputCountryIcon {
+    margin-top: 10px;
     width: 35px;
     height: 30px;
     border: none;
 }
-.PhoneInputCountryIconImg{
+
+.PhoneInputCountryIconImg {
     width: 40px;
     height: 30px;
     border: none;
 }
-.PhoneInput{
+
+.PhoneInput {
     display: none;
-    width: 400px !important;     
-    height:50px;
+    width: 360px !important;
+    height: 50px;
     padding: 0px !important;
     display: flex;
     justify-content: center;
     align-items: center !important;
 
 }
-.PhoneInput:hover{
+
+.PhoneInput:hover {
     border: 1px solid #000c66;
 
 }
-.PhoneInputCountry{
+
+.PhoneInputCountry {
     left: 10px;
     position: absolute;
     z-index: 11;
@@ -121,77 +140,89 @@
     display: flex;
     padding-top: 3px;
     justify-content: center;
-    
+
 }
-.PhoneInputInput{
-    width: 330px;
+
+.PhoneInputInput {
+    width: 280px;
     height: 40px;
     border-radius: 5px;
     position: absolute;
-    top: 42%;
-    left: 16%;
+    top: 35%;
+    left: 20%;
     border: none;
     font-size: 1.2rem;
-    color: #000c66 ;
+    color: #000c66;
     /* border: 1px solid #000c66; */
-    
+
 }
-input:focus-visible{
+
+input:focus-visible {
     offset: 0px;
 }
-:focus-visible{
+
+:focus-visible {
     outline: none;
 }
 
-h2{
+h2 {
     align-items: center;
     font-family: "Jersey 15", serif;
-        font-weight: 600;
+    font-weight: 600;
     font-size: 2.5rem;
     font-weight: 100;
-    color: #ba3276 ;
+    color: #ba3276;
     font-style: normal;
-   
+
 }
-.login-button{
+
+.login-button {
     margin-left: 0px;
-    width: 400px;
+    width: 360px;
     height: 50px;
-    background-color: #eed544 !important;
+    background-color: #d52e92 !important;
     color: #fff;
+    border: none;
 }
-.login-button:hover{
-transition: 1s ease-out;
-    background-color: #e56997 !important;
+
+.login-button:hover {
+    transition: 1s ease-out;
+    /* background-color: #e56997 !important; */
     color: black;
-    border: 2px solid #eed544 !important;
+    /* border: 2px solid #eed544 !important; */
 }
-span h4{
+
+span h4 {
     margin-right: 30px;
     margin-top: 20px;
     text-align: end;
     font-family: "Roboto", serif;
     font-weight: 500;
     font-style: normal;
-     font-size: 0.85rem;
+    font-size: 0.85rem;
     font-style: normal;
 }
-span a{
+
+span a {
     text-decoration: none;
     text-align: center;
     font-family: "Roboto", serif;
     font-weight: 500;
     font-style: normal;
 }
-.title{
+
+.title {
     margin-left: 3px;
-    font-size: 1.2rem;
-     color:#ba3276 !important;
+    font-size: 1.1rem;
+    color: #ba3276 !important;
     font-family: "Jersey 15", serif;
     font-weight: 500;
-  /* font-size: 1.5rem; */
+    margin-bottom: .2rem;
+    /* font-size: 1.5rem; */
 }
-.signup_container{
+
+
+.signup_container {
     margin: 20px 0px;
     font-family: "Roboto", serif;
     font-weight: 500;
@@ -203,10 +234,11 @@ span a{
     height: 750px;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
+
 @media (max-width:600px) {
-    .login-main-container{
+    .login-main-container {
         font-family: "Roboto", serif;
         font-weight: 500;
         font-style: normal;
@@ -217,22 +249,26 @@ span a{
         justify-content: center;
         align-items: center;
     }
-    input:focus-visible{
+
+    input:focus-visible {
         offset: 0px !important;
     }
-    :focus-visible{
+
+    :focus-visible {
         outline: none !important;
     }
-     h2{
+
+    h2 {
         font-family: "Jersey 15", serif;
-            font-weight: 600;
+        font-weight: 600;
         font-size: 3rem;
         font-weight: 100;
-        color: #ba3276 ;
+        color: #ba3276;
         font-style: normal;
         text-align: center;
     }
-    .Login_container{
+
+    .Login_container {
         background-size: auto;
         background-repeat: no-repeat;
         /* margin: 20px 0px; */
@@ -243,79 +279,89 @@ span a{
         font-weight: 200;
         font-style: normal;
         box-shadow: -4px 5px 4px rgb(208, 206, 206);
-        width:440px;     
+        width: 400px;
         height: 500px;
         display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
     }
-    form{
-        margin-left: 70px;
-    }
-    .mb-3{
-    position: relative;
-    font-family: "Roboto", serif;
-    font-weight: 500;
-    font-style: normal;
-    font-weight: 200;
-    font-style: normal;
-    width: 420px;
-    height: 100px;
 
-}
-    .mb-3 .form_input{
+    form {
+        margin-left: 40px;
+    }
+
+    .form_box {
+        position: relative;
+        font-family: "Roboto", serif;
+        font-weight: 500;
+        font-style: normal;
+        font-weight: 200;
+        font-style: normal;
+        width: 360px;
+        height: 100px;
+
+    }
+
+    .form_box .form_input {
         width: 350px;
     }
-    .PhoneInput{
+
+    .PhoneInput {
         display: none;
-        width: 350px !important;     
-        height:50px;
+        width: 350px !important;
+        height: 50px;
         padding: 0px !important;
         display: flex;
         justify-content: center;
         align-items: center !important;
-    
+
     }
-    .PhoneInputInput{
+
+    .PhoneInputInput {
         width: 250px !important;
         height: 40px;
         border-radius: 5px;
         position: absolute;
-        top: 42%;
-        left: 21%;
+        top: 35%;
+        left: 20%;
     }
-    .PhoneInput:hover{
+
+    .PhoneInput:hover {
         border: 1px solid #000c66;
     }
-    .PhoneInputCountryIconImg{
+
+    .PhoneInputCountryIconImg {
         width: 50px;
         height: 30px;
         border: none;
     }
-    .login-button{
-        width: 350px;
+
+    .login-button {
+        width: 360px;
         height: 50px;
-        background-color: #F4CE14;
+        background-color: #d52e92 !important;
         color: #fff;
     }
-    .login-button:hover{
-        background-color: #fff;
+
+    .login-button:hover {
+        /* background-color: #fff; */
         color: #379777;
-        border: 2px solid #F4CE14;
+        /* border: 2px solid #F4CE14; */
     }
-    .signup_container{
+
+    .signup_container {
         margin: 20px 0px;
         font-family: "Roboto", serif;
-    font-weight: 500;
-    font-style: normal;
+        font-weight: 500;
+        font-style: normal;
         font-style: normal;
         box-shadow: -4px 5px 4px rgb(208, 206, 206);
-        width: 375px;     
+        width: 375px;
         height: 750px;
         display: flex;
         justify-content: center;
         align-items: center;
-    }  
+    }
 }

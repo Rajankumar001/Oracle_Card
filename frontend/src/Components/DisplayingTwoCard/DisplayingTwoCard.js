@@ -11,20 +11,27 @@ import Header from '../Header/Header';
 const DisplayTwoCard = () => {
   const [cardData, setCardData] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
+  const [saveId,setSaveId]=useState([]);
   useEffect(() => {
     const storedData = localStorage.getItem('twoCards');
     if (storedData) {
       const parsedData = JSON.parse(storedData);
       setCardData(parsedData);
-      setFlippedCards(Array(parsedData.length).fill(false)); 
+      setFlippedCards(Array(parsedData.length).fill(false));
+
     }
   }, []);
 
-  const handleCardClick = (index) => {
+  const handleCardClick = ({_Id,index}) => {
     const newFlippedCards = [...flippedCards];
     newFlippedCards[index] = !newFlippedCards[index];
     setFlippedCards(newFlippedCards);
+    const newSaveId=[..._Id];
+    console.log("newsaveId",newSaveId);
+    setSaveId(newSaveId);
+    
   };
+  console.log("SaveId",saveId);
 
   return (
     <>
@@ -49,7 +56,7 @@ const DisplayTwoCard = () => {
         >
           {cardData.map((data, index) => (
             <SwiperSlide key={index}>
-              <div className={`card ${flippedCards[index] ? 'flipped' : ''}`} onClick={() => handleCardClick(index)}>
+              <div className={`card ${flippedCards[index] ? 'flipped' : ''}`} onClick={() => handleCardClick(data._id,index)}>
                 <div className='card-inner'>
                   <div className='card-front'>
                     <img className='front' src={data.frontImage} alt="Front Image" />
@@ -63,7 +70,10 @@ const DisplayTwoCard = () => {
           ))}
         </Swiper>
       </div>
-<NavigationTwo link={'/two-card'}/>
+      <div className='save-card-container'>
+        <button className='save-card-button'>Save Card</button>
+      </div>
+<NavigationTwo link={'/home'}/>
     </>
   );
 };

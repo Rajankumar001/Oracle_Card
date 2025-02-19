@@ -57,10 +57,9 @@ const loginId = parsedUser?.user?._id; // Extract the _id
           <img src={About_section} className="Navigation-image-style" alt="About" />
         </a>
       </div>
-      {/* Save Button */}
-      <div>
+      {/* <div>
         <button className="save-button" onClick={handleSave}>Save</button>
-      </div>
+      </div> */}
     </div>
   );
 };

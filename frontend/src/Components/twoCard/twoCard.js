@@ -1,16 +1,32 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import './twoCard.css';
+import axios from 'axios'
 import { EffectCoverflow, EffectCards,Pagination } from 'swiper/modules';
 import Navigation from '../Navigation/Navigation';
-import { cardData } from '../../constants/CardData';
+// import { cardData } from '../../constants/CardData';
 import shuffleSound from '../../assets/shufflingCard.wav'; 
 import Header from '../Header/Header';
 const TwoCard = () => {
-    const [shuffledIndices, setShuffledIndices] = useState(Array.from({ length: cardData.length }, (_, index) => index));
+  const [cardData,setCardData]=useState([]);
+  const [shuffledIndices, setShuffledIndices] = useState([]);
+  const fetchCustomsData = async () => {
+    try {
+      const response = await axios.get("http://localhost:8080/api/savedcard/getcard");
+      console.log("response data...",response.data);
+      setCardData(response.data);
+      setShuffledIndices(Array.from({ length: response.data.length }, (_, index) => index));
+      console.log("response...",response);
+    } catch (error) {
+      console.error("Error fetching customs data:", error);
+    }
+  };
+  useEffect(() => {
+    fetchCustomsData();
+  }, []);
       const [isShuffling, setIsShuffling] = useState(false);
       const [selectedCards, setSelectedCards] = useState([]);
       const [arrayOfObjects, setArrayOfObjects] = useState([]);
@@ -41,7 +57,7 @@ const TwoCard = () => {
 
         if (selectedCards.length < 2) {
           const selectedCard = cardData[index];
-          if (selectedCards.some(card => card.id === selectedCard.id)) {
+          if (selectedCards.some(card => card._id === selectedCard._id)) {
             alert('You have already chosen this card.');
             return;
           }
@@ -52,8 +68,8 @@ const TwoCard = () => {
             setBox2Selected(true);
             // setRedirected(true);
             setRedirected(true);
-            const dataEntry1 = { id: selectedCards[0].id, frontImage: selectedCards[0].frontImage, backImage: selectedCards[0].backImage };
-            const dataEntry2 = { id: selectedCard.id, frontImage: selectedCard.frontImage, backImage: selectedCard.backImage };
+            const dataEntry1 = { _id: selectedCards[0]._id, frontImage: selectedCards[0].frontImage, backImage: selectedCards[0].backImage };
+            const dataEntry2 = { _id: selectedCard._id, frontImage: selectedCard.frontImage, backImage: selectedCard.backImage };
             setArrayOfObjects([dataEntry1, dataEntry2]);
             localStorage.setItem('twoCards', JSON.stringify([dataEntry1, dataEntry2]));
             console.log("localStorage called..", localStorage.setItem('twoCards', JSON.stringify([dataEntry1, dataEntry2])));

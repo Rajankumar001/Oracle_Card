@@ -38,9 +38,8 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-// Use custom route handlers
 app.use('/api/User', UserRouter);
-app.use('/api/saved-cards', SavedCardRouter); // Add saved cards routes
+app.use('/api/savedcard', SavedCardRouter); // Add saved cards routes
 
 // Test route
 app.get("/home", (req, res) => {

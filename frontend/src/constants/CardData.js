@@ -4,10 +4,11 @@ export const cardData = [
     id: 1,
     frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
     backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625332/01_Michael_zhpfof.jpg',
-    Name: "Archangel Michael - Divine Guardian", 
+    "name"
+: "Archangel Michael - Divine Guardian", 
     Message: "Embrace Courage and Protection",
     Colour: "Royal Blue, Purple, Gold",
-    CrystalOrDivinationTool: "Amethyst, Sugilite, Tanzanite, Blue Sapphire ,Sword",
+    Crystal: "Amethyst, Sugilite, Tanzanite, Blue Sapphire ,Sword",
     Description: "Archangel Michael is a powerful and protective angel known for his unwavering courage and strength. He is often depicted with a sword and shield, ready to protect and guide those in need. His presence exudes a sense of safety and security, making him a trusted ally in times of adversity. Archangel Michael's purpose is to provide Guidance, protection, and support to all who call upon him. He is a beacon of courage, helping individuals find the inner strength to face challenges and overcome obstacles. You can call upon Archangel Michael to release doubt, fear, psychic attack, and black magic or dark energies. He is also very good with technology.",
     Guidance: "Archangel Michael stands by your side, offering his protective energy and Guidance. When you draw this card, know that you are divinely protected and supported. Call upon Archangel Michael whenever you feel in jeopardy or in need of strength. He will help you release fear, doubt, and negativity, allowing you to move forward with confidence. Trust in his presence, and know that you are safe and guided on your journey. Embrace courage, for you have a mighty protector watching over you.",
     Affirmation: "I am guided and protected by divine with Archangel Michael by my side.",
@@ -18,10 +19,11 @@ export const cardData = [
     id: 2,
     frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
     backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625335/02_Gabriel_jep3uu.jpg',
-    name: "Archangel Gabriel - Divine Messenger",
+    "name"
+: "Archangel Gabriel - Divine Messenger",
     Message: "Receive Divine Guidance and Inspiration",
-    Colour: ["White", "Orange", "Gold"],
-    crystalOrDivinationTool: ["Citrine", "Sunstone", "Carnelian", "White Lilies"],
+    Colour: "White, Orange, Gold",
+    Crystal: "Citrine, Sunstone, Carnelian, White Lilies",
     Description: "Archangel Gabriel is a gentle and nurturing angel known as the Strength of God. Often depicted with a trumpet, Gabriel delivers divine messages and inspiration to those who seek Guidance. Gabriel's presence is comforting and reassuring, radiating a sense of purity and light. This angel's purpose is to help individuals communicate with clarity, receive divine insights, and embrace their creative potential. Gabriel is closely aligned with the Divine Feminine, particularly in situations involving pregnancy, birth, and communication.",
     Guidance: "When you draw this card, know that Archangel Gabriel is by your side, ready to assist you in receiving divine Guidance and inspiration for all your creations—be it a child, a book, a poem, a business, or anything else you desire to create. This angel encourages you to embrace your inner creativity and trust your intuition. Call upon Archangel Gabriel when you need help with clear communication, creative projects, or anything related to children, from conception to raising them. Gabriel's gentle presence will fill you with divine wisdom and encourage you to express your true self.",
     Affirmation: "I am willing to receive divine Guidance, and I embrace my creative potential with the loving support of Archangel Gabriel.",
@@ -29,7 +31,8 @@ export const cardData = [
   },
   {
     id: 3,
-    name: "Archangel Raphael Divine Healer",
+    "name"
+: "Archangel Raphael Divine Healer",
     Message: "Healing is Possible and Available",
     Colour: "Emerald Green",
     Crystal: "Green Aventurine and Malachite",
@@ -42,7 +45,8 @@ export const cardData = [
   },
     {
       id: 4,
-      name: "Archangel Uriel Divine Wisdom",
+      "name"
+: "Archangel Uriel Divine Wisdom",
       Message: "Divine Confidence and Courage Illuminates Your Path",
       Colour: "Bright Yellow, Gold",
       Crystal: "Amber",
@@ -57,7 +61,8 @@ export const cardData = [
   
   {
     id: 5,
-    name: "Archangel Metatron Divine Wisdom",
+    "name"
+: "Archangel Metatron Divine Wisdom",
     Message: "Divine Wisdom and Intelligence is Now Accessible.",
     Colour: "Violet, Deep Pink, and Green",
     Crystal: "Watermelon Tourmaline and Merkabah Cube",
@@ -71,7 +76,8 @@ export const cardData = [
   
   {
     id: 6,
-    name: "Archangel Chamuel Divine Love",
+    "name"
+: "Archangel Chamuel Divine Love",
     Message: "Divine Love Dissolves All Pain and Suffering.",
     Colour: "Pink",
     Crystal: "Rose Quartz",
@@ -85,7 +91,8 @@ export const cardData = [
   
   {
     id: 7,
-    name: "Archangel Zadkiel Divine Mercy",
+    "name"
+: "Archangel Zadkiel Divine Mercy",
     Message: "Incorporate Divine Mercy and Forgiveness.",
     Colour: "Violet",
     Crystal: "Amethyst",
@@ -99,7 +106,8 @@ export const cardData = [
   
   {
     id: 8,
-    name: "Archangel Jophiel Divine Beauty",
+    "name"
+: "Archangel Jophiel Divine Beauty",
     Message: "Harness Divine Beauty and Illumination.",
     Colour: "Fuchsia Pink and Gold",
     Crystal: "Ruby and Pink Fluorite",
@@ -112,7 +120,8 @@ export const cardData = [
   },
   {
     id: 9,
-    name: "Archangel Raguel Divine Justice",
+    "name"
+: "Archangel Raguel Divine Justice",
     Message: "Harmony and Resolution through Divine Justice.",
     Colour: "Aquamarine",
     Crystal: "Aquamarine Crystal",
@@ -125,7 +134,8 @@ export const cardData = [
   },
  {
     id: 10,
-    name: "Archangel Azrael Divine Solace",
+    "name"
+: "Archangel Azrael Divine Solace",
     Message: "Time to let go of Pain and Worry.",
     Colour: "Pale Yellow",
     Crystal: "Yellow Calcite",
@@ -138,7 +148,8 @@ export const cardData = [
   },
   {
     id: 11,
-    name: "Archangel Sandalphon Divine Voice",
+    "name"
+: "Archangel Sandalphon Divine Voice",
     Message: "Mesmerise all with your Voice.",
     Colour: "Turquoise",
     Crystal: "Turquoise Crystal",
@@ -151,7 +162,8 @@ export const cardData = [
   },
   {
     id: 12,
-    name: "Archangel Raziel Divine Secret",
+    "name"
+: "Archangel Raziel Divine Secret",
     Message: "Unlocking Esoteric Wisdom and Secrets.",
     Colour: "Rainbow Hue",
     Crystal: "Clear Quartz",
@@ -164,7 +176,8 @@ export const cardData = [
   },
   {
     id: 13,
-    name: "Archangel Ariel Divine Nurturing",
+    "name"
+: "Archangel Ariel Divine Nurturing",
     Message: "Nurture Your Connection with Nature.",
     Colour: "Earthy Green and Deep Red",
     Crystal: "Moss Agate and Blood Stone",
@@ -177,7 +190,8 @@ export const cardData = [
   },
   {
     id: 14,
-    name: "Archangel Jeremiel Divine Reflection",
+    "name"
+: "Archangel Jeremiel Divine Reflection",
     Message: "Clarity in Reflection and Transformation.",
     Colour: "Deep Purple",
     Crystal: "Amethyst",
@@ -191,7 +205,8 @@ export const cardData = [
   
  {
       id: 15,
-      name: "Archangel Haniel Divine Flow",
+      "name"
+: "Archangel Haniel Divine Flow",
       Message: "Flow with the Rhythm of Life.",
       Colour: "Pale Blue and Silver",
       Crystal: "Moonstone",
@@ -204,7 +219,8 @@ export const cardData = [
     },
     {
       id: 16,
-      name: "Merlin - Magician of Transformation",
+      "name"
+: "Merlin - Magician of Transformation",
       Message: "Unlock your Magical Potential.",
       Colour: "Indigo",
       Crystal: "Merlinite or Indigo Gabbro",
@@ -217,7 +233,8 @@ export const cardData = [
     },
     {
       id: 17,
-      name: "Nostradamus - Seer of Foresight",
+      "name"
+: "Nostradamus - Seer of Foresight",
       Message: "Unlock the Power of Prophecy and Foresight.",
       Colour: "Indigo",
       Crystal: "Labradorite Crystal and Mirror",
@@ -230,7 +247,8 @@ export const cardData = [
     },
     {
       id: 18,
-      name: "Rumi - The Divine Poet",
+      "name"
+: "Rumi - The Divine Poet",
       Message: "Seek within to find Divine Truth",
       Colour: "Deep Crimson",
       Crystal: "Red Coral and Red Jade",
@@ -243,7 +261,8 @@ export const cardData = [
     },
     {
       id: 19,
-      name: "Sanat Kumara - Lord of Eternal Youth",
+      "name"
+: "Sanat Kumara - Lord of Eternal Youth",
       Message: "Awaken to the Eternal Light Within You",
       Colour: "Golden White",
       Crystal: "Clear Quartz and White Sapphire",
@@ -256,7 +275,8 @@ export const cardData = [
     },
   {
     id: 20,
-    name: "Mansa Musa - King of Prosperity",
+    "name"
+: "Mansa Musa - King of Prosperity",
     Message: "Acknowledge the Prosperity of the Universe",
     Colour: "Gold",
     Crystal: "Gold",
@@ -269,7 +289,8 @@ export const cardData = [
   },
   {
     id: 21,
-    name: "Rasputin - Mystical Healer",
+    "name"
+: "Rasputin - Mystical Healer",
     Message: "Unlock the Depths of your Inner Power",
     Colour: "Beyond all Colours",
     Crystal: "Energy",
@@ -282,7 +303,8 @@ export const cardData = [
   },
   {
     id: 22,
-    name: "Quan Yin - Goddess of Compassion",
+    "name"
+: "Quan Yin - Goddess of Compassion",
     Message: "Unite with the Power of Compassion and Mercy",
     Colour: "White",
     Crystal: "Green Vase",
@@ -295,7 +317,8 @@ export const cardData = [
   },
   {
     id: 23,
-    name: "Green Tara - Compassionate Liberator",
+    "name"
+: "Green Tara - Compassionate Liberator",
     Message: "Take Swift Action for Compassionate Liberation",
     Colour: "Emerald Green",
     Crystal: "Jade",
@@ -308,7 +331,8 @@ export const cardData = [
   },
   {
     id: 24,
-    name: "Gaia - Earth Mother",
+    "name"
+: "Gaia - Earth Mother",
     Message: "Honour the Nurturing Power of Nature",
     Colour: "Earthy Brown and Green",
     Crystal: "Moss Agate",
@@ -321,7 +345,8 @@ export const cardData = [
   },
   {
     id: 25,
-    name: "Goddess Isis - Divine Mother & Queen of Mysteries",
+    "name"
+: "Goddess Isis - Divine Mother & Queen of Mysteries",
     Message: "Accept Transformation and Rebirth",
     Colour: "Deep Blue and Gold",
     Crystal: "Lapis Lazuli, Moonstone, Ankh, Sacred Mirror",
@@ -334,7 +359,8 @@ export const cardData = [
   },
   {
     id: 26,
-    name: "Jesus Christ - Son of God",
+    "name"
+: "Jesus Christ - Son of God",
     Message: "Practice Unconditional Love",
     Colour: "Pure White",
     Crystal: "Cross",
@@ -347,7 +373,8 @@ export const cardData = [
   },
   {
     id: 27,
-    name: "Buddha - Enlightened One",
+    "name"
+: "Buddha - Enlightened One",
     Message: "Embody Inner Peace and Enlightenment",
     Colour: "Golden Yellow",
     Crystal: "Vajra, Bell and Prayer Wheel",
@@ -360,7 +387,8 @@ export const cardData = [
   },
   {
     id: 28,
-    name: "Sai Baba - Divine Saint",
+    "name"
+: "Sai Baba - Divine Saint",
     Message: "Cultivate Faith and Patience",
     Colour: "Saffron and White",
     Crystal: "Vibhuti (Holy Ash)",
@@ -373,7 +401,8 @@ export const cardData = [
   },
   {
     id: 29,
-    name: "Guru Nanak Dev - Divine Teacher",
+    "name"
+: "Guru Nanak Dev - Divine Teacher",
     Message: "Pursue Oneness, Humility, and Selfless Service",
     Colour: "Deep Blue",
     Crystal: "Ek Onkar Symbol",
@@ -386,6 +415,8 @@ export const cardData = [
   },
   {
     id: 30,
+    "name"
+:"Mahavatar Babaji The Eternal Yogi",
     frontImage: "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg",
     backImage: "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625343/30_mahavatar_y2bcnn.jpg",
     Message: "Practice Yoga and Meditation.",
@@ -398,12 +429,14 @@ export const cardData = [
   },
   
     { id:31,
+      "name"
+:"Mother Mary Divine Nurturer",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625342/31_mother_mary_ccatqs.jpg',
         Message: "Unconditional Love and Divine Nurturing.",
        Colour: "Light Blue and White",
       
-CrystalorDivinationTool: "Blue Lace Agate",
+Crystal: "Blue Lace Agate",
 Description:"Mother Mary, the revered mother of Jesus Christ, is a symbol of divine grace, compassion, and unconditional love. Known as the Virgin Mary in Christian tradition, she is venerated for her purity, humility, and profound faith. Mary’s acceptance of her role as the mother of Jesus exemplifies her deep devotion to God and her willingness to serve humanity. As a spiritual figure, she is often invoked for comfort, healing, and Guidance, offering a motherly presence to those in need. Mother Mary's legacy of love and mercy continues to inspire people worldwide, embodying the virtues of kindness, nurturing, and spiritual strength. Mother Mary serves as a spirit guide for those seeking to cultivate love, compassion, and healing in their lives.",
 Guidance:"Drawing the card of Mother Mary as your spirit guide signifies a time to embrace unconditional love and divine nurturing. Her Message encourages you to practice compassion and understanding towards yourself and others. Engage in practices that enhance your emotional and spiritual growth, such as prayer, meditation, and acts of kindness. Mother Mary reminds you that through love and nurturing, you can heal and transform your life and the lives of those around you.",
 Affirmation:"I embrace unconditional love and divine nurturing. With Mother Mary's Guidance, I open my heart to compassion and healing.",
@@ -412,11 +445,13 @@ Invocation: "Dear Mother Mary, Divine Nurturer, I seek your gentle Guidance and 
       },
    
       { id:32,
+        "name"
+:"White Buffalo Calf Woman The Sacred Teacher",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625345/32_white_buffalo_grnbi8.jpg',
         Message: "Commit to Peace, Spiritual Wisdom, and Sacred Traditions.",
 Colour: "White and Gold",
-CrystalorDivinationTool: "White Buffalo, Turquoise and Clear Quartz",
+Crystal: "White Buffalo, Turquoise and Clear Quartz",
 Description:"White Buffalo Calf Woman, a revered figure in Lakota and other Plains Native American traditions, embodies the essence of peace, spiritual wisdom, and the sacredness of life. Her presence is symbolized by the pure white and gold colors,representing purity, spiritual enlightenment, and the deep connection to sacred traditions. White Buffalo Calf Woman serves as a spirit guide for those seeking to cultivate inner peace, spiritual growth, and a deep respect for the sacred. Her energy is one of profound peace and sacred wisdom, making her a powerful ally for those on a journey of spiritual discovery and reverence.",
 Guidance:"Drawing the card of White Buffalo Calf Woman signifies a time to embrace peace, spiritual wisdom, and sacred traditions. Her Message encourages you to cultivate a deep respect for the sacredness of life and to seek wisdom through spiritual practice. Engage in practices that enhance your spiritual growth and connection to sacred traditions, such as meditation, prayer, and learning about indigenous teachings. White Buffalo Calf Woman reminds you that through peace and respect for the sacred, you can achieve profound spiritual growth and inner harmony.",
 Affirmation:"I embrace peace, spiritual wisdom, and sacred traditions. With the Guidance of White Buffalo Calf Woman, I cultivate inner harmony and reverence for all life.",
@@ -424,11 +459,13 @@ Invocation: "Honored White Buffalo Calf Womansacred teacher of wisdom and unity,
 
       },
       { id:33,
+        "name"
+:"Dolores Cannon Quantum Healing Visionary",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625346/33_dolores_cannon_cxoae7.jpg',
         Message: "Explore the Mysteries Within and Beyond.",
       Colour: "Deep Violet",
-CrystalorDivinationTool: "Books written by Dolores Cannon.",
+Crystal: "Books written by Dolores Cannon.",
 Description:"Dolores Cannon, a trailblazer in the field of past life regression and quantum healing hypnosis, dedicated her life to exploring the hidden realms of the human soul and the universe. With over four decades of experience in hypnosis, she developedthe Quantum Healing Hypnosis Technique (QHHT), which allows individuals to access past lives, higher consciousness, and the vast knowledge of the subconscious mind. Dolores's work delves into topics such as reincarnation, extraterrestrial encounters, and the New Earth, offering profound insights into the nature of reality and the purpose of human existence. Her books and teachings have inspired many to seek deeper understanding and explore the limitless possibilities of the soul's journey. As a pioneer of hypnotic exploration, Dolores Cannon's legacy continues to open doors to the unknown, guiding seekers on a transformative journey of discovery and awakening.",
 Guidance:"Drawing the card of Dolores Cannon as your guide signifies a time to explore the mysteries of your soul and the universe. Her Message encourages you to be open to new perspectives and to seek the deeper truths that lie beyond the surface of everyday life. Engage in practices that expand your consciousness, such as meditation, past life regression, or exploring spiritual literature. Dolores reminds you that the answers you seek are within you, waiting to be uncovered through inner exploration and connection with your higher self.",
 Affirmation:"I am open to the mysteries of the universe. With Dolores Cannon's Guidance, I explore the depths of my soul and uncover the wisdom within.",
@@ -436,11 +473,13 @@ Invocation: "Dear Dolores Cannon, guide me with your profound wisdom and insight
 
       },
       { id:34,
+        "name"
+:"Louise Hay The Healer of Hearts",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625343/34_louise_hay_ah0hvd.jpg',
         Message: "Heal Your Life with Self Love and Forgiveness.",
 Colour: "Soft Pink",
-CrystalorDivinationTool: "Mirror and Journal",
+Crystal: "Mirror and Journal",
 Description:"Louise Hay, a pioneering figure in the field of self- healing and personal development, dedicated her life to helping others realize the power of positive thinking and self-love. As an author, motivational speaker, and founder of Hay House, she revolutionized the way people view their thoughts and their impact on physical and emotional well- being. Her groundbreaking book, You Can Heal Your Life, introduced millions to the concept of affirmations and the idea that our thoughts create our reality. Louise's teachings emphasize the importance of self-compassion, forgiveness, and the belief that everyone has the power to transform their life by changing their mindset. Her legacy as a healer of hearts continues to inspire and empower individuals on their journey to self-discovery and holistic health.",
 Guidance:"Drawing the card of Louise Hay as your guide signifies a time to focus on healing your mind and nurturing your spirit. Her Message encourages you to pay close attention to your thoughts and beliefs, as they are powerful tools in shaping your reality. Engage in practices that promote self-love, such as daily affirmations, journaling, and self-care rituals. Louise reminds you that by changing your thoughts, you can heal your life and create a future filled with love, peace, and fulfillment.",
 Affirmation:"I nurture my thoughts with love and compassion. With Louise Hay's Guidance, I heal my life and embrace my inner power.",
@@ -449,11 +488,13 @@ Invocation: "Dear Louise Hay, guide me with your wisdom and loving energy. Help 
       },
       {
         id: 35,
+        "name"
+:"Lord Shiva Divine Transformer",
         frontImage: "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg",
         backImage: "https://res.cloudinary.com/dwiil16oj/image/upload/v1737625343/35_Lord_Shiva_jrl4q3.jpg",
         Message: "Rise Through Destruction and Rebirth.",
         Colour: "Deep Blue",
-        "CrystalorDivinationTool": "Shiv Ling",
+        Crystal: "Shiv Ling",
         Description: "Lord Shiva, one of the principal deities in Hinduism, is revered as the Supreme Being known as the 'Destroyer' and 'Transformer' within the Hindu trinity (Brahma, Vishnu, Mahesh – Creator, Preserver, Destroyer), Shiva's role is to dissolve the universe at the end of each cycle, paving the way for rebirth and renewal. He is often depicted in deep meditation, symbolizing his mastery over time and space, and his ability to transcend the physical world. Shiva is also worshipped as Nataraja, the cosmic dancer who represents the rhythmic movement of the universe. His powerful yet compassionate nature makes him a source of strength, transformation, and spiritual enlightenment for devotees.",
         Guidance: "Drawing the card of Lord Shiva as your spirit guide signifies a time to embrace transformation and inner strength. His Message encourages you to welcome change and use it as an opportunity for growth and renewal. Engage in practices that enhance your spiritual and personal development, such as meditation, yoga, and self-reflection. Lord Shiva reminds you that through inner strength and spiritual discipline, you can overcome obstacles and transform your life.",
         Affirmation: "I embrace transformation and inner strength. With Lord Shiva's Guidance, I transcend limitations and harness my divine power.",
@@ -461,11 +502,13 @@ Invocation: "Dear Louise Hay, guide me with your wisdom and loving energy. Help 
       },
       
       { id:36,
+        "name"
+:"Goddess Lakshmi Divine Giver of Prosperity",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625346/36_lakshmi_miu2jj.jpg',
         Message: "Embody Prosperity, Beauty, and Grace.",
 Colour: "Gold and Red",
-CrystalorDivinationTool: "Lotus Flower and Owl",
+Crystal: "Lotus Flower and Owl",
 Description:"Goddess Lakshmi, the Hindu deity of wealth, prosperity, and abundance, is revered as the embodiment of beauty, fortune, and spiritual prosperity. She is often depicted seated on a lotus flower, symbolising purity, growth, and the unfolding of inner wisdom. As the consort of Lord Vishnu, Lakshmi plays a vital role in the preservation and nurturing of the universe. Devotees worship her to attract material and spiritual wealth, seeking her blessings for success, happiness, and harmony in their lives. Goddess Lakshmi’s presence inspires generosity, gratitude, and a deep connection to the flow of abundance in all aspects of life.",
 Guidance:"Drawing the card of Goddess Lakshmi as your spirit guide signifies a time to embrace prosperity, beauty, and abundance in your life. Her Message encourages you to cultivate a positive mindset and practice gratitude for the blessings you have. Engage in practices that attract prosperity, such as affirmations, visualisation, and acts of generosity. Goddess Lakshmi reminds you that through gratitude and positive intention, you can attract and sustain prosperity and beauty in all areas of your life.",
 Affirmation:
@@ -474,11 +517,13 @@ Invocation: "Dear Goddess Lakshmi, divine source of prosperity, I call upon you 
 
       },
       { id:37,
+        "name"
+:"Goddess Durga Divine Warrior",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625344/37_durga_r6rgy8.jpg',
         Message: "Integrate Your Fierce Power.",
 Colour: "Red",
-CrystalorDivinationTool: "Red Jasper, Trishul, Sword, Lotus, Conch, Lion",
+Crystal: "Red Jasper, Trishul, Sword, Lotus, Conch, Lion",
 Description:"Maa Durga, the revered goddess in Hindu mythology, symbolises the embodiment of divine feminine power and strength. She is known as the fierce protector and warrior goddess who combats evil forces and restores cosmic balance. Often depicted riding a lion or tiger, with multiple arms carrying weapons, Maa Durga represents the fierce and nurturing aspects of motherhood. She is worshipped with great devotion during the festival of Navratri, where her nine forms, collectively known as Navadurga, are honored. Devotees seek her blessings for protection, courage, and the ability to overcome life's challenges, viewing her as the ultimate force of good against evil.",
 Guidance:"Drawing the card of Goddess Durga as your spirit guide signifies a time to embrace your inner strength and courage. Her Message encourages you to stand strong in the face of adversity and to protect what is important to you. Engage in practices that enhance your personal power and resilience, such as fasting, physical exercise, and spiritual rituals. Goddess Durga reminds you that through inner strength and fierce determination, you can overcome any challenge and protect yourself and those you love.",
 Affirmation:
@@ -487,11 +532,13 @@ Invocation: "Glorious Goddess Durga, mighty warrior of divine strength and wisdo
 
       },
       { id:38,
+        "name"
+:"Bal Krishna The Divine Guide",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625346/38_krishna_nut0j4.jpg',
         Message: "Let Divine Love and Playful Wisdom Flow.",
 Colour: "Blue",
-CrystalorDivinationTool: "Peacock feather, flute",
+Crystal: "Peacock feather, flute",
 Description:"Bal Krishna, one of the most dear deities in Hinduism, is revered as the Supreme God, symbolising love, wisdom, and divine joy. He is the central figure in the epic Mahabharata and the Bhagavad Gita, where he imparts spiritual wisdom to Arjuna on the battlefield of Kurukshetra. Known for his playful childhood, enchanting flute music,and divine teachings, Krishna embodies the essence of dharma and bhakti. His life and teachings inspire millions to live with love, compassion, and devotion. Krishna’s teachings emphasize the importance of surrendering to the divine will and leading a life of integrity and joy.",
 Guidance:"Drawing the card of Bal Krishna as your spirit guide signifies a time to embrace divine love and playful wisdom. His Message encourages you to live with joy, compassion, and an open heart. Engage in practices that enhance your spiritual and emotional growth, such as devotional singing (bhajans), reading sacred texts like the Bhagavad Gita, and spending time in nature. Bal Krishna reminds you that through pure childlike love, joy, and wisdom, you can transcend life's challenges and find a deeper connection to the divine.",
 Affirmation:
@@ -500,11 +547,13 @@ Invocation: "Divine Krishna, guide of eternal wisdom, illuminate my path with yo
 
       },
       { id:39,
+        "name"
+:"Goddess Saraswati Divine Knowledge",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625343/39_saraswati_uhzlex.jpg',
         Message: "Embrace Wisdom, Creativity, and Learning.",
 Colour: "White and Yellow",
-CrystalorDivinationTool: "Veena, Swan and Peacock",
+Crystal: "Veena, Swan and Peacock",
 Description:"Goddess Saraswati, the Hindu deity of wisdom, knowledge, and the arts, is revered as the divine source of all learning and creative inspiration. She is often depicted seated on a white lotus, symbolizing purity and enlightenment, with a veena (a musical instrument) in her hands, representing the harmony of music and arts. Saraswati is the embodiment of intellectual and spiritual growth, guiding her devotees towards truth and self-realization through education and creativity. As the goddess of speech and eloquence, she is invoked by students, artists, and scholars seeking wisdom, clarity, and mastery in their respective fields. Saraswati’s blessings are essential for the cultivation of knowledge, creativity, and the pursuit of higher learning.",
 Guidance:"Drawing the card of Goddess Saraswati as your spirit guide signifies a time to embrace wisdom, creativity, and learning. Her Message encourages you to cultivate your intellectual and artistic talents. Engage in practices that enhance your knowledge and creative expression, such as studying, playing music, writing, and engaging in artistic activities. Goddess Saraswati reminds you that through dedication to learning and creativity, you can achieve anything you desire and inspire others with your gifts.",
 Affirmation:
@@ -513,11 +562,13 @@ Invocation: "Dear Goddess Saraswati, divine embodiment of knowledge and wisdom, 
 
       },
       { id:40,
+        "name"
+:"Lord Ganesha Remover of Obstacles",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625344/40_ganesha_ftuxul.jpg',
         Message: "Welcome New Beginnings and Measure what Matters.",
 Colour: "Red",
-CrystalorDivinationTool: "Modak and Mouse",
+Crystal: "Modak and Mouse",
 Description:"Lord Ganesha, the dear elephant-headed deity, is revered as the remover of obstacles and the god of new beginnings in Hinduism. Known as the son of Lord Shiva and Goddess Parvati, Ganesha is worshipped at the start of new ventures, ceremonies, and journeys to ensure success and remove any hindrances. Lord Ganesha serves as a spirit guide for those seeking to overcome challenges and embark on new paths. He embodies wisdom, prosperity, and good fortune, and his blessings are sought for intellectual pursuits and overcoming challenges. Ganesha’s iconic image, with his large head symbolizing wisdom and his small eyes representing focus, inspires devotees to seek his Guidance for spiritual growth, knowledge, and the successful completion of endeavors.",
 Guidance:"Drawing the card of Lord Ganesha as your spirit guide signifies a time to embrace new beginnings and remove obstacles from your life. His Message encourages you to approach challenges with confidence and seek new opportunities with an open heart. Engage in practices that enhance your ability to overcome obstacles and invite prosperity, such as setting clear intentions, visualizing success, and invoking Ganesha's blessings. Lord Ganesha reminds you that through determination and positive action, you can navigate any difficulties and create a successful path forward.",
 Affirmation:
@@ -526,15 +577,26 @@ Affirmation:
 
       },
       { id:41,
+        "name"
+:"Goddess Kali Divine Liberator",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625343/41_kali_udlfk2.jpg',
+        Message:"Harness Transformation and Release Old Patterns",
+        Colour:"Midnight Blue and Black",
+        Crystal:"Red Hibiscus Flowers",
+        Description:"Goddess Kali, the fierce and powerful deity in Hinduism, represents the divine force of destruction and transformation. She is often depicted with a dark complexion, adorned with a garland of skulls,and wielding weapons, symbolizing her ability todestroy evil and ignorance.",
+        Guidance:"Drawing the card of Goddess Kali as your spirit guide signifies a time to embrace transformation and release old patterns. Her message encourages you to confront your fears and let go of anything that holds you back. Engage in practices that enhanceyour ability to release the past and invite new beginnings, such as deep meditation, shadow work,and invoking Kali's fierce energy. Goddess Kali reminds you that through courage and determination, you can transform your life andemerge stronger and more empowered.",
+        Affirmation:"I embrace transformation and release old patterns.",
+        Invocation:"Divine Kali, Sacred Liberator, I call upon your fierce grace and transformative power.Illuminate the shadows of my heart and reveal the truth that lies within. Help me release the chains of fear and limitation that bind me. Guide me withyour strength and wisdom to embrace liberation and renewal. May your presence empower me to face challenges with courage.",
       },
       { id:42,
+        "name"
+:"Sita Ram The Divine Union",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625341/42_sita_ram_cg8bzi.jpg',
         Message: "Embody Love, Devotion, and Consciousness.",
 Colour: "Royal Blue and Soft Gold",
-CrystalorDivinationTool: "Blue Sapphire and Peridot",
+Crystal: "Blue Sapphire and Peridot",
 Description:"Sita Ram, the sacred union of Lord Ram and Goddess Sita, represents the perfect balance of divine masculine and feminine energies. Together, they symbolize love, devotion, and the unwavering strength of dharma (righteousness). Lord Ram tands as the protector and embodiment of truth and virtue, while Goddess Sita radiates grace, resilience, and devotion. Their story from the Ramayana serves as a guide for leading a life of purpose, integrity, and selfless love. Sita Ram inspires seekers to navigate life’s trials with courage, trust, and mutual respect, reminding us that strength and compassion together lead to divine harmony.",
 Guidance:"Drawing the card of Sita Ram as your spirit guide signifies a time to align your actions with dharma and nurture your relationships with love and devotion. Their Message encourages you to seek balance and purpose in your life. Embrace the qualities of compassion, courage, and grace, and allow their divine energy to guide you through challenges, helping you stay true to your values. Sita Ram reminds you that in union and mutual respect lies the strength to overcome adversity and achieve spiritual growth.",
 Affirmation:"I embody love, devotion, and righteousness. With Sita Ram’s Guidance, I walk the path of dharma with courage and grace.",
@@ -542,11 +604,13 @@ Invocation: "Dear Sita Ram, divine embodiment of love and dharma, guide me with 
 
       },
       { id:43,
+        "name"
+:"Lord Hanuman Divine Devotion and Strength",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625331/43_Hanuman_fmxjjt.jpg',
         Message: "Adopt Strength, Devotion, and Faith.",
 Colour: "Orange and Red",
-CrystalorDivinationTool: "Red Jasper",
+Crystal: "Red Jasper",
 Description:"Lord Hanuman, the revered monkey deity in Hinduism, is celebrated as the embodiment of strength, devotion, and unwavering loyalty. Known for his immense physical prowess and his devotion to Lord Rama, Hanuman is a symbol of selfless service, courage, and the power of faith. His role in the epic Ramayana, where he plays a crucial part in the rescue of Sita and the defeat of the demon king Ravana, highlights his dedication and bravery. Hanuman is worshipped as a protector, and his blessings are sought to overcome obstacles, gain strength, and stay committed to one’s duties. His devotees find inspiration in his qualities of humility, wisdom, and boundless energy.",
 Guidance:"Drawing the card of Lord Hanuman as your spirit guide signifies a time to embrace strength, devotion, and unwavering faith. His Message encourages you to face challenges with courage and maintain steadfast devotion in your endeavors. Engage in practices that enhance your spiritual and physical strength, such as prayer, chanting, physical exercise, and acts of service. Lord Hanuman reminds you that through unwavering faith and dedication, you can overcome any obstacle and achieve greatness.",
 Affirmation:"I embrace strength, devotion, and unwavering faith. With Lord Hanuman's Guidance, I face challenges with courage and dedication.",
@@ -554,11 +618,13 @@ Invocation: "Dear Lord Hanuman, Divine Protector, hear my humble plea. Illuminat
 
       },
       { id:44,
+        "name"
+:"Dhanvantri Divine Healer",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625346/44_Dhanvantri_jwtfej.jpg',
         Message: "Embrace the Healing Power Within.",
 Colour: "Emerald Green",
-CrystalorDivinationTool: "Green Aventurine",
+Crystal: "Green Aventurine",
 Description:"Dhanvantri, the divine physician and god of Ayurveda in Hindu mythology, is revered as the source of all healing and medicine. Emerging during the churning of the ocean (Samudra Manthan) with the pot of Amrita, the nectar of immortality, Dhanvantri is honored as the patron of health, wellness, and longevity. His teachings form the foundation of Ayurveda, the ancient Indian system of natural healing. Worshipped for his ability to cure diseases and promote vitality, Dhanvantari is a symbol of life, health, and the eternal pursuit of balance between mind, body, and spirit.",
 Guidance:"Drawing the card of Dhanvantri as your spirit guide signifies a time to embrace your healing abilities and focus on wellness. His Message encourages you to trust in your innate power to heal and rejuvenate. Engage in practices that enhance your health and spiritual growth, such as meditation, studying Ayurveda, and exploring natural healing methods. Dhanvantri reminds you that you have the power to heal yourself and others through focused intention and holistic practices.",
 Affirmation:
@@ -567,11 +633,13 @@ Invocation: "Dear Lord Dhanvantri, reveal the path to healing and well-being wit
 
       },
       { id:45,
+        "name"
+:"Spirit Animal(s) Guardians of Natural Wisdom",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625344/45_spirit_a_tnohep.jpg',
         Message: "Open to the Wisdom and Power of Your Animal Guide.",
 Colour: "Varies by Animal",
-CrystalorDivinationTool : "Animals are themselves",
+Crystal : "Animals are themselves",
 Description:"Your spirit animal serves as a guide, offering wisdom, protection, and insights into your natural instincts and personal strengths. Each spirit animal embodies unique qualities and lessons that can help you navigate life's challenges and embrace your true nature. Each spirit animal is believed to offer unique lessons, reflecting aspects of one's personality or circumstances. For example, the wolf symbolizes leadership and intuition, while the owl represents wisdom and insight. People often feel drawn to specific animals that resonate with their life experiences or spiritual journey. Spirit animals serve as reminders of the natural world's connection to our inner selves, guiding us to embrace the quantities they represent, such as courage, adaptability, or inner peace.",
 Guidance:"Drawing the card of your spirit animal signifies a time to embrace the wisdom and power of your natural guide. The Message encourages you to connect with the qualities of your spirit animal and apply its lessons to your life. Engage in practices that enhance your connection to your spirit animal, such as meditation, visualization, and studying the animal's characteristics and behaviours. Your spirit animal reminds you that through understanding and embodying its traits, you can navigate life with greater confidence and insight.",
 Affirmation:
@@ -581,11 +649,13 @@ Invocation: "Great Spirit Animal, guide of ancient wisdom, I call upon you to re
 
       },
       { id:46,
+        "name"
+:"Guardian Angel Divine Protector",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625334/46_guardian_a_yqszlq.jpg',
         Message: "Unite with the Protection and Guidance of your Guardian Angel.",
 Colour: "Specific to your Guardian Angel",
-CrystalorDivinationTool: "Celestite and Angelite",
+Crystal: "Celestite and Angelite",
 Description:"Your guardian angels are divine protector and guides, offering you constant support, love, and Guidance. Their presence is symbolised by the serene white colours or their respective Colour, representing purity, divine light, and heavenly protection. Your guardian angel watches over you,helping you navigate life's challenges and offering wisdom and comfort in times of need. They encourage you to connect with their loving energy, helping you to feel safe and guided.",
 Guidance:"Drawing the card of your guardian angel signifies a time to embrace the protection and Guidance that is always available to you. Their Message encourages you to trust in their presence and seek their support whenever you need it. Engage in practices that enhance your connection to your guardian angel, such as prayer, meditation, and expressing gratitude. Your guardian angel reminds you that through trust and openness, you can receive their loving Guidance and protection in all aspects of your life.",
 Affirmation:"I embrace the protection and Guidance of my guardian angels. With their loving support, I feel safe, guided, and deeply loved.",
@@ -593,11 +663,13 @@ Invocation: "Dear Guardian Angel, divine protector, I call upon your sacred pres
 
       },
       { id:47,
+        "name"
+:"Shamans Wise Healers",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625347/47_shaman_jycqne.jpg',
         Message: "Explore the Ancient Wisdom and Healing Power.",
 Colour: "Earthy Browns and Greens",
-CrystalorDivinationTool: "Smoky Quartz, Drum, Feathers",
+Crystal: "Smoky Quartz, Drum, Feathers",
 Description:"Shamans, the wise healers and spiritual leaders of indigenous traditions, embody the essence of ancient wisdom, healing, and deep connection to the natural world. Their presence is symbolized by earthy browns and greens, representing grounding,growth, and the harmony of the earth. Shamans serve as spirit guides for those seeking to heal, transform, and connect with the spiritual realms. They encourage you to embrace their teachings, helping you to unlock the healing power within and connect with the spirit of nature. The energy of shamans is one of profound healing and spiritual Guidance, making them powerful allies for those on a journey of holistic wellness and spiritual awakening.",
 Guidance:"Drawing the card of shamans as your spirit guides signifies a time to embrace ancient wisdom and healing practices. Their Message encourages you to connect with the natural world and seek holistic healing. Engage in practices that enhance your spiritual and physical well-being, such as meditation, herbal medicine, drumming, and connecting with nature spirits. Shamans remind you that through harmony with nature and spiritual practice, you can achieve deep healing and transformation.",
 Affirmation:
@@ -607,11 +679,13 @@ Invocation: "Wise Shamans, I call upon you. Guide me through the depths of my he
 
       },
       { id:48,
+        "name"
+:"Ancestors Guardians of Lineage and Heritage",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625344/48_Ancestors_ciutum.jpg',
         Message: "Your Roots hold the Keys to your Growth.",
 Colour: "Deep Earth Tones",
-CrystalorDivinationTool: "Ancestralite or family totem",
+Crystal: "Ancestralite or family totem",
 Description:"Your ancestors, the lineage of your family and spiritual heritage, embody the essence of ancient wisdom, strength, and continuity. Often regarded as wise and protective figures who continue to influence the lives of their descendants. In many cultures, ancestors are honoured and revered through rituals, offerings, and prayers, as they are believed to provide Guidance, protection, and blessings. By honouring and remembering them, individuals can draw strength from their ancestors' experiences and wisdom, fostering a deep sense of belonging, continuity, and support on their life journey. Your ancestors serve as spirit guides, offering you Guidance, protection, and insights drawn from their experiences and wisdom.",
 Guidance:"Drawing the card of your ancestors signifies a time to embrace the wisdom and Guidance that flows from your lineage. Their Message encourages you to connect with your heritage and seek insights from the experiences of those who came before you. Engage in practices that honour your ancestors and deepen your connection to your roots, such as ancestral rituals, storytelling, and genealogical research. Your ancestors remind you that through honouring your heritage and seeking their Guidance, you can find strength, wisdom, and a sense of belonging.",
 Affirmation:"I embrace the Guidance and wisdom of my ancestors. With their support, I honour my heritage and draw strength from my roots.",
@@ -620,11 +694,13 @@ Invocation: "Great Ancestors, hear my call and bring forth the wisdom of your ag
 
       },
       { id:49,
+        "name"
+:"Parents Pillars of Love and Guidance",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625344/49_Parents_veclmd.jpg',
         Message: "Implement Forgiveness and Gratitude with your Origin in this Life.",
 Colour: "Soft Pink",
-CrystalorDivinationTool: "Rose Quartz",
+Crystal: "Rose Quartz",
 Description:"Your parents, the immediate caregivers and guides of your life, embody the essence of unconditional love, nurturing, and wisdom. Your parents serve as spirit guides, offering you love, support, and valuable life lessons drawn from their experiences. They encourage you to honour their teachings and embrace their Guidance, helping you navigate your life's journey with love and wisdom. The energy of your parents is one of profound care and nurturing, making them powerful allies for those seeking to strengthen their familial bonds and draw upon parental wisdom.",
 Guidance:"Drawing the card of your ancestors signifies a time to embrace the wisdom and Guidance that flows from your lineage. Their Message encourages you to connect with your heritage and seek insights from the experiences of those who came before you. Engage in practices that honour your ancestors and deepen your connection to your roots, such as ancestral rituals, storytelling, and genealogical research. Your ancestors remind you that through honouring your heritage and seeking their Guidance, you can find strength, wisdom, and a sense of belonging.",
 Affirmation:
@@ -633,11 +709,13 @@ Invocation: "Invocation of Parents' Energy Dear Parents, I call upon your loving
 
       },
       { id:50,
+        "name"
+:"Fairies Guardians of Natures Magic",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625345/50_fairies_mroqqy.jpg',
         Message: "Immerse in the Magic and Joy of the Natural World.",
 Colour: "Many Colours",
-CrystalorDivinationTool: "Green Aventurine and Fairy Stone",
+Crystal: "Green Aventurine and Fairy Stone",
 Description:"Fairies, the enchanting guardians of nature, embody the essence of magic, joy, and the playful spirit of the natural world. Their presence is symbolized by light green Colour, representing growth, enchantment, and the vibrant energy of nature. Fairies serve as spirit guides for those seeking to connect with the magic of the earth, enhance their creativity, and find joy in the little things. They encourage you to embrace their playful energy, helping you to see the world through a lens of wonder and enchantment. The energy of fairies is one of joyful Guidance and natural harmony, making them powerful allies for those on a journey of creative expression and connection with nature.",
 Guidance:"Drawing the card of fairies signifies a time to embrace the magic and joy of the natural world. Their Message encourages you to connect with nature and find delight in its beauty. Engage in practices that enhance your creativity and connection to the earth, such as spending time outdoors, gardening, and creating art inspired by nature. Fairies remind you that through playfulness and enchantment, you can bring more joy and magic into your life.",
 Affirmation:
@@ -646,11 +724,13 @@ Invocation: "Dear Fairies, gentle and wise guardians of the magical realms, I in
 
       },
       { id:51,
+        "name"
+:"Phoenix Eternal Flame",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625345/51_Phoenix_qmsbq1.jpg',
         Message: "Rise from the Ashes and Emerge as New You.",
 Colour: "Fiery Red and Gold",
-CrystalorDivinationTool: "Fire Agate",
+Crystal: "Fire Agate",
 Description:"Phoenix, the legendary bird of fire, is a powerful symbol of rebirth, transformation, and eternal life. In mythology, the Phoenix is known for its ability to rise from its own ashes, reborn anew in a cycle of death and resurrection. This divine creature embodies the energy of renewal, reminding us that from the ashes of our challenges and struggles, we have the power to emerge stronger, wiser, and more vibrant. The fiery red and gold colors of the Phoenix represent its dynamic energy and the warmth of its transformative fire. As a spiritual guide, the Phoenix encourages you to embrace change, let go of the past, and trust in the process of renewal.",
 Guidance:"Drawing the card of the Phoenix signifies a time of profound transformation and rebirth. The Phoenix’s Message is one of courage and resilience, urging you to embrace the changes in your life and trust that they are leading you to a new beginning. Engage in practices that help you release what no longer serves you, such as journaling, meditation, or rituals of letting go. The Phoenix reminds you that every ending is a new beginning and that through the fires of transformation, you can rise anew with greater strength and clarity.",
 Affirmation:
@@ -659,11 +739,13 @@ Invocation: "Phoenix, magnificent bird of fire, I call upon your power of transf
 
       },
       { id:52,
+        "name"
+:"Mermaids The Water Elementals",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625347/52_Mermaid_owk5b5.jpg',
         Message: "Align with Emotional Flow and Intuitive Wisdom.",
 Colour: "Aquatic Blue and Silver",
-CrystalorDivinationTool: "Aquatic Blue and Silver",
+Crystal: "Aquatic Blue and Silver",
 Description:"Mermaids are enchanting water spirits known for their beauty, grace, and deep connection to the oceans. Often depicted with the upper body of a human and the tail of a fish, mermaids embody the mystery and allure of the sea. They are associated with emotions, intuition, and the subconscious,guiding those who seek to explore their inner depths and embrace their true feelings. Mermaids are protectors of the oceans and all its creatures, symbolizing the balance between the human and natural worlds. Their presence encourages emotional healing, self-discovery, and a harmonious relationship with nature, making them powerful guides for those on a journey of emotional and spiritual growth.",
 Guidance:"Drawing the card of mermaids signifies a time to embrace emotional flow and intuitive wisdom. Their Message encourages you to trust in your emotions and listen to your inner voice. Engage in practices that enhance your emotional and intuitive connection, such as spending time near water, practicing meditation, and working with crystals. Mermaids remind you that through emotional flow and intuitive insight, you can achieve healing and transformation.",
 Affirmation:
@@ -672,11 +754,13 @@ Invocation: "Graceful Mermaid, guardian of the water’s wisdom, I call upon you
 
       },
       { id:53,
+        "name"
+:"Tree Spirits Guardians of Growth",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625347/53_Tree_Spirit_yqom0y.jpg',
         Message: "Cultivate Stability, Growth and Deep- Rooted Wisdom.",
 Colour: "Forest Green and Brown",
-CrystalorDivinationTool: "Tree Agate, Leaf or Twig",
+Crystal: "Tree Agate, Leaf or Twig",
 Description:"Tree spirits, also known as dryads or tree guardians, are ethereal beings that embody the life force of trees and forests. Deeply connected to nature, these spirits are protectors of the woodlands, nurturing growth and maintaining balance within their ecosystems. Tree spirits are ancient and wise,holding the knowledge of the earth's history and the secrets of life. They symbolize stability, strength, and endurance, offering Guidance to those who seek a deeper connection with nature. By communicating with tree spirits, individuals can gain insight into natural cycles, healing, and grounding energies. These spirits encourage respect for the environment and a harmonious relationship with the natural world.",
 Guidance:"Drawing the card of tree spirits signifies a time to embrace stability, growth, and deep-rooted wisdom. Their Message encourages you to connect with the grounding energy of the earth and seek inner strength. Engage in practices that enhance your connection to nature, such as spending time in forests, practicing grounding exercises, and working with crystals. Tree spirits remind you that through stability and steady growth, you can achieve profound personal development and spiritual insight.",
 Affirmation:
@@ -684,11 +768,13 @@ Affirmation:
 Invocation: "Wise Tree Spirits, guardians of growth and wisdom, I call upon you to hear the whispers of my heart. Illuminate the path to my deepest needs and desires. As you nurture the earth, guide me through life's transitions with clarity and strength. Help me grow with grace, embracing change and renewal. Bless me with your wisdom, so I may flourish in harmony and purpose.",
  },
   { id:54,
+    "name"
+:"You Divine Reflection",
         frontImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg',
         backImage: 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625347/54_you_illfa0.jpg',
         Message: "The Power You Seek is within YOU.",
 Colour: "Golden White",
-CrystalorDivinationTool: "Journal and Mirror",
+Crystal: "Journal and Mirror",
 Description:"You, as a divine reflection, embodies the essence of inner wisdom, spiritual clarity, and the boundless light that resides within each individual. This divinity is symbolised by a golden white light, representing purity, enlightenment, and the infinite potential of the soul. You serves as a powerful reminder that divinity is not something external, but a profound presence within, waiting to be acknowledged and embraced. This divine essence guides you towards self-realization, helping you unlock the wisdom and spiritual strength that are inherent to your being. The energy of You is one of empowerment and inner peace, making it a guiding force for those on a path of spiritual awakening and personal transformation.",
 Guidance:"Drawing the card of You signifies a time to turn inward and embrace the divine light that resides within. This Message encourages you to trust in your inner wisdom and recognize the spiritual power that flows through you. Engage in practices that nurture your connection with your inner self, such as meditation, self-reflection, and spiritual study. You reminds you that by embracing your inner divinity, you can bring clarity, purpose, and peace into your life.",
 Affirmation:

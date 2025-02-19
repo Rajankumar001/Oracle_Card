@@ -19,13 +19,11 @@ const DisplayFiveCard = () => {
       setFlippedCards(Array(parsedData.length).fill(false)); 
     }
   }, []);
-
   const handleCardClick = (index) => {
     const newFlippedCards = [...flippedCards];
     newFlippedCards[index] = !newFlippedCards[index];
     setFlippedCards(newFlippedCards);
   };
-
   return (
     <>
     <Header/>
@@ -63,9 +61,11 @@ const DisplayFiveCard = () => {
           ))}
         </Swiper>
       </div>
-<NavigationTwo link={'/five-card'}/>
+      <div className='save-card-container'>
+        <button className='save-card-button'>Save Card</button>
+      </div>
+<NavigationTwo link={'/home'}/>
     </>
   );
 };
-
 export default DisplayFiveCard;

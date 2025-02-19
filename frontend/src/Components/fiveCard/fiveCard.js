@@ -1,17 +1,34 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import './fiveCard.css'; 
+import axios from 'axios';
 import { EffectCoverflow,EffectCards, Pagination } from 'swiper/modules';
 import Navigation from '../Navigation/Navigation';
-import { cardData } from '../../constants/CardData';
+// import { cardData } from '../../constants/CardData';
 import shuffleSound from '../../assets/shufflingCard.wav'; 
 import Header from '../Header/Header';
 
 const FiveCard = () => {
-  const [shuffledIndices, setShuffledIndices] = useState(Array.from({ length: cardData.length }, (_, index) => index));
+  const [cardData,setCardData]=useState([]);
+  const [shuffledIndices, setShuffledIndices] = useState([]);
+  const fetchCustomsData = async () => {
+    try {
+      const response = await axios.get("http://localhost:8080/api/savedcard/getcard");
+      console.log("response data...",response.data);
+      setCardData(response.data);
+      setShuffledIndices(Array.from({ length: response.data.length }, (_, index) => index));
+      console.log("response...",response);
+    } catch (error) {
+      console.error("Error fetching customs data:", error);
+    }
+  };
+  useEffect(() => {
+    fetchCustomsData();
+  }, []);
+  // const [shuffledIndices, setShuffledIndices] = useState(Array.from({ length: cardData.length }, (_, index) => index));
   const [isShuffling, setIsShuffling] = useState(false);
   const [selectedCards, setSelectedCards] = useState([]);
   const [arrayOfObjects, setArrayOfObjects] = useState([]);
@@ -44,7 +61,7 @@ const FiveCard = () => {
   const handleCardClick = (index) => {
     if (selectedCards.length < 5) {
       const selectedCard = cardData[index];
-      if (selectedCards.some(card => card.id === selectedCard.id)) {
+      if (selectedCards.some(card => card._id === selectedCard._id)) {
         alert('You have already chosen this card.');
         return;
       }
@@ -70,12 +87,12 @@ const FiveCard = () => {
           setBox5Selected(true);
           console.log("Fifth card selected.");
           const combinedEntries = selectedCards.map((card) => ({
-            id: card.id,
+            _id: card._id,
             frontImage: card.frontImage,
             backImage: card.backImage,
           }));
           combinedEntries.push({
-            id: selectedCard.id,
+            _id: selectedCard._id,
             frontImage: selectedCard.frontImage,
             backImage: selectedCard.backImage,
           });
