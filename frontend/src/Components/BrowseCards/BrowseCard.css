@@ -48,8 +48,8 @@ width: 1250px;
 height: 500px;
 margin: auto;
 padding: 10px;
-background-color: #fff;
-border: 2px solid yellow;
+/* background-color: #fff; */
+/* border: 2px solid yellow; */
 }
 
 @media (max-width:600px) {
@@ -75,7 +75,7 @@ border: 2px solid yellow;
     height: 500px;
     margin: auto;
     padding: 10px;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     }
   
 }
