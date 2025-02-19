@@ -1,7 +1,6 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,19 +11,13 @@
   background-image: url('./assets/galaxy background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-  /* background-image: url('./assets/backrground.jpg');
-  background-size: cover;
-  background-repeat: no-repeat; */
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
-  
   height: 100vh;
   display: flex;
   flex-direction: column;

@@ -1,9 +1,9 @@
 import axios from 'axios';
-const baseUrl = "http://localhost:8080/";
+// const baseUrl = "http://localhost:8080/";
 export const UserAction=(user)=>async dispatch=>{
   dispatch({type:'SIGNIN_REQUEST'})
   try{
-      const response=await axios.post(`${baseUrl}api/User/signin`,user);
+      const response=await axios.post(`/api/User/signin`,user);
       console.log("API Response:", response.data);
      dispatch({type:'SIGNIN_SUCCESS',payload:response.data})
   }catch(err){
