@@ -1,4 +1,5 @@
 const User = require('../models/UserModels'); 
+const savecard = require('../models/SavedCard'); 
 const jwt = require('jsonwebtoken');
 const asyncHandler = require("express-async-handler");
 const UserSignin = asyncHandler(async (req, res) => {
@@ -58,7 +59,41 @@ const createUser = asyncHandler(async (req, res) => {
         res.status(500).json({ message: 'Server error. Please try again later.' });
     }
 });
+const updateuser = asyncHandler(async (req, res) => {
+    const { id } = req.params;
+    try {
+        const userupdate = await User.findByIdAndUpdate(id, { 
+            ...req.body 
+        }, { new: true }); 
 
-module.exports = { UserSignin, createUser, logoutUser };
+        if (!userupdate) {
+            return res.status(404).json({ error: "User not found" });
+        }
+
+        res.status(200).json(userupdate);
+    } catch (error) {
+        res.status(500).json({ error: error.message }); 
+    }
+});
+const getuser = asyncHandler(async (req, res) => {
+    const { id } = req.params;
+    try {
+        // Fetch user data
+        const userget = await User.findOne({ _id: id });
+
+        if (!userget) {
+            return res.status(404).json({ message: "User not found" });
+        }
+
+        // Fetch saved card details
+        const savedCards = await savecard.find({ _id: { $in: userget.savedcard } });
+
+        res.status(200).json({ user: userget, savedCards });
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+module.exports = { UserSignin, createUser, logoutUser,updateuser,getuser};
 
 

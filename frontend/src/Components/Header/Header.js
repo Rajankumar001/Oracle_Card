@@ -10,11 +10,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import './Header.css';
 const Header = () => {
-  // const User = useSelector((state)=>state.LoginReducer);
-  // console.log("user...",User);
-  // const {LoginUser} =User
-  // console.log("user mobile...",LoginUser);
-  const navigate = useNavigate(); // To navigate after logout
+
+  const navigate = useNavigate(); 
 
   const handleLogout = () => {
     localStorage.clear();  

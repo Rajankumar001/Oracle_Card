@@ -5,51 +5,50 @@ import NavigationTwo from '../Navigation/NavigationTwo';
 import Header from '../Header/Header';
 
 const SavedCards = () => {
-  const [savedCards, setSavedCards] = useState([]); // State to store fetched cards
-  const [loading, setLoading] = useState(true); // Loading state
-  const [error, setError] = useState(''); // Error state
+  const [UserId, setUserId] = useState("");
+  const [showCard, setShowCard] = useState([]);
+
+  const getLocalstorage = () => {
+    const storedUserData = localStorage.getItem('LoginUser');
+    if (storedUserData) {
+      const parsedUserData = JSON.parse(storedUserData);
+      const Userid = parsedUserData.user._id;
+      setUserId(Userid);
+    } else {
+      console.log("No Data in Savedcards.....😒.");
+    }
+  }
 
   useEffect(() => {
-    const fetchSavedCards = async () => {
-      const loginId = localStorage.getItem('loginUser'); // Get loginId from localStorage
-      if (!loginId) {
-        setError('User not logged in');
-        setLoading(false);
-        return;
-      }
+    getLocalstorage();
 
+    const fetchData = async () => {
       try {
-        const response = await axios.get(`/api/saved-cards?loginId=${loginId}`);
-        setSavedCards(response.data); // Set the fetched cards in the state
-      } catch (err) {
-        console.error('Error fetching saved cards:', err);
-        setError('Failed to fetch saved cards');
+        const res = await axios.get(`http://localhost:8080/api/User/getbyid/${UserId}`);
+        console.log("Response data of showed card", res.data);
+        setShowCard(res.data.savedCards);
+      } catch (error) {
+        console.error("Error fetching data:", error);
       }
-      setLoading(false);
     };
 
-    fetchSavedCards();
-  }, []); // Run the effect once on component mount
+    if (UserId) {
+      fetchData();
+    }
+  }, [UserId]);
 
   return (
     <>
       <Header />
       <div className='saved-container'>
-        {loading && <p>Loading...</p>} {/* Display loading state */}
-        {error && <p>{error}</p>} {/* Display error if there's any */}
-        {!loading && !error && savedCards.length === 0 && (
-          <p>No saved cards found</p>
-        )}
         <div className='saved-content'>
-          {savedCards.map((card, index) => (
-            <div key={index} className='saved-box'>
-              <img src={card.imageUrl || 'https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg'} className='saved-img' alt="Card" />
-              <div className='saved-description'>
-                {card.title || 'No title'}<br />
-                {new Date(card.createdAt).toLocaleDateString()} {/* Format the date */}
+          <div className='card-grid'>
+            {showCard.map((data, index) => (
+              <div className='content' key={index}>
+                <img src={data.backImage} className='content-img' alt={`Card ${index + 1}`} />
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
       <NavigationTwo link={'/home'} />

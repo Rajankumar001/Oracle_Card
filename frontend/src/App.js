@@ -20,11 +20,9 @@ import About from './Components/About/About';
 import SavedCards from './Components/SavedCards/SavedCards';
 import CardSpread from './Components/UseOracle/CardSpread';
 import UseOracle from './Components/UseOracle/UseOracle';
-
-// Protected Route Component (Security Fix)
 const ProtectedRoute = ({ children }) => {
-  const user = JSON.parse(localStorage.getItem('LoginUser'));
-  return user ? children : <Navigate to="/" replace />;
+  const token = localStorage.getItem("token");
+  return token ? children : <Navigate to="/" replace />;
 };
 
 function App() {
@@ -32,10 +30,7 @@ function App() {
     <div className="app-container">
       <BrowserRouter>
         <Routes>
-          {/*  Public Route */}
           <Route path="/" element={<Login />} />
-
-          {/* Protected Routes - Requires Login */}
           <Route path="/home" element={<ProtectedRoute><HomeScreen /></ProtectedRoute>} />
           <Route path='/begin-new-cards' Component={cardReadingScreen}></Route>
           <Route path="/one-card" element={<ProtectedRoute><OneCard /></ProtectedRoute>} />
@@ -53,8 +48,6 @@ function App() {
           <Route path="/load-saved-cards" element={<ProtectedRoute><SavedCards /></ProtectedRoute>} />
           <Route path="/card-spread" element={<ProtectedRoute><CardSpread /></ProtectedRoute>} />
           <Route path="/use-oracle" element={<ProtectedRoute><UseOracle /></ProtectedRoute>} />
-
-          {/* Redirect unknown routes to login */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
