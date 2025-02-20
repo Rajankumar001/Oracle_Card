@@ -10,7 +10,6 @@ import Loader from '../../Loader';
 import PhoneInput from 'react-phone-number-input';
 
 const Login = () => {
-  const notify = () => toast.success("Contact  verified ✅");
   const dispatch = useDispatch();
   const User = useSelector((state) => state.LoginReducer);
   const { LoginUser, loading, error } = User;
@@ -43,17 +42,20 @@ const Login = () => {
       localStorage.setItem('LoginUser', userString);
       console.log(localStorage.setItem('LoginUser', userString));
       console.log("localStorage get item", localStorage.getItem('LoginUser'));
-      setTimeout(()=>{
-       notify()
-       window.location.href='/home';
-      },2000)
-      
+    //   if(LoginUser){
+    //   notify()
+    //   setTimeout(()=>{
+    //    window.location.href='/home';
+    //   },2000)
+    // }else{
+    //   notifyError();
+    // }
     }
   }, [LoginUser]);
 
   
 
-  const SigninHandler = async (e) => {
+  const SigninHandler = async(e) => {
     e.preventDefault(); 
     console.log("SigninHandler function is calling");
     console.log("mobile",mobile);
@@ -62,14 +64,17 @@ const Login = () => {
       return;
     }
     const user = { mobile };
-
+    
     try {
       await dispatch(UserAction(user)); 
-       // Dispatch the user action
+      setTimeout(() => {
+        window.location.href = '/home';
+      }, 2000);
       console.log("User after dispatch:", user);
     } catch (error) {
-      console.error('Error signing in:', error);
-     notify();
+      console.log("error is calling....")
+      toast.error("contact not verified ❌")
+      console.log('Error signing in:', error);
     }
   };
 
@@ -102,7 +107,7 @@ const Login = () => {
             <Button type="button" onClick={SigninHandler} className="login-button">
               Verify
             </Button>
-            <ToastContainer />
+  
           </Form>
         </div>
       </div>

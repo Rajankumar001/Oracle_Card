@@ -1,6 +1,7 @@
 import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
 import './App.css';
 import Login from './Components/Login/Login';
+
 import HomeScreen from './Screens/HomeScreen';
 import cardReadingScreen from './Screens/cardReadingScreen/cardReadingScreen';
 import guidebook from './Components/Guidebook/guidebook';
@@ -24,7 +25,6 @@ const ProtectedRoute = ({ children }) => {
   const LoginUser = localStorage.getItem('LoginUser');
   return LoginUser ? children : <Navigate to="/" replace />;
 };
-
 function App() {
   return (
     <div className="app-container">

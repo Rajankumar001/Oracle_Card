@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { ToastContainer, toast } from 'react-toastify';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -59,7 +60,7 @@ const DisplayTwoCard = () => {
     setFlippedCards(newFlippedCards);
     setSaveId([...saveId, _id]);
   } else {
-    alert("You have already accessed this card!"); // Alert if trying to flip the card again
+    toast.error("You have already accessed this card!"); // Alert if trying to flip the card again
   }
     
   };
@@ -69,7 +70,7 @@ const DisplayTwoCard = () => {
     try{
       const res=await axios.put(`/api/User/updateuser/${UserId}`,{ savedcard: saveId });
       console.log("res data...",res.data);
-      alert("Card-Reading saved successfully...🎉")
+      toast.success("Card-Reading saved successfully...🎉")
     }catch(err){
      console.log("err",err);
     }
@@ -114,6 +115,7 @@ const DisplayTwoCard = () => {
       </div>
       <div className='save-card-container'>
         <button className='save-card-button' onClick={()=>savedCard()}>Save Card</button>
+         <ToastContainer />
       </div>
 <NavigationTwo link={'/home'}/>
     </>
