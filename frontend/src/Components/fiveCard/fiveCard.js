@@ -115,7 +115,7 @@ const FiveCard = () => {
     <Header/>
       <div className='fiveCard-container'>
         <Swiper
-          effect={change?'cards':'coverflow'}
+         effect={isShuffling || change ? 'cards' : 'coverflow'}
           grabCursor={true}
           centeredSlides={true}
           slidesPerView={'auto'}
@@ -132,7 +132,7 @@ const FiveCard = () => {
         >
           {shuffledIndices.map((index) => (
             <SwiperSlide key={index}>
-              <div className={`card ${isShuffling ? 'shake-animation' : ''}`}  onClick={() => {handleCardClick(index)}}>
+              <div className={`card ${isShuffling ? 'shuffle-animation' : ''}`}  onClick={() => {handleCardClick(index)}}>
                 <img className='front' src={cardData[index].frontImage} alt="Front Image" />
                 <img className='back' src={cardData[index].backImage} alt="Back Image" />
               </div>

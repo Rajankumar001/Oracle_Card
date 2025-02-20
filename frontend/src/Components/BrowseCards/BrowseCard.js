@@ -64,8 +64,9 @@ export default function BrowseCard() {
            
           </Swiper>
           </div>
+         
           <NavigationTwo link={'/home'}/>
-        
+         
     </>
   );
 }

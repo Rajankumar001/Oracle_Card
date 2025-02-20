@@ -7,6 +7,7 @@
     align-items: center;
 }
 .Oracle_Card_Content{
+    margin-top: 30px;
     overflow-y: auto;
     border: 5px solid yellow;
     background-color: white;

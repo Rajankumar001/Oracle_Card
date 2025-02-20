@@ -52,7 +52,7 @@ export default function App() {
     setTimeout(() => {
       setIsShuffling(false);
       setShuffledIndices(shuffled);
-    }, 2000); // Delay the reset of isShuffling and shuffledIndices for 2 seconds
+    }, 1000);
 
     audioRef.current.play();
   };

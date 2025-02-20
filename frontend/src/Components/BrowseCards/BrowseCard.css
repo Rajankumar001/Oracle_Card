@@ -17,10 +17,11 @@ body {
 }
 
 .swiper {
-  padding-top: 50px;
+  padding-top: 30px;
   width: 100%;
   height: 100%;
 }
+
 
 .swiper-slide {
   text-align: center;

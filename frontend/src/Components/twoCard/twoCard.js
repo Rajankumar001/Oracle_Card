@@ -44,13 +44,15 @@ const TwoCard = () => {
           const j = Math.floor(Math.random() * (i + 1));
           [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
         }
-        audioRef.current.play();
+    
         setIsShuffling(true);
+    
         setTimeout(() => {
-          setIsShuffling(false); 
-        }, 1000); 
-        setShuffledIndices(shuffled);
-       
+          setIsShuffling(false);
+          setShuffledIndices(shuffled);
+        }, 1000);
+    
+        audioRef.current.play();
       };
      
       const handleCardClick = (index) => {
@@ -82,7 +84,7 @@ const TwoCard = () => {
     <Header/>
     <div className='twoCard-container'>
       <Swiper
-        effect={change?'cards':'coverflow'}
+       effect={isShuffling || change ? 'cards' : 'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={'auto'}
@@ -99,7 +101,7 @@ const TwoCard = () => {
       >
         {shuffledIndices.map((index) => (
           <SwiperSlide key={index}>
-            <div className={`card ${isShuffling ? 'shake-animation' : ''}`}  onClick={() => {handleCardClick(index)}}>
+            <div className={`card ${isShuffling ? 'shuffle-animation' : ''}`}  onClick={() => {handleCardClick(index)}}>
               <img className='front' src={cardData[index].frontImage} alt="Front Image" />
               <img className='back' src={cardData[index].backImage} alt="Back Image" />
             </div>

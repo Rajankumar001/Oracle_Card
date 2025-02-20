@@ -51,7 +51,9 @@ const SavedCards = () => {
           </div>
         </div>
       </div>
+      <div className='load-saved-card'>
       <NavigationTwo link={'/home'} />
+      </div>
     </>
   );
 };
