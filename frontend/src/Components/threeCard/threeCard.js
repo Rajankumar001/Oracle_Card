@@ -92,7 +92,7 @@ const ThreeCard = () => {
 return (
   <>
   <Header/>
-  <div className='oneCard-container'>
+  <div className='threeCard-container'>
     <Swiper
        effect={change?'cards':'coverflow'}
        grabCursor={true}

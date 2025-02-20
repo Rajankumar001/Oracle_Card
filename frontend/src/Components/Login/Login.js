@@ -80,7 +80,6 @@ const Login = () => {
           </div>
         )} */}
         <div className="Login_container">
-        <h2>Login</h2>
           <Form className='login-form'>
             <Form.Group className="mb-3 form_box" controlId="formBasicMobile">
               <Form.Label className="title">Mobile Number</Form.Label>

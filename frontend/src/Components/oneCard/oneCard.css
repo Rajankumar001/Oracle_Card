@@ -1,26 +1,11 @@
-#app { height: 100% }
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
 .swiper {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 50px;
-  transition: transform 0.4s ease-in-out; 
+  transition: transform 0.4s ease-in-out;
 }
-.swiper-pagination-bullets{
+
+.swiper-pagination-bullets {
   display: none;
 }
 
@@ -31,19 +16,22 @@ body {
   width: 260px;
   height: 330px;
   border-radius: 10px;
-  transition: transform 0.4s ease-in-out; 
+  transition: transform 0.4s ease-in-out;
 }
-.card{
+
+.card {
   width: 260px;
   height: 330px;
   border-radius: 10px !important;
 }
-.back{
+
+.back {
   width: 260px;
   height: 330px;
   border-radius: 10px;
 }
-.front{
+
+.front {
   border-radius: 10px;
 }
 
@@ -52,68 +40,56 @@ body {
   width: 100%;
   border-radius: 10px;
 }
-.oneCard-container{
+
+.oneCard-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 20px;
   width: 700px;
-  height: 600px;
+  height: 500px;
   margin: auto;
   padding: 20px;
-  background-color: rgb(255, 255, 255);
-  border: 2px solid yellow;
-
 }
-.card-choosed-box{
+
+.card-choosed-box,
+.highlighted {
   width: 50px;
   height: 70px;
   background-color: grey;
   border: 2px solid black;
   border-radius: 5px;
 }
-.highlighted{
-  width: 50px;
-  height: 70px;
-  background-color: rgb(229, 223, 223);
-  border: 2px solid black;
-  border-radius: 5px;
-}
+
 .card {
-  transition: transform 1.4s ease-in-out; 
+  transition: transform 1.4s ease-in-out;
 }
 
-.shake-animation {
-  animation: shake 1.4s ease-in-out;
+.shuffle-animation {
+  animation: shuffle 2s ease-in-out;
 }
 
-@keyframes shake {
+@keyframes shuffle {
   0%, 100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
-  10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px); 
-  }
-  20%, 40%, 60%, 80% {
-    transform: translateX(10px); 
+  50% {
+    transform: translateY(-50px);
   }
 }
-
-
-
 @media (max-width:600px) {
+
   .oneCard-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 20px;
     width: 500px;
-    height: 600px;
+    height: 581px;
     margin: auto;
     padding: 20px;
-    border: 2px solid yellow;
-  
   }
+
 }

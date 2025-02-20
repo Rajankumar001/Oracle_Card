@@ -19,7 +19,7 @@
 }
 .logout-button{
     margin-right: 20px;
-        background-color: rgb(215, 215, 7);
+    background-image: linear-gradient(to right, rgb(254, 185, 65) ,rgb(255, 244, 95));
         color: black;
 }
 .header-title{
