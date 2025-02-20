@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 800px; /* Adjust width as per your design */
     margin: auto;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +13,7 @@
   .saved-content {
     width: 100%;
     height: auto;
-    background-color: gainsboro;
+    /* background-color: gainsboro; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,4 +40,29 @@
     max-height: 100%;
     object-fit: cover; /* Ensure images fill the container */
   }
-  
+  @media (max-width:600px) {
+    .saved-content {
+      width: 50%;
+      height: auto;
+      /* background-color: gainsboro; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .content {
+      width: 50%;
+      height: 100%;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .content-img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover; /* Ensure images fill the container */
+    }
+    
+  }
