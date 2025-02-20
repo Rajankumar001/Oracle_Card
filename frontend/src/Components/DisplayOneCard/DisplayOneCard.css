@@ -161,8 +161,15 @@ body {
   .save-card-button{
     width: 100px;
     height: 40px;
-    background-color: green;
+    background-image: linear-gradient(to right, rgb(254, 185, 65) ,rgb(255, 244, 95));
     border-radius: 5px;
-    color: rgb(243, 235, 235);
+    color: rgb(19, 18, 18);
+  }
+  .save-card-button:hover{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(221, 227, 221);
+    border-radius: 5px;
+    color: rgb(206, 147, 46);
   }
 }

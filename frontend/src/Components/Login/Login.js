@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 import './Login.css';
 import { UserAction } from '../../Action/UserAction';
@@ -10,6 +10,7 @@ import Loader from '../../Loader';
 import PhoneInput from 'react-phone-number-input';
 
 const Login = () => {
+  const notify = () => toast.success("Contact  verified ✅");
   const dispatch = useDispatch();
   const User = useSelector((state) => state.LoginReducer);
   const { LoginUser, loading, error } = User;
@@ -42,13 +43,15 @@ const Login = () => {
       localStorage.setItem('LoginUser', userString);
       console.log(localStorage.setItem('LoginUser', userString));
       console.log("localStorage get item", localStorage.getItem('LoginUser'));
-      window.location.href='/home';
+      setTimeout(()=>{
+       notify()
+       window.location.href='/home';
+      },2000)
+      
     }
   }, [LoginUser]);
 
-  const notifyContactNotFound = () => {
-    toast.error("Contact not found!");
-  };
+  
 
   const SigninHandler = async (e) => {
     e.preventDefault(); 
@@ -61,11 +64,12 @@ const Login = () => {
     const user = { mobile };
 
     try {
-      await dispatch(UserAction(user)); // Dispatch the user action
+      await dispatch(UserAction(user)); 
+       // Dispatch the user action
       console.log("User after dispatch:", user);
     } catch (error) {
       console.error('Error signing in:', error);
-      notifyContactNotFound();
+     notify();
     }
   };
 
@@ -98,6 +102,7 @@ const Login = () => {
             <Button type="button" onClick={SigninHandler} className="login-button">
               Verify
             </Button>
+            <ToastContainer />
           </Form>
         </div>
       </div>
