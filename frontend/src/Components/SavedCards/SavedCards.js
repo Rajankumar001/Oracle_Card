@@ -24,7 +24,7 @@ const SavedCards = () => {
 
     const fetchData = async () => {
       try {
-        const res = await axios.get(`http://localhost:8080/api/User/getbyid/${UserId}`);
+        const res = await axios.get(`/api/User/getbyid/${UserId}`);
         console.log("Response data of showed card", res.data);
         setShowCard(res.data.savedCards);
       } catch (error) {
