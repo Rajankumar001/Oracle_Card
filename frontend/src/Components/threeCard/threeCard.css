@@ -10,6 +10,7 @@
     /* padding-top: 30px; */
     background-position: center;
     background-size: cover;
+    background: none !important;
     width: 260px;
     height: 330px;
   }
