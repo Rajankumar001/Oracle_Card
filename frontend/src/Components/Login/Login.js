@@ -6,18 +6,15 @@ import { ToastContainer, toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 import './Login.css';
 import { UserAction } from '../../Action/UserAction';
-import Loader from '../../Loader';
 import PhoneInput from 'react-phone-number-input';
-
 const Login = () => {
   const dispatch = useDispatch();
   const User = useSelector((state) => state.LoginReducer);
-  const { LoginUser, loading, error } = User;
+  console.log("User ",User);
+  const { LoginUser, loading, err } = User;
   console.log("loginUser", LoginUser);
-  
   const [mobile, setMobile] = useState('');
   const [countryCode, setCountryCode] = useState('');
-
   useEffect(() => {
     const fetchCountryCode = async () => {
       try {
@@ -28,8 +25,8 @@ const Login = () => {
             setCountryCode(resultObj.countryCode);
           }
         }
-      } catch (error) {
-        console.error('Error fetching country code:', error);
+      } catch (er) {
+        console.error('Error fetching country code:', er);
       }
     };
     fetchCountryCode();
@@ -42,19 +39,8 @@ const Login = () => {
       localStorage.setItem('LoginUser', userString);
       console.log(localStorage.setItem('LoginUser', userString));
       console.log("localStorage get item", localStorage.getItem('LoginUser'));
-    //   if(LoginUser){
-    //   notify()
-    //   setTimeout(()=>{
-    //    window.location.href='/home';
-    //   },2000)
-    // }else{
-    //   notifyError();
-    // }
     }
   }, [LoginUser]);
-
-  
-
   const SigninHandler = async(e) => {
     e.preventDefault(); 
     console.log("SigninHandler function is calling");
@@ -64,9 +50,13 @@ const Login = () => {
       return;
     }
     const user = { mobile };
-    
     try {
-      await dispatch(UserAction(user)); 
+      await dispatch(UserAction(user));
+      if(err.message){
+        toast.error("contact not verified ❌")
+      }else{
+        toast.success("login verified successfully ...")
+      }
       setTimeout(() => {
         window.location.href = '/home';
       }, 2000);
@@ -77,7 +67,6 @@ const Login = () => {
       console.log('Error signing in:', error);
     }
   };
-
   return (
     <>
       <div className="login-main-container">
@@ -97,7 +86,7 @@ const Login = () => {
                 defaultCountry={countryCode || "IND"}
                 placeholder="Enter your 10-digit mobile number"
                 value={mobile}
-                onChange={setMobile} // Update state on change
+                onChange={setMobile} 
                 className="form_input form-control"
               />
               <Form.Text className="text-muted">
@@ -107,7 +96,7 @@ const Login = () => {
             <Button type="button" onClick={SigninHandler} className="login-button">
               Verify
             </Button>
-  
+            <ToastContainer/>
           </Form>
         </div>
       </div>

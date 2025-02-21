@@ -25,8 +25,8 @@
   
   .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust card size and spacing */
-    gap: 20px; /* Adjust gap between cards */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px; 
   }
   
   .content {
@@ -41,13 +41,12 @@
   .content-img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover; /* Ensure images fill the container */
+    object-fit: cover;
   }
   @media (max-width:600px) {
     .saved-content {
       width: 50%;
       height: auto;
-      /* background-color: gainsboro; */
       display: flex;
       justify-content: center;
       align-items: center;

@@ -56,11 +56,11 @@ const DisplayTwoCard = () => {
     // }
     if (!flippedCards[index]) { //
     const newFlippedCards = [...flippedCards];
-    newFlippedCards[index] = true; // Mark the card as flipped
+    newFlippedCards[index] = true; 
     setFlippedCards(newFlippedCards);
     setSaveId([...saveId, _id]);
   } else {
-    toast.error("You have already accessed this card!"); // Alert if trying to flip the card again
+    toast.error("You have already accessed this card!");
   }
     
   };
