@@ -52,18 +52,12 @@ const Login = () => {
     const user = { mobile };
     try {
       await dispatch(UserAction(user));
-      if(err.message){
-        toast.error("contact not verified ❌")
-      }else{
-        toast.success("login verified successfully ...")
-      }
       setTimeout(() => {
         window.location.href = '/home';
       }, 2000);
       console.log("User after dispatch:", user);
     } catch (error) {
       console.log("error is calling....")
-      toast.error("contact not verified ❌")
       console.log('Error signing in:', error);
     }
   };

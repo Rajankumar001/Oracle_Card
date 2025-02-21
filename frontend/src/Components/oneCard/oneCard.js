@@ -61,7 +61,8 @@ export default function App() {
     const dataId = cardData[index]._id;
     const frontImglink = cardData[index].frontImage;
     const backImglink = cardData[index].backImage;
-    const dataEntry1 = { _id: dataId, frontImage: frontImglink, backImage: backImglink };
+    const description=cardData[index].Description;
+    const dataEntry1 = { _id: dataId, frontImage: frontImglink, backImage: backImglink,description:description };
 
     setIsHighlighted(!isHighlighted);
     setArrayOfObjects([dataEntry1]);

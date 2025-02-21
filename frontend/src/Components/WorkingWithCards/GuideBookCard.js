@@ -16,8 +16,9 @@ const GuideBookCard = () => {
                 messages. Each card typically represents an aspect of spiritual wisdom or guidance, offering insights and encouragement. When using angel cards, practitioners often focus on setting intentions, asking specific questions, and interpreting the cards' meanings intuitively. The process can provide clarity, comfort, and a sense of divine support, helping individuals navigate challenges or decisions with greater spiritual awareness and insight. Angel cards are valued for their gentle yet profound messages, fostering a deeper connection to one's inner wisdom and the guidance of spiritual beings.
                 </p>
                 </div>
-                <NavigationTwo link='/view-guidebook' />
+               
             </div>
+            <NavigationTwo link='/view-guidebook' />
         </>
     );
 }

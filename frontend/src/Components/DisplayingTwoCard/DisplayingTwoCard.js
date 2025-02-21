@@ -15,6 +15,8 @@ const DisplayTwoCard = () => {
   const [flippedCards, setFlippedCards] = useState([]);
   const [saveId,setSaveId]=useState([]);
   const [UserId,setUserId]=useState("");
+  const [lastFlippedIndex, setLastFlippedIndex] = useState(null);
+    const [lastFlippedDescription, setLastFlippedDescription] = useState("");
   useEffect(() => {
     const storedData = localStorage.getItem('twoCards');
     if (storedData) {
@@ -59,6 +61,8 @@ const DisplayTwoCard = () => {
     newFlippedCards[index] = true; 
     setFlippedCards(newFlippedCards);
     setSaveId([...saveId, _id]);
+    setLastFlippedIndex(index); // Update the last flipped index
+    setLastFlippedDescription(cardData[index].description); 
   } else {
     toast.error("You have already accessed this card!");
   }
@@ -75,6 +79,19 @@ const DisplayTwoCard = () => {
      console.log("err",err);
     }
   }
+  // const renderCardDescription = () => {
+  //   if (allFlipped) {
+  //     const currentCard = cardData[currentCardIndex];
+  //     setCurrentCardIndex(currentCardIndex + 1); 
+  //     return (
+  //       <div className="card-description">
+  //         <h3>{currentCard.title}</h3>
+  //         <p>{currentCard.description}</p>
+  //       </div>
+  //     );
+  //   }
+  //   return null;
+  // };
 
   return (
     <>
@@ -106,6 +123,7 @@ const DisplayTwoCard = () => {
                   </div>
                   <div className='card-back'>
                     <img className='back' src={data.backImage} alt="Back Image" />
+                    {/* {renderCardDescription()} */}
                   </div>
                 </div>
               </div>
@@ -113,6 +131,11 @@ const DisplayTwoCard = () => {
           ))}
         </Swiper>
       </div>
+      {lastFlippedIndex !== null && (
+        <div className='cardReading-description'>
+          <p>{lastFlippedDescription}</p>
+        </div>
+      )}
       <div className='save-card-container'>
         <button className='save-card-button' onClick={()=>savedCard()}>Save Card</button>
          <ToastContainer />

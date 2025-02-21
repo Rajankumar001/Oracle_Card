@@ -1,6 +1,6 @@
 .app-container{
   width: 99.99%;
-  height: 100vh;
+  height:100vh;
   background-image: url('./assets/galaxy background.jpg');
     background-size: cover;
     background-repeat: no-repeat;

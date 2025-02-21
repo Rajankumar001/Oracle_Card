@@ -15,13 +15,15 @@ const DisplayOneCard = () => {
   const [flippedCards, setFlippedCards] = useState([]);
    const [saveId,setSaveId]=useState([]);
   const [UserId,setUserId]=useState("");
+  const [lastFlippedIndex, setLastFlippedIndex] = useState(null);
+  const [lastFlippedDescription, setLastFlippedDescription] = useState(""); // 
 
   useEffect(() => {
     const storedData = localStorage.getItem('oneCard');
     if (storedData) {
       const parsedData = JSON.parse(storedData);
       setCardData(parsedData);
-      setFlippedCards(Array(parsedData.length).fill(false)); // Initialize flippedCards state
+      setFlippedCards(Array(parsedData.length).fill(false)); 
     }
   }, []);
   const getLocalstorage=()=>{
@@ -59,6 +61,12 @@ const DisplayOneCard = () => {
       newFlippedCards[index] = true; // Mark the card as flipped
       setFlippedCards(newFlippedCards);
       setSaveId([...saveId, _id]);
+      setLastFlippedIndex(index); // Update the last flipped index
+      setLastFlippedDescription(cardData[index].description); 
+      // setTimeout(()=>{
+      // window.location.href='/card-reading'
+      // },5000)
+      
     } else {
       toast.error("You have already accessed this card!"); // Alert if trying to flip the card again
     }
@@ -112,6 +120,11 @@ const DisplayOneCard = () => {
           ))}
         </Swiper>
       </div>
+      {lastFlippedIndex !== null && (
+        <div className='cardReading-description'>
+          <p>{lastFlippedDescription}</p>
+        </div>
+      )}
       <div className='save-card-container'>
         <button className='save-card-button' onClick={()=>savedCard()}>Save Card</button>
          <ToastContainer />

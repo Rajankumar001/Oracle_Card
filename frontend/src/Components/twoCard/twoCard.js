@@ -70,8 +70,8 @@ const TwoCard = () => {
             setBox2Selected(true);
             // setRedirected(true);
             setRedirected(true);
-            const dataEntry1 = { _id: selectedCards[0]._id, frontImage: selectedCards[0].frontImage, backImage: selectedCards[0].backImage };
-            const dataEntry2 = { _id: selectedCard._id, frontImage: selectedCard.frontImage, backImage: selectedCard.backImage };
+            const dataEntry1 = { _id: selectedCards[0]._id, frontImage: selectedCards[0].frontImage, backImage: selectedCards[0].backImage,description:selectedCards[0].Description };
+            const dataEntry2 = { _id: selectedCard._id, frontImage: selectedCard.frontImage, backImage: selectedCard.backImage,description:selectedCard.Description };
             setArrayOfObjects([dataEntry1, dataEntry2]);
             localStorage.setItem('twoCards', JSON.stringify([dataEntry1, dataEntry2]));
             console.log("localStorage called..", localStorage.setItem('twoCards', JSON.stringify([dataEntry1, dataEntry2])));
