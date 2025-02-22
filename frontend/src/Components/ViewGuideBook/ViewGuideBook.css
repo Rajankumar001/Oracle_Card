@@ -7,6 +7,7 @@
     align-items: center;
 }
 .guidebook-title {
+    position: relative;
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -20,6 +21,7 @@
     border-radius: 6%;
 }
 .guidebook-mainContent {
+    position: relative;
     margin: auto;
     font-family: "Jersey 15", serif;
     font-weight: 600;
@@ -64,6 +66,7 @@
         align-items: center;
     }
     .guidebook-title {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -76,6 +79,7 @@
         border-radius: 6%;
     }
     .guidebook-mainContent {
+        position: relative;
         font-family: "Jersey 15", serif;
         font-weight: 600;
         font-size: 1.8rem;

@@ -1,4 +1,5 @@
 .saved-container {
+  position: relative;
     width: 100%;
     height: 500px;
     margin: auto;
@@ -45,6 +46,7 @@
   }
   @media (max-width:600px) {
     .saved-container {
+      position: relative;
       width: 100%;
       height:auto;
       margin: auto;

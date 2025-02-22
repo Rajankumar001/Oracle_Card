@@ -1,25 +1,21 @@
 .cardReading-container{
-    /* width: 100vw; */
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
 }
 .cardReading-main-content{
-
+        position: relative;
         font-family: "Jersey 15", serif;
         font-weight: 600;
         font-size: 1.8rem;
         font-style: normal;
-        /* background-color: white; */
-        /* border: 5px solid yellow; */
     border-radius: 6%;
     width: 450px;
     height: 425px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -40,6 +36,10 @@
     border-radius: 10px;
     box-shadow: 2px 2px 2px black;
 }
+.cardReading-box-content:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+  }
 .link-style{
     text-decoration: none;
     color: black;
@@ -75,15 +75,12 @@
         box-shadow: 2px 2px 2px black;
     }
     .cardReading-main-content{
+        position: relative;
 
         font-family: "Jersey 15", serif;
         font-weight: 600;
         font-size: 1.8rem;
         font-style: normal;
-        /* background-image: url('https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg');
-        background-size: auto; */
-        /* background-color: white;
-        border: 5px solid yellow; */
     border-radius: 6%;
     width: 450px;
     height: 425px;

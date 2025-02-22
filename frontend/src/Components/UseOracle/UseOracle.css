@@ -10,6 +10,7 @@
 }
 
 .OracleCard-mainContent {
+    position: relative;
     margin: auto;
     background-color: white;
     padding: 5px;
@@ -49,6 +50,7 @@
     }
 
     .OracleCard-mainContent {
+        position: relative;
         padding: 10px;
         text-align: center;
         border: 5px solid #F4CE14;

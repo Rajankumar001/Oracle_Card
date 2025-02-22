@@ -1,8 +1,8 @@
 .Navigation-container{
+    position: relative;
     margin-top: 55px;
     height: 80px;
     width: 100%;
-    /* background-image: linear-gradient(to right, #4c5270 ,#722b55); */
     background-color: #d2d1cc;
     display: flex;
     justify-content: space-evenly;
@@ -30,10 +30,10 @@
 }
 @media (max-width:600px) {
     .Navigation-container{
+        position: relative;
         margin-top: 100px;
         height: 80px;
         width: 500px;
-        /* background-image: linear-gradient(to right, #7efaee ,#d88eb9); */
         display: flex;
         justify-content: space-evenly;
         align-items: center;

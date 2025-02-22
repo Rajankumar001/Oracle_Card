@@ -1,21 +1,15 @@
 .home-container{
-    /* width: 100vw; */
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
 }
 .home-main-content{
-
-        font-family: "Jersey 15", serif;
-        font-weight: 600;
-        font-size: 1.8rem;
-        font-style: normal;
-   /* background-image: url('https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg'); */
-   /* background-size: auto; */
-   /* background-color: white;
-        border: 5px solid yellow; */
+    position: relative;
+    font-family: "Jersey 15", serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-style: normal;
     border-radius: 6%;
     width: 450px;
     height: 425px;
@@ -25,7 +19,7 @@
     justify-content: center;
     align-items: center;
 }
-.home-box-content{
+.home-box-content {
     cursor: pointer;
     font-family: "Jersey 15", serif;
     font-weight: 600;
@@ -38,9 +32,18 @@
     width: 400px;
     height: 70px;
     border-radius: 10px;
-    background-image: linear-gradient(to right, rgb(254, 185, 65) ,rgb(255, 244, 95));
-    box-shadow: 2px 2px 2px black;
-}
+    background-image: linear-gradient(
+      to right,
+      rgb(254, 185, 65),
+      rgb(255, 244, 95)
+    );
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .home-box-content:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+  }
 .link-style{
     text-decoration: none;
     color: black;
@@ -55,21 +58,18 @@
         align-items: center;
     }
     .home-main-content{
+        position: relative;
         font-family: "Jersey 15", serif;
         font-weight: 600;
         font-size: 1.8rem;
         font-style: normal;
-   /* background-image: url('https://res.cloudinary.com/dwiil16oj/image/upload/v1737625336/00_Back_card_upxqkz.jpg'); */
-   /* background-size: auto; */
-   /* background-color: white;
-   border: 5px solid yellow; */
-    border-radius: 6%;
-    width: 450px;
-    height: 425px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+        border-radius: 6%;
+        width: 450px;
+        height: 425px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
 }
 }
