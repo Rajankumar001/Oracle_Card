@@ -24,9 +24,6 @@
     background-image: linear-gradient(to right, rgb(254, 185, 65), rgb(255, 244, 95));
     color: black;
 }
-.logout-button-mobile{
-    display: none;
-}
 
 .header-title {
     text-align: center;
@@ -35,9 +32,6 @@
 }
 
 @media (max-width:600px) {
-    .logout-button {
-        display: none;
-    }
     .header-class {
         font-family: "Inter", sans-serif;
         display: flex;
