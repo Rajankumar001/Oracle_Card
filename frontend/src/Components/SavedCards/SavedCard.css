@@ -1,6 +1,5 @@
 .saved-container {
     width: 100%;
-    max-width: 800px;
     margin: auto;
     display: flex;
     flex-direction: column;

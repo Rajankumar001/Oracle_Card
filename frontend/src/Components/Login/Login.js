@@ -8,6 +8,7 @@ import './Login.css';
 import { UserAction } from '../../Action/UserAction';
 import PhoneInput from 'react-phone-number-input';
 const Login = () => {
+  const notify=()=>toast.error("contact not verified...")
   const dispatch = useDispatch();
   const User = useSelector((state) => state.LoginReducer);
   console.log("User ",User);
@@ -39,6 +40,10 @@ const Login = () => {
       localStorage.setItem('LoginUser', userString);
       console.log(localStorage.setItem('LoginUser', userString));
       console.log("localStorage get item", localStorage.getItem('LoginUser'));
+      toast.success("contact verified successfully.....");
+      setTimeout(() => {
+        window.location.href = '/home';
+      }, 2000);
     }
   }, [LoginUser]);
   const SigninHandler = async(e) => {
@@ -52,9 +57,6 @@ const Login = () => {
     const user = { mobile };
     try {
       await dispatch(UserAction(user));
-      setTimeout(() => {
-        window.location.href = '/home';
-      }, 2000);
       console.log("User after dispatch:", user);
     } catch (error) {
       console.log("error is calling....")
@@ -64,13 +66,7 @@ const Login = () => {
   return (
     <>
       <div className="login-main-container">
-        {/* {loading && <p><Loader /></p>}
-        {error && <p>Error: {error}</p>}
-        {LoginUser && (
-          <div className="welcome-container">
-            <p><span>Welcome</span> {LoginUser.name}</p>
-          </div>
-        )} */}
+        {err && <p>{notify()}:err</p>}
         <div className="Login_container">
           <Form className='login-form'>
             <Form.Group className="mb-3 form_box" controlId="formBasicMobile">
