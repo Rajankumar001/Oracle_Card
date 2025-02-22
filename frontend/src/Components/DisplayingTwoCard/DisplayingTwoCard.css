@@ -133,6 +133,7 @@
     padding: 20px;
   }
   .cardReading-description-container{
+    position: relative;
     overflow-y: auto;
     margin: auto;
     position: static;

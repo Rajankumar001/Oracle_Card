@@ -1,5 +1,6 @@
 @media (max-width:600px) {
     .cardReading-description-container{
+        position: relative;
         position: static;
         margin: auto;
         padding: 20px;

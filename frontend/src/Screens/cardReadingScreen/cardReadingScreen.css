@@ -31,10 +31,13 @@
     padding: 10px;
     align-items: center;
     width: 400px;
-    height: 80px;
+    height: 70px;
     background-image: linear-gradient(to right, rgb(254, 185, 65) ,rgb(255, 244, 95));
     border-radius: 10px;
     box-shadow: 2px 2px 2px black;
+}
+.cardReading-box-content {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .cardReading-box-content:hover {
     transform: translateY(-5px) scale(1.05);

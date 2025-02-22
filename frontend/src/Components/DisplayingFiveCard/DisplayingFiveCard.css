@@ -1,5 +1,6 @@
 @media (max-width:600px) {
     .cardReading-description-container{
+        position: relative;
         position: static;
         margin: auto;
         padding: 20px;
@@ -18,12 +19,10 @@
         color: #ba3276;
         font-size: 1.2rem;
         font-family: "Inter"sans-serif;
-        
       }
       .cardReading-description{
         width: 350px;
         color: white;
         font-family: "Inter"sans-serif;
-       
       }
 }
