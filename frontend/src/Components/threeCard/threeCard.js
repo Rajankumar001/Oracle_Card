@@ -78,9 +78,9 @@ const ThreeCard = () => {
       
             setRedirected(true);
       
-            const dataEntry1 = { _id: selectedCards[0]._id, frontImage: selectedCards[0].frontImage, backImage: selectedCards[0].backImage,description:selectedCards[0].Description };
-            const dataEntry2 = { _id: selectedCards[1]._id, frontImage: selectedCards[1].frontImage, backImage: selectedCards[1].backImage,description:selectedCards[1].Description };
-            const dataEntry3 = { _id: selectedCard._id, frontImage: selectedCard.frontImage, backImage: selectedCard.backImage,description:selectedCard.Description };
+            const dataEntry1 = { _id: selectedCards[0]._id, frontImage: selectedCards[0].frontImage, backImage: selectedCards[0].backImage,description:selectedCards[0].Description,name:selectedCards[0].name };
+            const dataEntry2 = { _id: selectedCards[1]._id, frontImage: selectedCards[1].frontImage, backImage: selectedCards[1].backImage,description:selectedCards[1].Description,name:selectedCards[1].name};
+            const dataEntry3 = { _id: selectedCard._id, frontImage: selectedCard.frontImage, backImage: selectedCard.backImage,description:selectedCard.Description,name:selectedCard.name };
             const combinedEntries = [dataEntry1, dataEntry2, dataEntry3];
       
             setArrayOfObjects(combinedEntries);

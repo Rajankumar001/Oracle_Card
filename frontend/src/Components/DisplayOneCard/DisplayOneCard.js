@@ -16,7 +16,8 @@ const DisplayOneCard = () => {
    const [saveId,setSaveId]=useState([]);
   const [UserId,setUserId]=useState("");
   const [lastFlippedIndex, setLastFlippedIndex] = useState(null);
-  const [lastFlippedDescription, setLastFlippedDescription] = useState(""); // 
+  const [lastFlippedDescription, setLastFlippedDescription] = useState("");
+  const [lastFlippedname, setLastFlippedname] = useState(""); // 
 
   useEffect(() => {
     const storedData = localStorage.getItem('oneCard');
@@ -59,10 +60,11 @@ const DisplayOneCard = () => {
     if (!flippedCards[index]) { // Check if the card has not been flipped yet
       const newFlippedCards = [...flippedCards];
       newFlippedCards[index] = true; // Mark the card as flipped
-      setFlippedCards(newFlippedCards);
-      setSaveId([...saveId, _id]);
       setLastFlippedIndex(index); // Update the last flipped index
-      setLastFlippedDescription(cardData[index].description); 
+      setLastFlippedDescription(cardData[index].description);
+      setLastFlippedname(cardData[index].name);
+      setFlippedCards(newFlippedCards);
+      setSaveId([...saveId, _id]); 
       // setTimeout(()=>{
       // window.location.href='/card-reading'
       // },5000)
@@ -121,8 +123,9 @@ const DisplayOneCard = () => {
         </Swiper>
       </div>
       {lastFlippedIndex !== null && (
-        <div className='cardReading-description'>
-          <p>{lastFlippedDescription}</p>
+        <div className='cardReading-description-container'>
+          <h2 className='carReading-name'>{lastFlippedname}</h2>
+          <p className='cardReading-description'>{lastFlippedDescription}</p>
         </div>
       )}
       <div className='save-card-container'>

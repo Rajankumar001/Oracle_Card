@@ -16,7 +16,9 @@ const DisplayTwoCard = () => {
   const [saveId,setSaveId]=useState([]);
   const [UserId,setUserId]=useState("");
   const [lastFlippedIndex, setLastFlippedIndex] = useState(null);
-    const [lastFlippedDescription, setLastFlippedDescription] = useState("");
+  const [lastFlippedDescription, setLastFlippedDescription] = useState("");
+  const [lastFlippedname, setLastFlippedname] = useState(""); // 
+    
   useEffect(() => {
     const storedData = localStorage.getItem('twoCards');
     if (storedData) {
@@ -47,22 +49,14 @@ const DisplayTwoCard = () => {
   },[])
 
   const handleCardClick = (_id,index) => {
-    // console.log("index",index);
-    // if (flippedCards[index] < 1) {
-    //   const newFlippedCards = [...flippedCards];
-    //   newFlippedCards[index] = newFlippedCards[index] + 1;
-    //   setFlippedCards(newFlippedCards);
-    //   setSaveId([...saveId, _id]);
-    // } else {
-    //   alert("You have already accessed this card twice!");
-    // }
     if (!flippedCards[index]) { //
     const newFlippedCards = [...flippedCards];
     newFlippedCards[index] = true; 
     setFlippedCards(newFlippedCards);
     setSaveId([...saveId, _id]);
     setLastFlippedIndex(index); // Update the last flipped index
-    setLastFlippedDescription(cardData[index].description); 
+    setLastFlippedDescription(cardData[index].description);
+    setLastFlippedname(cardData[index].name); 
   } else {
     toast.error("You have already accessed this card!");
   }
@@ -132,8 +126,9 @@ const DisplayTwoCard = () => {
         </Swiper>
       </div>
       {lastFlippedIndex !== null && (
-        <div className='cardReading-description'>
-          <p>{lastFlippedDescription}</p>
+        <div className='cardReading-description-container'>
+         <h2 className='carReading-name'>{lastFlippedname}</h2>
+         <p className='cardReading-description'>{lastFlippedDescription}</p>
         </div>
       )}
       <div className='save-card-container'>

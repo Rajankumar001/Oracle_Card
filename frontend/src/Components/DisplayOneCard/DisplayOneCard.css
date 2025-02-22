@@ -56,18 +56,34 @@ body {
   height: 425px;
   margin: auto;
 }
-.cardReading-description{
+.cardReading-description-container{
   position: absolute;
-  right: 20px;
+  padding: 20px;
+  right: 15px;
   top: 100px;
-  width: 350px;
-  height: 425px;
+  width: 400px;
+  height: 500px;
   font-size: 1.1rem;
   border: grey;
   border-radius: 10px;
   color: white;
   font-family: "inter"sans-serif;
   font-weight: 500;
+  border: 5px solid goldenrod;
+}
+.carReading-name{
+  width: 350px;
+  color: #ba3276;
+  font-size: 1.2rem;
+  font-family: "Inter"sans-serif;
+  
+}
+.cardReading-description{
+  overflow-y: auto;
+  width: 350px;
+  color: white;
+  font-family: "Inter"sans-serif;
+ 
 }
 .card-choosed-box{
   width: 50px;
@@ -147,9 +163,6 @@ body {
     transform: translateX(10px); 
   }
 }
-
-
-
 @media (max-width:600px) {
   .oneCard-container-displaying{
     display: flex;
@@ -185,5 +198,31 @@ body {
     background-color: rgb(221, 227, 221);
     border-radius: 5px;
     color: rgb(206, 147, 46);
+  }
+  .cardReading-description-container{
+    /* display: none; */
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    font-size: 1.1rem;
+    border: grey;
+    border-radius: 10px;
+    color: white;
+    font-family: "inter"sans-serif;
+    font-weight: 500;
+    border: 5px solid goldenrod;
+  }
+  .carReading-name{
+    width: 350px;
+    color: #ba3276;
+    font-size: 1.2rem;
+    font-family: "Inter"sans-serif;
+    
+  }
+  .cardReading-description{
+    width: 350px;
+    color: white;
+    font-family: "Inter"sans-serif;
+   
   }
 }

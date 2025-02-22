@@ -1,0 +1,30 @@
+@media (max-width:600px) {
+    .cardReading-description-container{
+        /* display: none; */
+        padding: 20px;
+        width: 400px;
+        height: 500px;
+        font-size: 1.1rem;
+        border: grey;
+        border-radius: 10px;
+        color: white;
+        font-family: "inter"sans-serif;
+        font-weight: 500;
+        border: 5px solid goldenrod;
+      }
+      .carReading-name{
+        width: 350px;
+        color: #ba3276;
+        font-size: 1.2rem;
+        font-family: "Inter"sans-serif;
+        
+      }
+      .cardReading-description{
+        width: 350px;
+        color: white;
+        font-family: "Inter"sans-serif;
+       
+      }
+
+    
+}

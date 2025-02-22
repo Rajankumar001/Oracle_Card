@@ -91,12 +91,14 @@ const FiveCard = () => {
             frontImage: card.frontImage,
             backImage: card.backImage,
             description:card.Description,
+            name:card.name
           }));
           combinedEntries.push({
             _id: selectedCard._id,
             frontImage: selectedCard.frontImage,
             backImage: selectedCard.backImage,
             description:selectedCard.description,
+            name:selectedCard.name
           });
   
           setArrayOfObjects(combinedEntries);
