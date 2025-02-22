@@ -143,7 +143,9 @@ body {
     padding: 20px;
   }
   .cardReading-description-container{
-    /* display: none; */
+    overflow-y: auto;
+    margin: auto;
+    position: static;
     padding: 20px;
     width: 400px;
     height: 400px;

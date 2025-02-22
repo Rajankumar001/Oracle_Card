@@ -89,7 +89,6 @@ const DisplayOneCard = () => {
     <>
     <Header/>
       <div className='oneCard-container-displaying'>
-        {/* <h4 className='card-title'>Your Card </h4> */}
         <Swiper
           effect={'coverflow'}
           grabCursor={true}

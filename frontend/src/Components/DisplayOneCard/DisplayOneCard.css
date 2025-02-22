@@ -1,9 +1,4 @@
-#app { height: 100% }
-html,
-body {
-  position: relative;
-  height: 100%;
-}
+
 
 body {
   background: #eee;
@@ -57,6 +52,8 @@ body {
   margin: auto;
 }
 .cardReading-description-container{
+  overflow-y: auto;
+  overflow-x: hidden;
   position: absolute;
   padding: 20px;
   right: 15px;
@@ -74,7 +71,7 @@ body {
 .carReading-name{
   width: 350px;
   color: #ba3276;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: "Inter"sans-serif;
   
 }
@@ -200,7 +197,9 @@ body {
     color: rgb(206, 147, 46);
   }
   .cardReading-description-container{
+    margin: auto;
     /* display: none; */
+    position: static;
     padding: 20px;
     width: 400px;
     height: 400px;
