@@ -1,12 +1,4 @@
 
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
 .save-card-container{
   display: flex;
   justify-content: center;
@@ -69,8 +61,6 @@ body {
   width: 700px;
   height: 425px;
   margin: auto;
-  /* border: 2px solid yellow; */
-
 }
 .card-choosed-box{
   width: 50px;

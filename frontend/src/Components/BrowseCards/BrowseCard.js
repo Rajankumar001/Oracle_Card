@@ -49,7 +49,7 @@ export default function BrowseCard() {
               },
             }}
             modules={[Pagination]}
-            className="mySwiper"
+            className="mySwiper swiper-browseCard"
           >
            
            {cardData.map((data,index) => (

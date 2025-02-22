@@ -65,8 +65,8 @@ const Login = () => {
   };
   return (
     <>
-      <div className="login-main-container">
-        {err && <p>{notify()}:err</p>}
+    <div className="login-main-container">
+        {err && notify()}
         <div className="Login_container">
           <Form className='login-form'>
             <Form.Group className="mb-3 form_box" controlId="formBasicMobile">
@@ -93,5 +93,4 @@ const Login = () => {
     </>
   );
 };
-
 export default Login;
