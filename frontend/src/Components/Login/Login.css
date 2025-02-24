@@ -243,8 +243,9 @@ span a {
     align-items: center;
 }
 .error-message{
-    color: red;
-    font-size: 1.1rem;
+    position: relative;;
+    color: #e60909;
+    font-size: 1.3rem;
     font-family: "Roboto", serif;
     font-weight: 500;
     font-style: normal;
