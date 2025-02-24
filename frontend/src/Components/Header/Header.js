@@ -23,7 +23,7 @@ const Header = () => {
       {['xxl'].map((expand) => (
         <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3 header-class-container">
           <div fluid className='header-class'>
-            <Navbar.Brand href="" className='header-title'>AngelsOnEarth</Navbar.Brand>
+            <Navbar.Brand href="" className='header-title navbar-logo'>Angels On Earth</Navbar.Brand>
             <Button onClick={handleLogout} className="logout-button">
               Logout
             </Button>
