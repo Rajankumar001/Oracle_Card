@@ -242,6 +242,13 @@ span a {
     justify-content: center;
     align-items: center;
 }
+.error-message{
+    color: red;
+    font-size: 1.1rem;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+}
 
 @media (max-width:600px) {
     .login-main-container {

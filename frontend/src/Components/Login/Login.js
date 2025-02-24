@@ -51,12 +51,13 @@ const Login = () => {
     console.log("SigninHandler function is calling");
     console.log("mobile",mobile);
     if (!mobile || mobile.length !== 13) {
-      alert('Please enter a valid 10-digit mobile number with country code.');
+     toast.error('Please enter a valid 10-digit mobile number with country code.');
       return;
     }
     const user = { mobile };
     try {
       await dispatch(UserAction(user));
+      setMobile('');
       console.log("User after dispatch:", user);
     } catch (error) {
       console.log("error is calling....")
@@ -66,7 +67,7 @@ const Login = () => {
   return (
     <>
     <div className="login-main-container">
-        {err && notify()}
+        {err && <p className='error-message'>contact not verified ! please refresh and try </p>}
         <div className="Login_container">
           <Form className='login-form'>
             <Form.Group className="mb-3 form_box" controlId="formBasicMobile">
