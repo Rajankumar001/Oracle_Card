@@ -67,7 +67,7 @@
 }
 
 .shuffle-animation {
-  animation: shuffle 2s ease-in-out;
+  animation: shuffle 5s ease-in-out;
 }
 
 @keyframes shuffle {
